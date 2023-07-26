@@ -1,21 +1,29 @@
 import { useState } from "react";
 import "./App.scss";
-import { BeerPreview } from "./components/BeerPreview/BeerPreview";
 import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
-import { Modal } from "./components/Header/modal";
-import { beer } from "./components/data/beerData";
-import { Hero } from "./components/Hero/Hero";
+import { Route, Routes } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { Beer } from "./pages/Beer";
+import { Snacks } from "./pages/Snacks";
+import { Menu } from "./pages/Menu";
+import { Galery } from "./pages/Galery";
+import { Contacts } from "./pages/Contacts";
 
 function App() {
-  const [modalActive, setModalActive] = useState(true);
+  const [modalActive, setModalActive] = useState(false);
 
   return (
     <div className="App">
       <Header />
-      <Hero />
-      <Modal active={modalActive} setActive={setModalActive} />
-      <BeerPreview beerData={beer} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/beer" element={<Beer />} />
+        <Route path="/snacks" element={<Snacks />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/galary" element={<Galery />} />
+        <Route path="/contacts" element={<Contacts />} />
+      </Routes>
       <Footer />
     </div>
   );
