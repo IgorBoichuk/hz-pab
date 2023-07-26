@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./header.module.scss";
+import style from "./Modal.module.scss";
 
 export const Modal = ({ modalActive, setModalActive }) => {
   return (

@@ -1,0 +1,28 @@
+@import "../../scss/variables";
+
+.modalwrapper {
+  display: none;
+
+  background: rgb(45, 44, 44);
+  // background-image: radial-gradient(rgb(166, 163, 166), rgb(49, 49, 49));
+}
+
+.modalcontent {
+  // background: rgb(45, 44, 44);
+  background-image: radial-gradient(rgb(113, 113, 113), rgb(49, 49, 49));
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 35px 0 0 35px;
+}
+
+.modallist {
+  list-style: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+}

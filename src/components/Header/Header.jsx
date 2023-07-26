@@ -3,7 +3,7 @@ import style from "./header.module.scss";
 
 import Logo from "../galary/hzfav.png";
 import { Container } from "../Container/Container";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export const Header = () => {
   return (
@@ -16,29 +16,34 @@ export const Header = () => {
           <nav className={style.navmenu}>
             <ul className={style.navlist}>
               <li>
-                <Link to="/beer" className={style.navlink}>
+                <NavLink to="/" className={style.navlink}>
+                  Головна
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/beer" className={style.navlink}>
                   Пиво
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/snacks" className={style.navlink}>
+                <NavLink to="/snacks" className={style.navlink}>
                   Снеки та закуски
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/menu" className={style.navlink}>
+                <NavLink to="/menu" className={style.navlink}>
                   Меню
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/galary" className={style.navlink}>
+                <NavLink to="/galary" className={style.navlink}>
                   Галерея
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/contacts" className={style.navlink}>
+                <NavLink to="/contacts" className={style.navlink}>
                   Контакти
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </nav>
