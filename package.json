@@ -2,7 +2,7 @@
   "name": "hz-pab",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://igorboichuk.github.io/hz-pab",
+  "homepage": "https://IgorBoichuk.github.io/hz-pab",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
