@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 import "./App.scss";
 import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
@@ -11,7 +11,7 @@ import { Galery } from "./pages/Galery";
 import { Contacts } from "./pages/Contacts";
 
 function App() {
-  const [modalActive, setModalActive] = useState(false);
+  // const [modalActive, setModalActive] = useState(false);
 
   return (
     <div className="App">
