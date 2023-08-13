@@ -8,7 +8,7 @@ export const Home = () => {
   return (
     <div>
       <Hero />
-      <SwiperController beerData={beer} />
+      {/* <SwiperController beerData={beer} /> */}
     </div>
   );
 };

@@ -15,7 +15,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
   margin-bottom: 120px;
 
   @media screen and (min-width: $breakpoint-tablet) {
@@ -28,32 +27,47 @@
   }
 }
 .content {
-  position: relative;
   width: 50%;
   padding-left: 80px;
-  padding-top: 140px;
-}
-.textOutline {
-  font-family: Unbounded, sans-serif;
-  font-size: 90px;
-  font-weight: 900;
-  line-height: 130%; /* 117px */
-  text-transform: uppercase;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px #ffffff;
-  margin: 0;
-  padding: 0;
+  padding-top: 180px;
+  padding-bottom: 90px;
 }
 
+// .textOutline {
+//   font-family: Unbounded, sans-serif;
+//   font-size: 90px;
+//   font-weight: 900;
+//   line-height: 130%; /* 117px */
+//   text-transform: uppercase;
+// -webkit-text-fill-color: transparent;
+// -webkit-text-stroke: 1px #ffffff;
+//   margin: 0;
+//   padding: 0;
+// }
+
 .title {
-  position: absolute;
-  top: 50%;
+  position: relative;
   color: #ff612f;
   font-family: Unbounded, sans-serif;
   // font-size: 48px;
   font-weight: 700;
   line-height: 130%; /* 62.4px */
   text-transform: uppercase;
+
+  &::after {
+    position: absolute;
+    content: "КОНТАКТИ";
+    font-family: Unbounded, sans-serif;
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 130%; /* 117px */
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #8f8f8f;
+    margin: 0;
+    padding: 0;
+    left: -3px;
+    top: -50%;
+  }
   @media screen and (min-width: $breakpoint-tablet) {
     font-size: 35px;
   }
@@ -65,21 +79,4 @@
   @media screen and (min-width: $breakpoint-desktop) {
     font-size: 48px;
   }
-}
-
-.promotion {
-  color: #fff;
-  font-family: Unbounded, sans-serif;
-  font-size: 38px;
-  line-height: 130%; /* 49.4px */
-  text-transform: uppercase;
-  margin-bottom: 25px;
-}
-
-.description {
-  width: 450px;
-  color: #fff;
-  font-family: Nunito Sans, sans-serif;
-  font-size: 18px;
-  line-height: 140%; /* 25.2px */
 }

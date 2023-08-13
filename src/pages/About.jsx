@@ -1,10 +1,10 @@
 import React from "react";
 import { MainSection } from "../components/MainSection/MainSection";
 
-export const Contacts = () => {
+export const About = () => {
   return (
     <div>
-      <MainSection title={"контакти"} />
+      <MainSection title={"About"} />
     </div>
   );
 };
