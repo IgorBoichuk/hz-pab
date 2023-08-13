@@ -21,13 +21,8 @@ export const Header = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/beer" className={style.navlink}>
-                  Пиво
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/snacks" className={style.navlink}>
-                  Снеки та закуски
+                <NavLink to="/about-us" className={style.navlink}>
+                  Про нас
                 </NavLink>
               </li>
               <li>
@@ -36,8 +31,8 @@ export const Header = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/galary" className={style.navlink}>
-                  Галерея
+                <NavLink to="/atmosphere" className={style.navlink}>
+                  Атмосфера
                 </NavLink>
               </li>
               <li>
@@ -47,6 +42,9 @@ export const Header = () => {
               </li>
             </ul>
           </nav>
+          <Link to="tel:+380662408540" className={style.navlink}>
+            +380662408540
+          </Link>
         </div>
       </Container>
     </header>
