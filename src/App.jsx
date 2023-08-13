@@ -1,6 +1,3 @@
-import "./App.scss";
-import { Footer } from "./components/Footer/Footer";
-import { Header } from "./components/Header/Header";
 import { Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
@@ -13,23 +10,21 @@ import { SharedLayout } from "./components/SharedLayout/SharedLayout";
 
 function App() {
   return (
-    <div className="App">
-      <Routes>
-        <Route path="/" element={<SharedLayout />}>
-          <Route index element={<Home />} />
-          <Route path="/about-us" element={<About />} />
-          <Route path="/menu" element={<Menu />}>
-            <Route path="bar" element={<BeerPreview />} />
-            <Route path="snacks" element={<BeerPreview />} />
-            <Route path="kitchen" element={<BeerPreview />} />
-            <Route path="souses" element={<BeerPreview />} />
-          </Route>
-          <Route path="/atmosphere" element={<Atmosphere />} />
-          <Route path="/contacts" element={<Contacts />} />
-          <Route path="*" element={<NotFound />} />
+    <Routes>
+      <Route path="/" element={<SharedLayout />}>
+        <Route index element={<Home />} />
+        <Route path="/about-us" element={<About />} />
+        <Route path="/menu" element={<Menu />}>
+          <Route path="bar" element={<BeerPreview />} />
+          {/* <Route path="snacks" element={<BeerPreview />} />
+          <Route path="kitchen" element={<BeerPreview />} />
+          <Route path="souses" element={<BeerPreview />} /> */}
         </Route>
-      </Routes>
-    </div>
+        <Route path="/atmosphere" element={<Atmosphere />} />
+        <Route path="/contacts" element={<Contacts />} />
+        <Route path="*" element={<NotFound />} />
+      </Route>
+    </Routes>
   );
 }
 
