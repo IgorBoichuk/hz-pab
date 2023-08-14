@@ -13,15 +13,15 @@ function App() {
     <Routes>
       <Route path="/" element={<SharedLayout />}>
         <Route index element={<Home />} />
-        <Route path="/about-us" element={<About />} />
-        <Route path="/menu" element={<Menu />}>
+        <Route path="about-us" element={<About />} />
+        <Route path="menu" element={<Menu />}>
           <Route path="bar" element={<BeerPreview />} />
-          {/* <Route path="snacks" element={<BeerPreview />} />
+          <Route path="snacks" element={<BeerPreview />} />
           <Route path="kitchen" element={<BeerPreview />} />
-          <Route path="souses" element={<BeerPreview />} /> */}
+          <Route path="souses" element={<BeerPreview />} />
         </Route>
-        <Route path="/atmosphere" element={<Atmosphere />} />
-        <Route path="/contacts" element={<Contacts />} />
+        <Route path="atmosphere" element={<Atmosphere />} />
+        <Route path="contacts" element={<Contacts />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
