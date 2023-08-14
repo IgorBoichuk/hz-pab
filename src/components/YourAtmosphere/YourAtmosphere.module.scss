@@ -1,36 +1,13 @@
 @import "../../scss/variables";
+@import "../../scss/fonts";
 
 .section {
   display: flex;
   justify-content: center;
-  position: relative;
-  // max-width: 1400px;
-  // height: 700px;
-
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.4) 0%,
-      rgba(0, 0, 0, 0.4) 100%
-    ),
-    url(../galary/hero-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 120px;
-
-  @media screen and (min-width: $breakpoint-tablet) {
-  }
-
-  @media screen and (min-width: $breakpoint-tablet-horizontal) {
-  }
-
-  @media screen and (min-width: $breakpoint-desktop) {
-  }
 }
-.content {
+
+.sectionTitle {
   position: relative;
-  padding-top: 180px;
-  padding-bottom: 90px;
 }
 
 .textOutline {
@@ -41,14 +18,14 @@
   text-transform: uppercase;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 2px #7d7d7d;
-  margin: 0;
+  margin-bottom: 60px;
   padding: 0;
 }
 
 .title {
   position: absolute;
 
-  top: 54%;
+  top: 30%;
   left: 3px;
 
   color: #ff612f;
@@ -70,16 +47,42 @@
   }
 }
 
-.endsection {
-  position: absolute;
-  z-index: 3;
-  width: 100%;
-  top: 82%;
+.list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 97px;
 }
 
-.endMainSection {
-  position: absolute;
-  z-index: 3;
-  width: 100%;
-  top: 85%;
+.item {
+  width: 362px;
+}
+
+.itemImg {
+  display: block;
+  width: 362px;
+  height: 200px;
+  background-color: #686868;
+  margin-bottom: 28px;
+  border-radius: 20px;
+}
+
+.itemTitle {
+  color: #fff;
+  font-family: Unbounded;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 26px */
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.itemDescription {
+  color: #cdcdcd;
+  font-family: Nunito Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 28px */
 }

@@ -4,7 +4,7 @@ import { MainSection } from "../components/MainSection/MainSection";
 export const Atmosphere = () => {
   return (
     <div>
-      <MainSection title={"Atmosphere"} />
+      <MainSection title={"атмосфера"} />
     </div>
   );
 };

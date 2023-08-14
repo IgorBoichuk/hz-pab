@@ -14,33 +14,27 @@ export const Header = () => {
             <img src={Logo} alt="Logo" className={style.logo} />
           </Link>
           <nav className={style.navmenu}>
-            <ul className={style.navlist}>
-              <li>
-                <NavLink to="/" className={style.navlink}>
-                  Головна
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/about-us" className={style.navlink}>
-                  Про нас
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/menu" className={style.navlink}>
-                  Меню
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/atmosphere" className={style.navlink}>
-                  Атмосфера
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/contacts" className={style.navlink}>
-                  Контакти
-                </NavLink>
-              </li>
-            </ul>
+            <NavLink to="/" className={style.navlink}>
+              Головна
+            </NavLink>
+            <NavLink
+              to="/about-us"
+              className={style.navlink}
+              activeClassName={style.activeNavlink}
+            >
+              Про нас
+            </NavLink>
+            <NavLink to="/menu" className={style.navlink}>
+              Меню
+            </NavLink>
+
+            <NavLink to="/atmosphere" className={style.navlink}>
+              Атмосфера
+            </NavLink>
+
+            <NavLink to="/contacts" className={style.navlink}>
+              Контакти
+            </NavLink>
           </nav>
           <Link to="tel:+380662408540" className={style.navlink}>
             +380662408540

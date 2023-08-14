@@ -10,7 +10,7 @@ import { MainSection } from "../components/MainSection/MainSection";
 export const Menu = () => {
   return (
     <div>
-      <MainSection title={"Menu"} />
+      <MainSection title={"меню"} />
       <AsideMenu />
       <Outlet />
       {/* <BeerPreview>

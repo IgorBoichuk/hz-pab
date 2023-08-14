@@ -4,7 +4,7 @@ import { MainSection } from "../components/MainSection/MainSection";
 export const About = () => {
   return (
     <div>
-      <MainSection title={"About"} />
+      <MainSection title={"про нас"} />
     </div>
   );
 };

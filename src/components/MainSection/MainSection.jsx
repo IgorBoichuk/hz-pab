@@ -1,13 +1,21 @@
+import { BrokenPaper } from "../BrokenPaper/BrokenPaper";
+import { Container } from "../Container/Container";
 import style from "./MainSection.module.scss";
 
 import React from "react";
 
 export const MainSection = ({ title }) => {
   return (
-    <section className={style.wrapper}>
-      <div className={style.content}>
-        {/* <p className={style.textOutline}>{title}</p> */}
-        <h1 className={style.title}>{title}</h1>
+    <section className={style.section}>
+      <Container>
+        <div className={style.content}>
+          <h1 className={style.textOutline}>{title}</h1>
+          <p className={style.title}>{title}</p>
+        </div>
+        <div className={style.endsection}></div>
+      </Container>
+      <div className={style.endMainSection}>
+        <BrokenPaper />
       </div>
     </section>
   );

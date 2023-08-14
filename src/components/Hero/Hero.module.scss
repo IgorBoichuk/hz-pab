@@ -1,6 +1,8 @@
 @import "../../scss/variables";
+@import "../../scss/fonts";
 
-.wrapper {
+.section {
+  position: relative;
   // max-width: 1400px;
   // height: 700px;
   margin-left: auto;
@@ -15,7 +17,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
   margin-bottom: 120px;
 
   @media screen and (min-width: $breakpoint-tablet) {
@@ -25,17 +26,20 @@
   }
 
   @media screen and (min-width: $breakpoint-desktop) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 }
 .content {
   position: relative;
   width: 50%;
-  padding-left: 80px;
-  padding-top: 140px;
+  padding-top: 200px;
+  margin-bottom: 140px;
 }
 .textOutline {
-  font-family: Unbounded, sans-serif;
-  font-size: 90px;
+  // font-family: Unbounded, sans-serif;
+  font-size: 110px;
   font-weight: 900;
   line-height: 130%; /* 117px */
   text-transform: uppercase;
@@ -47,7 +51,8 @@
 
 .title {
   position: absolute;
-  top: 50%;
+  top: 60%;
+  left: 4px;
   color: #ff612f;
   font-family: Unbounded, sans-serif;
   // font-size: 48px;
@@ -71,8 +76,10 @@
   color: #fff;
   font-family: Unbounded, sans-serif;
   font-size: 38px;
+  font-weight: 400;
   line-height: 130%; /* 49.4px */
   text-transform: uppercase;
+  padding-top: 20px;
   margin-bottom: 25px;
 }
 
@@ -81,5 +88,88 @@
   color: #fff;
   font-family: Nunito Sans, sans-serif;
   font-size: 18px;
+  font-weight: 400;
   line-height: 140%; /* 25.2px */
+}
+
+.heroLink {
+  position: absolute;
+  z-index: 3;
+  right: 25%;
+  bottom: 15%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 300px;
+  height: 300px;
+
+  text-decoration: none;
+  color: #fff;
+
+  // border: 1px solid white;
+  // border-radius: 100%;
+
+  animation-name: spin;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.textSvg {
+  width: 300px;
+  height: 300px;
+}
+
+.cursorSvg {
+  position: absolute;
+
+  width: 88px;
+  height: 88px;
+
+  fill: #ff612f;
+  padding: 0;
+  margin: 0;
+
+  animation-name: spinCur;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-around;
+  width: 50px;
+  color: #ff612f;
+  margin-left: 100px;
+  padding-bottom: 140px;
+}
+
+.endsection {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  top: 93%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinCur {
+  100% {
+    transform: rotate(0deg);
+  }
+
+  0% {
+    transform: rotate(360deg);
+  }
 }
