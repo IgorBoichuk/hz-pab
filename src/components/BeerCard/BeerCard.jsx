@@ -11,12 +11,12 @@ export const BeerCard = ({ beer }) => {
       <h3 className={style.beername}>{beer.name}</h3>
       <div className={style.datawrapper}>
         <div className={style.paramwrapper}>
-          <span className={style.paramalcohol}>Алкоголь: {beer.alcohol}</span>
-          <span className={style.paramibu}>Гіркість: {beer.ibu}</span>
+          <span className={style.paramalcohol}>AVB: {beer.alcohol}</span>
+          <span className={style.paramibu}>IBU: {beer.ibu}</span>
         </div>
-        <span className={style.price}>Ціна: {beer.price} грн/за 0.5л</span>
+        <p className={style.description}>Дескріпшн: {beer.description}</p>
       </div>
-      <p className={style.description}>Дескріпшн: {beer.description}</p>
+      <span className={style.price}>Ціна: {beer.price} грн/за 0.5л</span>
     </div>
   );
 };

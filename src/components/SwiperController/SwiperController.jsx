@@ -13,12 +13,11 @@ export const SwiperController = ({ beerData }) => {
   return (
     <section className={style.section}>
       <Container>
-        <h3 className={style.title}>Наші напої</h3>
         <Swiper
           className={style.swiper}
           autoplay={{
             delay: 2500,
-            disableOnInteraction: false,
+            disableOnInteraction: true,
           }}
           modules={[Autoplay, Pagination, Navigation]}
           breakpoints={{
