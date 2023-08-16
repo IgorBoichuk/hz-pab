@@ -17,11 +17,7 @@ export const Header = () => {
             <NavLink to="/" className={style.navlink}>
               Головна
             </NavLink>
-            <NavLink
-              to="/about-us"
-              className={style.navlink}
-              activeClassName={style.activeNavlink}
-            >
+            <NavLink to="/about-us" className={style.navlink}>
               Про нас
             </NavLink>
             <NavLink to="/menu" className={style.navlink}>
