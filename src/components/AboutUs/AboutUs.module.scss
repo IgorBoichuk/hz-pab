@@ -5,45 +5,85 @@
   display: flex;
   justify-content: center;
   padding: 80px 0px;
+
+  background-image: url("../galary/section-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.sectionTitle {
-  position: relative;
+.sectionWrapper {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
 }
 
-.textOutline {
-  // font-family: Unbounded, sans-serif;
-  font-size: 90px;
-  font-weight: 900;
-  line-height: 130%; /* 117px */
-  text-transform: uppercase;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 2px #7d7d7d;
-  margin-bottom: 60px;
-  padding: 0;
+.linkwrapper {
+  max-width: max-content;
 }
 
-.title {
-  position: absolute;
+.link {
+  text-decoration: none;
+  color: white;
+}
 
-  top: 30%;
-  left: 3px;
+.linkText {
+  color: #cdcdcd;
+  font-family: Nunito Sans, sans-serif;
+  line-height: 150%; /* 24px */
+  margin-bottom: 20px;
+}
 
-  color: #ff612f;
+.linkPath {
+  color: #f5f5f5;
   font-family: Unbounded, sans-serif;
-  font-weight: 700;
-  line-height: 130%; /* 62.4px */
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 150%; /* 21px */
   text-transform: uppercase;
+  margin-bottom: 10px;
+}
 
-  @media screen and (min-width: $breakpoint-tablet) {
-    font-size: 35px;
-  }
+.beerImg {
+  display: block;
+  max-width: 519px;
+  height: 190px;
+  border-radius: 20px;
+}
 
-  @media screen and (min-width: $breakpoint-tablet-horizontal) {
-    font-size: 40px;
-  }
+.barImg {
+  display: block;
+  max-width: 302px;
+  height: 490px;
+  border-radius: 20px;
+}
 
-  @media screen and (min-width: $breakpoint-desktop) {
-    font-size: 48px;
-  }
+.beerTapImg {
+  display: block;
+  max-width: 411px;
+  height: 390px;
+  border-radius: 20px;
+  margin-bottom: 24px;
+}
+
+.promoWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.quote {
+  background-image: url("./galary/quote-solid.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  width: 43px;
+  height: 43px;
+}
+
+.promoText {
+  color: #cdcdcd;
+  font-family: Nunito Sans, sans-serif;
+  line-height: 150%; /* 24px */
+  width: 80%;
 }

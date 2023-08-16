@@ -16,7 +16,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-bottom: 120px;
 
   @media screen and (min-width: $breakpoint-tablet) {
   }
@@ -33,53 +32,9 @@
   padding-bottom: 90px;
 }
 
-.textOutline {
-  // font-family: Unbounded, sans-serif;
-  font-size: 90px;
-  font-weight: 900;
-  line-height: 130%; /* 117px */
-  text-transform: uppercase;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 2px #7d7d7d;
-  margin: 0;
-  padding: 0;
-}
-
-.title {
-  position: absolute;
-
-  top: 54%;
-  left: 3px;
-
-  color: #ff612f;
-  font-family: Unbounded, sans-serif;
-  font-weight: 700;
-  line-height: 130%; /* 62.4px */
-  text-transform: uppercase;
-
-  @media screen and (min-width: $breakpoint-tablet) {
-    font-size: 35px;
-  }
-
-  @media screen and (min-width: $breakpoint-tablet-horizontal) {
-    font-size: 40px;
-  }
-
-  @media screen and (min-width: $breakpoint-desktop) {
-    font-size: 48px;
-  }
-}
-
-.endsection {
-  position: absolute;
-  z-index: 3;
-  width: 100%;
-  top: 82%;
-}
-
 .endMainSection {
   position: absolute;
   z-index: 3;
   width: 100%;
-  top: 85%;
+  top: 87%;
 }

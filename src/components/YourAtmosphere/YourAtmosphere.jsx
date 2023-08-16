@@ -7,16 +7,19 @@ import family from "./galaryAtmosphere/family.png";
 import sport from "./galaryAtmosphere/sport.png";
 import beer from "./galaryAtmosphere/beer.png";
 import kitchen from "./galaryAtmosphere/kitchen.png";
+import { SectionTitle } from "../SectionTitle/SectionTitle";
 
 export const YourAtmosphere = ({ title }) => {
   return (
     <div>
       <section className={style.section}>
         <Container>
-          <div className={style.sectionTitle}>
+          {/* <div className={style.sectionTitle}>
             <p className={style.textOutline}>{title}</p>
             <h3 className={style.title}>{title}</h3>
-          </div>
+          </div> */}
+
+          <SectionTitle title={title} />
           <div className={style.content}>
             <ul className={style.list}>
               <li className={style.item}>
