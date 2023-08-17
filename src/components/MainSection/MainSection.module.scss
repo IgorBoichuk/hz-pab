@@ -2,7 +2,6 @@
 
 .section {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   position: relative;
 
@@ -29,8 +28,7 @@
   }
 }
 .content {
-  padding-top: 180px;
-  padding-bottom: 90px;
+  padding: 180px 20px 90px 20px;
 }
 
 .endMainSection {
