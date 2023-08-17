@@ -13,15 +13,31 @@
   background-position: center;
 }
 
-.runningLline {
-  text-align: center;
+.runningLlineBlock {
+  overflow: hidden;
+}
+
+.runningLlineText {
+  width: max-content;
+
   font-family: Unbounded, sans-serif;
   color: #ff612f;
   font-size: 48px;
   line-height: 150%; /* 72px */
   text-transform: uppercase;
+  animation: scroll 400s linear infinite;
+  overflow: hidden;
 }
 
 .lineRotate {
   transform: rotate(180deg);
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
