@@ -7,17 +7,18 @@ import { CraftBeer } from "../components/CraftBeer/CraftBeer";
 import { beer } from "../components/data/beerData";
 import { Recomendation } from "../components/Recomendation/Recomendation";
 import { Instagram } from "../components/Instagram/Instagram";
-// import { SwiperController } from "../components/SwiperController/SwiperController";
+import { RunningLline } from "../components/RunningLline/RunningLline";
 
 export const Home = () => {
   return (
-    <div>
+    <>
       <Hero />
       <YourAtmosphere title={"твоя атмосфера"} />
       <AboutUs title={"про нас"} />
       <CraftBeer title={"КРАФТОВЕ ПИВО"} beerData={beer} />
+      <RunningLline />
       <Recomendation title={"Рекомендуємо"} />
       <Instagram title={"INSTAGRAM"} />
-    </div>
+    </>
   );
 };

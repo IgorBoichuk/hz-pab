@@ -2,8 +2,10 @@
 
 .section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   position: relative;
+
   // max-width: 1400px;
   // height: 700px;
 
@@ -27,7 +29,6 @@
   }
 }
 .content {
-  position: relative;
   padding-top: 180px;
   padding-bottom: 90px;
 }
@@ -37,4 +38,6 @@
   z-index: 3;
   width: 100%;
   top: 87%;
+
+  // top: 410px;
 }

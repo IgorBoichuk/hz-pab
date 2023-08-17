@@ -6,12 +6,10 @@ import { SectionTitle } from "../SectionTitle/SectionTitle";
 
 export const Instagram = ({ title }) => {
   return (
-    <div>
-      <section className={style.section}>
-        <Container>
-          <SectionTitle title={title} />
-        </Container>
-      </section>
-    </div>
+    <section className={style.section}>
+      <Container>
+        <SectionTitle title={title} />
+      </Container>
+    </section>
   );
 };

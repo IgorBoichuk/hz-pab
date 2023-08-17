@@ -5,12 +5,10 @@ import { SectionTitle } from "../SectionTitle/SectionTitle";
 
 export const Recomendation = ({ title }) => {
   return (
-    <div>
-      <section className={style.section}>
-        <Container>
-          <SectionTitle title={title} />
-        </Container>
-      </section>
-    </div>
+    <section className={style.section}>
+      <Container>
+        <SectionTitle title={title} />
+      </Container>
+    </section>
   );
 };

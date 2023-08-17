@@ -1,0 +1,27 @@
+@import "../../scss/variables";
+@import "../../scss/fonts";
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 0px;
+
+  background-image: url("../galary/section-background-rotate.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.runningLline {
+  text-align: center;
+  font-family: Unbounded, sans-serif;
+  color: #ff612f;
+  font-size: 48px;
+  line-height: 150%; /* 72px */
+  text-transform: uppercase;
+}
+
+.lineRotate {
+  transform: rotate(180deg);
+}

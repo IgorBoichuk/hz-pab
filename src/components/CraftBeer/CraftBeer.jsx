@@ -7,13 +7,11 @@ import { beer } from "../data/beerData";
 
 export const CraftBeer = ({ title }) => {
   return (
-    <div>
-      <section className={style.section}>
-        <Container>
-          <SectionTitle title={title} />
-          <SwiperController beerData={beer} />
-        </Container>
-      </section>
-    </div>
+    <section className={style.section}>
+      <Container>
+        <SectionTitle title={title} />
+        <SwiperController beerData={beer} />
+      </Container>
+    </section>
   );
 };
