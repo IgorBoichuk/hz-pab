@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./Hero.module.scss";
 import { BrokenPaper } from "../BrokenPaper/BrokenPaper";
-import { ReactComponent as CursorSVG } from "../galary/svg/cursor.svg";
+import { ReactComponent as CursorSVG } from "../../assets/galary/svg/cursor.svg";
 import { Link } from "react-router-dom";
 import { Container } from "../Container/Container";
 import CircleWithRunningText from "../CircleWithRunningText/CircleWithRunningText";

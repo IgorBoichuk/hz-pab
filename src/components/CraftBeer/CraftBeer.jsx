@@ -3,7 +3,7 @@ import { Container } from "../Container/Container";
 import style from "./CraftBeer.module.scss";
 import { SectionTitle } from "../SectionTitle/SectionTitle";
 import { SwiperController } from "../SwiperController/SwiperController";
-import { beer } from "../data/beerData";
+import { beer } from "../../assets/data/beerData";
 
 export const CraftBeer = ({ title }) => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./BrokenPaper.module.scss";
 
-import brokenPaper from "../galary/brokenpaper.png";
+import brokenPaper from "../../assets/galary/brokenpaper.png";
 
 export const BrokenPaper = () => {
   return (
