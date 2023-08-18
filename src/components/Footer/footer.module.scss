@@ -2,16 +2,95 @@
 @import "../../scss/fonts";
 
 .footer {
-  // background-color: rgb(235, 235, 235);
-  border-top: 1px solid wheat;
-
+  border-top: 2px solid #7d7d7d;
   background-image: url("../../assets/galary/section-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: center;
 }
 
-.footercontent {
-  padding: 40px;
-  color: wheat;
+.footerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 62px 0;
+}
+
+.logolink {
+  // display: block;
+  width: 100px;
+}
+.logo {
+  display: block;
+  text-decoration: none;
+  width: 70px;
+}
+
+.navmenu {
+}
+
+.navlink {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-decoration: none;
+  &:hover {
+    color: #ff612f;
+  }
+  &:focus {
+    color: #ff612f;
+  }
+}
+
+.timetWrapper {
+  width: 150px;
+}
+
+.adressWrapper {
+  width: 240px;
+}
+
+.contactTitle {
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.contact {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  color: #cdcdcd;
+}
+
+.footerNav {
+  flex-direction: column;
+}
+
+.sicialWrapper {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 42px;
+}
+
+.sicialItem {
+  width: 40px;
+  height: 40px;
+  fill: #ffffff;
+  &:hover {
+    fill: #ff612f;
+  }
+  &:focus {
+    fill: #ff612f;
+  }
 }
