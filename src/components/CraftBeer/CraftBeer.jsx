@@ -10,7 +10,7 @@ export const CraftBeer = ({ title }) => {
     <section className={style.section}>
       <Container>
         <SectionTitle title={title} />
-        <SwiperController beerData={beer} />
+        <SwiperController data={beer} />
       </Container>
     </section>
   );

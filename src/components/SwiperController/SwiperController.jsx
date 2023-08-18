@@ -9,7 +9,7 @@ import "swiper/css";
 import { Container } from "../Container/Container";
 import { BeerCard } from "../BeerCard/BeerCard";
 
-export const SwiperController = ({ beerData }) => {
+export const SwiperController = ({ data }) => {
   return (
     <section className={style.section}>
       <Container>
@@ -35,9 +35,9 @@ export const SwiperController = ({ beerData }) => {
             },
           }}
         >
-          {beerData.map((beer) => (
+          {data.map((item) => (
             <SwiperSlide key={nanoid()}>
-              <BeerCard beer={beer} />
+              <BeerCard item={item} />
             </SwiperSlide>
           ))}
         </Swiper>

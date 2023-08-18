@@ -4,7 +4,9 @@ export const beer = [
     color: "Світле",
     alcohol: 4.2,
     ibu: 12,
-    image: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Weizenbier.jpg",
+    weight: "0,5л",
+    image:
+      "https://i0.wp.com/samogonman.com/wp-content/uploads/2018/01/3633.jpg",
     description:
       "Найкраще пиво яке ти можеш випити в нашому закуточку, цей сорт пива є дуже популярним в нашому закладі. Не дуже гірке, має приємний смак і до нього пасують всі види наших снеків.",
     price: 49,
@@ -14,8 +16,9 @@ export const beer = [
     color: "Світле",
     alcohol: 4.5,
     ibu: 13,
+    weight: "0,5л",
     image:
-      "https://hophey.ua/upload/iblock/006/0067a3860f3a24babfec76077a2ae62e.png",
+      "https://i0.wp.com/samogonman.com/wp-content/uploads/2018/01/3633.jpg",
     description:
       "Найкраще пиво яке ти можеш випити в нашому закуточку, цей сорт пива є дуже популярним в нашому закладі. Не дуже гірке, має приємний смак і до нього пасують всі види наших снеків.",
     price: 54,
@@ -25,7 +28,9 @@ export const beer = [
     color: "Світле",
     alcohol: 4.4,
     ibu: 15,
-    image: "https://brovar.org/inc/uploads/2017/08/mykulyn_beer_10_lager.png",
+    weight: "0,5л",
+    image:
+      "https://i0.wp.com/samogonman.com/wp-content/uploads/2018/01/3633.jpg",
     description:
       "Найкраще пиво яке ти можеш випити в нашому закуточку, цей сорт пива є дуже популярним в нашому закладі. Не дуже гірке, має приємний смак і до нього пасують всі види наших снеків.",
     price: 51,
@@ -35,8 +40,9 @@ export const beer = [
     color: "Світле",
     alcohol: 5.6,
     ibu: 45,
+    weight: "0,5л",
     image:
-      "https://static.tildacdn.com/tild6139-3963-4431-a438-623939396266/ipanew.jpg",
+      "https://i0.wp.com/samogonman.com/wp-content/uploads/2018/01/3633.jpg",
     description:
       "Найкраще пиво яке ти можеш випити в нашому закуточку, цей сорт пива є дуже популярним в нашому закладі. Не дуже гірке, має приємний смак і до нього пасують всі види наших снеків.",
     price: 61,
@@ -46,7 +52,9 @@ export const beer = [
     color: "Світле",
     alcohol: 4.2,
     ibu: 12,
-    image: "https://winestyle.com.ua/images_gen/143/143598/0_0_orig.jpg",
+    weight: "0,5л",
+    image:
+      "https://i0.wp.com/samogonman.com/wp-content/uploads/2018/01/3633.jpg",
     description:
       "Найкраще пиво яке ти можеш випити в нашому закуточку, цей сорт пива є дуже популярним в нашому закладі. Не дуже гірке, має приємний смак і до нього пасують всі види наших снеків.",
     price: 49,
@@ -56,7 +64,9 @@ export const beer = [
     color: "Світле",
     alcohol: 5.0,
     ibu: "",
-    image: "https://www.somersby.com/media/1614/apple-transparent.png",
+    weight: "0,5л",
+    image:
+      "https://divinepizza.com.ua/image/cache/catalog/%D0%9D%D0%B0%D0%BF%D0%B8%D1%82%D0%BA%D0%B8/63c0005e5b_500-500x500.jpg",
     description:
       "Найкраще пиво яке ти можеш випити в нашому закуточку, цей сорт пива є дуже популярним в нашому закладі. Не дуже гірке, має приємний смак і до нього пасують всі види наших снеків.",
     price: 50,
@@ -66,8 +76,9 @@ export const beer = [
     color: "Світле",
     alcohol: 10.5,
     ibu: "",
+    weight: "0,5л",
     image:
-      "https://viva-italia.od.ua/image/cache/catalog/igristoe%20beloe/Prosecco_b-1000x1000.png",
+      "https://www.wineenthusiast.com/wp-content/uploads/2023/08/08_23_Everything_You_Need_to_Know_About_Prosecco_HERO_GettyImages-1185246504_1920x1280.jpg",
     description:
       "Найкраще пиво яке ти можеш випити в нашому закуточку, цей сорт пива є дуже популярним в нашому закладі. Не дуже гірке, має приємний смак і до нього пасують всі види наших снеків.",
     price: 70,
@@ -77,8 +88,9 @@ export const beer = [
     color: "Світле",
     alcohol: "",
     ibu: "",
+    weight: "0,5л",
     image:
-      "https://market.rukavychka.ua/image/catalog/orig/bc2be461-a634-c762-7e2b-1afb1c265fe1.png",
+      "https://calorizator.ru/sites/default/files/imagecache/product_512/product/kvass.jpg",
     description:
       "Найкраще пиво яке ти можеш випити в нашому закуточку, цей сорт пива є дуже популярним в нашому закладі. Не дуже гірке, має приємний смак і до нього пасують всі види наших снеків.",
     price: 30,

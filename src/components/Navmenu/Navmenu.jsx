@@ -28,7 +28,7 @@ export const Navmenu = () => {
   return (
     <div className={style.navWrapper}>
       {navData.map((item) => (
-        <NavLink to={item.link} className={style.navlink}>
+        <NavLink to={item.link} key={item.link} className={style.navlink}>
           {item.navItem}
         </NavLink>
       ))}

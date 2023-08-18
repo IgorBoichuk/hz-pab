@@ -1,22 +1,28 @@
 import React from "react";
 import style from "./BeerCard.module.scss";
 
-export const BeerCard = ({ beer }) => {
+export const BeerCard = ({ item }) => {
   return (
     <div className={style.card}>
       <div className={style.imagewrapper}>
-        <img src={beer.image} alt="{beer.name}" className={style.img} />
+        <img src={item.image} alt={item.name} className={style.img} />
       </div>
 
-      <h3 className={style.beername}>{beer.name}</h3>
+      <h3 className={style.title}>{item.name}</h3>
       <div className={style.datawrapper}>
         <div className={style.paramwrapper}>
-          <span className={style.paramalcohol}>AVB: {beer.alcohol}</span>
-          <span className={style.paramibu}>IBU: {beer.ibu}</span>
+          {item.alcohol && (
+            <span className={style.paramalcohol}>AVB: {item.alcohol}</span>
+          )}
+          {item.ibu && <span className={style.paramibu}>IBU: {item.ibu}</span>}
         </div>
-        <p className={style.description}>Дескріпшн: {beer.description}</p>
+        {item.description && (
+          <p className={style.description}>{item.description}</p>
+        )}
       </div>
-      <span className={style.price}>Ціна: {beer.price} грн/за 0.5л</span>
+      <span className={style.price}>
+        Ціна: {item.price} грн / {item.weight}
+      </span>
     </div>
   );
 };
