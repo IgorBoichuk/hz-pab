@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import { Container } from "../Container/Container";
-import { BeerCard } from "../BeerCard/BeerCard";
+import { ArticleCard } from "../ArticleCard/ArticleCard";
 
 export const SwiperController = ({ data }) => {
   return (
@@ -16,8 +16,8 @@ export const SwiperController = ({ data }) => {
         <Swiper
           className={style.swiper}
           autoplay={{
-            delay: 2500,
-            disableOnInteraction: true,
+            delay: 2000,
+            disableOnInteraction: false,
           }}
           modules={[Autoplay, Pagination, Navigation]}
           breakpoints={{
@@ -37,7 +37,7 @@ export const SwiperController = ({ data }) => {
         >
           {data.map((item) => (
             <SwiperSlide key={nanoid()}>
-              <BeerCard item={item} />
+              <ArticleCard item={item} />
             </SwiperSlide>
           ))}
         </Swiper>

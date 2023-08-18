@@ -1,7 +1,7 @@
 import React from "react";
-import style from "./BeerCard.module.scss";
+import style from "./ArticleCard.module.scss";
 
-export const BeerCard = ({ item }) => {
+export const ArticleCard = ({ item }) => {
   return (
     <div className={style.card}>
       <div className={style.imagewrapper}>
