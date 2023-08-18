@@ -7,7 +7,7 @@ import { InstaCard } from "../InstaCard/InstaCard";
 
 export const Instagram = ({ title }) => {
   const random = () => {
-    return `rotate(${Math.random() * 20 - 5}deg)`;
+    return `rotate(${Math.random() * 20 - 10}deg)`;
   };
 
   // style = { inlineStyles };
