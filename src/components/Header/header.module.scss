@@ -31,26 +31,6 @@
   width: 70px;
 }
 
-.navmenu {
-  display: none;
-  list-style: none;
-
-  @media (min-width: $breakpoint-tablet) {
-    display: flex;
-    gap: 38px;
-  }
-}
-
-// .navlist {
-// display: none;
-// list-style: none;
-
-// @media (min-width: $breakpoint-tablet) {
-//   display: flex;
-//   gap: 20px;
-// }
-// }
-
 .navlink {
   color: #fff;
   text-align: center;

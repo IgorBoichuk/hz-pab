@@ -1,23 +1,18 @@
 import React from "react";
 import style from "./YourAtmosphere.module.scss";
 import { Container } from "../Container/Container";
-import dictrict from "./galaryAtmosphere/dictrict.png";
-import friends from "./galaryAtmosphere/friends.png";
-import family from "./galaryAtmosphere/family.png";
-import sport from "./galaryAtmosphere/sport.png";
-import beer from "./galaryAtmosphere/beer.png";
-import kitchen from "./galaryAtmosphere/kitchen.png";
+import dictrict from "../../assets/galaryAtmosphereSection/dictrict.png";
+import friends from "../../assets/galaryAtmosphereSection/friends.png";
+import family from "../../assets/galaryAtmosphereSection/family.png";
+import sport from "../../assets/galaryAtmosphereSection/sport.png";
+import beer from "../../assets/galaryAtmosphereSection/beer.png";
+import kitchen from "../../assets/galaryAtmosphereSection/kitchen.png";
 import { SectionTitle } from "../SectionTitle/SectionTitle";
 
 export const YourAtmosphere = ({ title }) => {
   return (
     <section className={style.section}>
       <Container>
-        {/* <div className={style.sectionTitle}>
-            <p className={style.textOutline}>{title}</p>
-            <h3 className={style.title}>{title}</h3>
-          </div> */}
-
         <SectionTitle title={title} />
         <div className={style.content}>
           <ul className={style.list}>

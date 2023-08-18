@@ -3,9 +3,9 @@ import style from "./AboutUs.module.scss";
 import { Container } from "../Container/Container";
 import { Link } from "react-router-dom";
 import { SectionTitle } from "../SectionTitle/SectionTitle";
-import beer from "./galary/beer.jpg";
-import bar from "./galary/bar.jpg";
-import beerTap from "./galary/bar2.jpg";
+import beer from "../../assets/galaryAbutUsSection/beer.jpg";
+import bar from "../../assets/galaryAbutUsSection/bar.jpg";
+import beerTap from "../../assets/galaryAbutUsSection/bar2.jpg";
 
 export const AboutUs = ({ title }) => {
   return (

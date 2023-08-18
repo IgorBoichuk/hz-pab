@@ -3,7 +3,8 @@ import style from "./header.module.scss";
 
 import Logo from "../../assets/galary/hzfav.png";
 import { Container } from "../Container/Container";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { Navmenu } from "../Navmenu/Navmenu";
 
 export const Header = () => {
   return (
@@ -14,23 +15,7 @@ export const Header = () => {
             <img src={Logo} alt="Logo" className={style.logo} />
           </Link>
           <nav className={style.navmenu}>
-            <NavLink to="/" className={style.navlink}>
-              Головна
-            </NavLink>
-            <NavLink to="/about-us" className={style.navlink}>
-              Про нас
-            </NavLink>
-            <NavLink to="/menu" className={style.navlink}>
-              Меню
-            </NavLink>
-
-            <NavLink to="/atmosphere" className={style.navlink}>
-              Атмосфера
-            </NavLink>
-
-            <NavLink to="/contacts" className={style.navlink}>
-              Контакти
-            </NavLink>
+            <Navmenu />
           </nav>
           <Link to="tel:+380662408540" className={style.navlink}>
             +380662408540
