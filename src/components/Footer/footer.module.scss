@@ -2,7 +2,10 @@
 @import "../../scss/fonts";
 
 .footer {
-  display: block;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   border-top: 2px solid #7d7d7d;
   background-image: url("../../assets/galary/section-background.png");
@@ -11,10 +14,19 @@
   background-position: center;
   display: flex;
   justify-content: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    border-top: 1px solid #7d7d7d;
+  }
 }
 
 .footerWrapper {
   display: flex;
+
   align-items: center;
   justify-content: space-between;
   padding: 62px 0;
@@ -95,6 +107,10 @@
   &:focus {
     fill: #ff612f;
   }
+}
+
+.rightsWrapper {
+  width: 100%;
 }
 
 .rights {

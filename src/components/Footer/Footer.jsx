@@ -48,8 +48,10 @@ export const Footer = () => {
             </Link>
           </div>
         </div>
+        <div className={style.rightsWrapper}>
+          <p className={style.rights}>Copyright © 2023. All rights reserved.</p>
+        </div>
       </Container>
-      <p className={style.rights}>Copyright © 2023. All rights reserved.</p>
     </footer>
   );
 };
