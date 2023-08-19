@@ -2,6 +2,8 @@
 @import "../../scss/fonts";
 
 .footer {
+  display: block;
+
   border-top: 2px solid #7d7d7d;
   background-image: url("../../assets/galary/section-background.png");
   background-repeat: no-repeat;
@@ -93,4 +95,14 @@
   &:focus {
     fill: #ff612f;
   }
+}
+
+.rights {
+  display: block;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px; /* 157.143% */
+  color: #cdcdcd;
+  padding: 34px 0;
 }

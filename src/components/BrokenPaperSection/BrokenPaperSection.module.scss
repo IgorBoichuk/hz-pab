@@ -13,11 +13,19 @@
 }
 
 .textBlock {
-  outline: 2px solid white;
+  display: flex;
+  justify-content: center;
+}
 
-  // display: flex;
-  // justify-content: center;
-  // margin-left: auto;
+.textBlockWrapper {
+  display: flex;
+  gap: 28px;
+}
+.quote {
+  width: 40px;
+  height: 40px;
+  fill: bisque;
+  color: black;
 }
 
 .text {
