@@ -32,7 +32,7 @@ export const Footer = () => {
           </div>
           <div>
             <div className={style.sicialWrapper}>
-              <Link to="https://www.facebook.com/">
+              <Link to="https://www.facebook.com/HzPubCraftbeer">
                 <svg className={style.sicialItem} width="40" height="40">
                   <use xlinkHref={`${srite}#facebook`}></use>
                 </svg>
