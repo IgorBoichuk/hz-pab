@@ -69,22 +69,19 @@
 
 .promoWrapper {
   display: flex;
+  gap: 27px;
   justify-content: space-between;
 }
 
 .quote {
-  background-image: url("../../assets/galaryAbutUsSection/quote-solid.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-
   width: 43px;
   height: 43px;
+  fill: #fff;
 }
 
 .promoText {
   color: #cdcdcd;
   font-family: Nunito Sans, sans-serif;
   line-height: 150%; /* 24px */
-  width: 80%;
+  // width: 80%;
 }

@@ -6,6 +6,7 @@ import { SectionTitle } from "../SectionTitle/SectionTitle";
 import beer from "../../assets/galaryAbutUsSection/beer.jpg";
 import bar from "../../assets/galaryAbutUsSection/bar.jpg";
 import beerTap from "../../assets/galaryAbutUsSection/bar2.jpg";
+import srite from "../../assets/galary/svg/sprite.svg";
 
 export const AboutUs = ({ title }) => {
   return (
@@ -30,7 +31,11 @@ export const AboutUs = ({ title }) => {
           <div className={style.linkwrapper}>
             <img src={beerTap} alt="beerTap" className={style.beerTapImg} />
             <div className={style.promoWrapper}>
-              <div className={style.quote}></div>
+              <div className={style.quoteWrapper}>
+                <svg className={style.quote} width="40" height="40">
+                  <use xlinkHref={`${srite}#quote`}></use>
+                </svg>
+              </div>
               <p className={style.promoText}>
                 "ХЗ паб" – це місце, де час зупиняється, а веселі зустрічі з
                 друзями стають ще приємнішими
