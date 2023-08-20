@@ -32,12 +32,18 @@ export const Footer = () => {
           </div>
           <div>
             <div className={style.sicialWrapper}>
-              <Link to="https://www.facebook.com/HzPubCraftbeer">
+              <Link
+                to="https://www.facebook.com/HzPubCraftbeer"
+                target="_blank"
+              >
                 <svg className={style.sicialItem} width="40" height="40">
                   <use xlinkHref={`${srite}#facebook`}></use>
                 </svg>
               </Link>
-              <Link to="https://www.instagram.com/craftbeer_pub_2020/">
+              <Link
+                to="https://www.instagram.com/craftbeer_pub_2020/"
+                target="_blank"
+              >
                 <svg className={style.sicialItem} width="40" height="40">
                   <use xlinkHref={`${srite}#instagram`}></use>
                 </svg>
