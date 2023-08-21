@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { Container } from "../Container/Container";
 import CircleWithRunningText from "../CircleWithRunningText/CircleWithRunningText";
 import { motion } from "framer-motion";
+
 export const Hero = () => {
   return (
     <section className={style.section}>
