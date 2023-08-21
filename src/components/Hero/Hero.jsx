@@ -5,20 +5,46 @@ import { ReactComponent as CursorSVG } from "../../assets/galary/svg/cursor.svg"
 import { Link } from "react-router-dom";
 import { Container } from "../Container/Container";
 import CircleWithRunningText from "../CircleWithRunningText/CircleWithRunningText";
-
+import { motion } from "framer-motion";
 export const Hero = () => {
   return (
     <section className={style.section}>
       <Container>
-        <div className={style.content}>
-          <p className={style.textOutline}>Найкращий</p>
-          <h1 className={style.title}>Пивний паб:</h1>
-          <h2 className={style.promotion}>смачне пиво та страви</h2>
-          <p className={style.description}>
+        <motion.div className={style.content}>
+          <motion.p
+            initial={{ opacity: 0, x: -500 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            animate={{ opacity: 1, x: 0 }}
+            className={style.textOutline}
+          >
+            Найкращий
+          </motion.p>
+          <motion.h1
+            initial={{ opacity: 0, x: -500 }}
+            transition={{ duration: 0.5, delay: 0.7 }}
+            animate={{ opacity: 1, x: 0 }}
+            className={style.title}
+          >
+            Пивний паб:
+          </motion.h1>
+          <motion.h2
+            initial={{ opacity: 0, x: -500 }}
+            transition={{ duration: 0.5, delay: 1.2 }}
+            animate={{ opacity: 1, x: 0 }}
+            className={style.promotion}
+          >
+            смачне пиво та страви
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 100 }}
+            transition={{ duration: 0.5, delay: 1.5 }}
+            animate={{ opacity: 1, y: 0 }}
+            className={style.description}
+          >
             Спостерігайте за улюбленими спортивними подіями і насолоджуйтесь
             часом з друзями та родиною
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
         <ul className={style.pagination}>
           <li></li>
           <li></li>
@@ -27,7 +53,9 @@ export const Hero = () => {
         </ul>
         <Link to="/menu" className={style.heroLink}>
           <CircleWithRunningText className={style.textSvg} />
-          <CursorSVG className={style.cursorSvg} />
+          <div className={style.cursorSvg}>
+            <CursorSVG />
+          </div>
         </Link>
       </Container>
       <div className={style.endsection}>
