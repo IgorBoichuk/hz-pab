@@ -13,20 +13,26 @@
   background-position: center;
 }
 
-.runningLlineBlock {
+.runningLlineWrapper {
+  max-width: 100%;
   overflow: hidden;
 }
 
-.runningLlineText {
-  width: max-content;
+.runningLlineBlock {
+  display: flex;
+  width: 231%;
+  animation: scroll 45s linear infinite;
+}
 
+.runningLlineText {
   font-family: Unbounded, sans-serif;
   color: #ff612f;
   font-size: 48px;
   line-height: 150%; /* 72px */
   text-transform: uppercase;
-  animation: scroll 700s linear infinite;
-  overflow: hidden;
+
+  white-space: nowrap;
+  width: 100%;
 }
 
 .lineRotate {
@@ -34,10 +40,10 @@
 }
 
 @keyframes scroll {
-  from {
-    transform: translateX(0);
+  0% {
+    transform: translateX(0%);
   }
-  to {
-    transform: translateX(-100%);
+  100% {
+    transform: translateX(-50%);
   }
 }
