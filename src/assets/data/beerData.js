@@ -1,5 +1,6 @@
 export const beer = [
   {
+    category: "beer",
     name: "Кельш",
     color: "Світле",
     alcohol: 4.2,
@@ -11,6 +12,7 @@ export const beer = [
     price: 49,
   },
   {
+    category: "beer",
     name: "Пшеничне",
     color: "Світле",
     alcohol: 4.5,
@@ -23,6 +25,7 @@ export const beer = [
     price: 54,
   },
   {
+    category: "beer",
     name: "Лагер",
     color: "Світле",
     alcohol: 4.4,
@@ -35,6 +38,7 @@ export const beer = [
     price: 51,
   },
   {
+    category: "beer",
     name: "IPA",
     color: "Світле",
     alcohol: 5.6,
@@ -47,6 +51,7 @@ export const beer = [
     price: 61,
   },
   {
+    category: "beer",
     name: "Лайт",
     color: "Світле",
     alcohol: 4.2,
@@ -59,6 +64,7 @@ export const beer = [
     price: 49,
   },
   {
+    category: "cider",
     name: "Сідр яблучний",
     color: "Світле",
     alcohol: 5.0,
@@ -70,6 +76,7 @@ export const beer = [
     price: 50,
   },
   {
+    category: "vine",
     name: "Prosecco",
     color: "Світле",
     alcohol: 10.5,
@@ -81,6 +88,7 @@ export const beer = [
     price: 70,
   },
   {
+    category: "kvass",
     name: "Квас",
     color: "Світле",
     alcohol: "",
