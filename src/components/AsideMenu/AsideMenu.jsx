@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import style from "./AsideMenu.module.scss";
 import { Link } from "react-router-dom";
-import { Container } from "../Container/Container";
 import { SubMenu } from "../SubMenu/SubMenu";
-import { beer } from "../../assets/data/beerData";
-import { menu } from "../../assets/data/menuData";
-import { snacks } from "../../assets/data/snacksData";
+import { ReposContext } from "../../Context/ContextProvider";
+// import { beer } from "../../assets/data/beerData";
+// import { menu } from "../../assets/data/menuData";
+// import { snacks } from "../../assets/data/snacksData";
+// import { souses } from "../../assets/data/sousesData";
 
 export const AsideMenu = () => {
+  const { handleSetSearchParams } = useContext(ReposContext);
   const sideMenu = [
     {
       menuItem: "Бар",
@@ -31,18 +33,19 @@ export const AsideMenu = () => {
     <aside className={style.aside}>
       <ul className={style.list}>
         {sideMenu.map((item) => (
-          <div>
+          <div key={item.menuItem}>
             <Link
               to={item.menuLink}
               className={style.linkItem}
-              key={item.menuItem}
+              onClick={() => handleSetSearchParams(item.menuItem)}
             >
               <li className={style.listItem}>{item.menuItem}</li>
             </Link>
             <SubMenu
-              beer={beer}
-              menu={menu}
-              snacks={snacks}
+              // beer={beer}
+              // menu={menu}
+              // snacks={snacks}
+              // souses={souses}
               id={item.menuLink}
             />
           </div>
