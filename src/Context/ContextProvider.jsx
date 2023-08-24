@@ -11,12 +11,10 @@ export const ReposContext = createContext();
 
 export const ContextProvider = ({ children }) => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const [allMenuData, setAllMenuData] = useState([
-    ...beer,
-    ...menu,
-    ...snacks,
-    ...souses,
-  ]);
+
+  const subMenu = searchParams.get("SubMenu");
+
+  const [allMenuData] = useState([...beer, ...menu, ...snacks, ...souses]);
   const [filteredData, setFilteredData] = useState([]);
   const location = useLocation();
   const active = location.pathname.split("/");
@@ -49,14 +47,15 @@ export const ContextProvider = ({ children }) => {
   const filterByCategory = useCallback(() => {
     let activeItem = normalizeSubMenu(activeSubMenu);
 
-    // console.log(activeItem);
-
-    const filteredArray = allMenuData.filter(
-      (item) => item.category === activeItem
-    );
-
+    const filteredArray = allMenuData.filter((item) => {
+      if (subMenu) {
+        return item.subCategory === subMenu;
+      }
+      return item.category === activeItem;
+    });
     setFilteredData(filteredArray);
-  }, [allMenuData, activeSubMenu]);
+  }, [allMenuData, activeSubMenu, subMenu]);
+
   useEffect(() => {
     filterByCategory();
   }, [filterByCategory]);
