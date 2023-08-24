@@ -3,7 +3,7 @@ import style from "./ArticleCard.module.scss";
 
 export const ArticleCard = ({ item }) => {
   return (
-    <div className={style.card}>
+    <li className={style.card}>
       <div className={style.imagewrapper}>
         <img src={item.image} alt={item.name} className={style.img} />
       </div>
@@ -23,6 +23,6 @@ export const ArticleCard = ({ item }) => {
       <span className={style.price}>
         Ціна: {item.price} грн / {item.weight}
       </span>
-    </div>
+    </li>
   );
 };

@@ -2,7 +2,7 @@ import React from "react";
 import style from "./Navmenu.module.scss";
 import { NavLink } from "react-router-dom";
 
-export const Navmenu = () => {
+export const Navmenu = ({ flex }) => {
   const navData = [
     {
       navItem: "головна",
@@ -26,7 +26,7 @@ export const Navmenu = () => {
     },
   ];
   return (
-    <div className={style.navWrapper}>
+    <div style={{ flexDirection: flex }} className={style.navWrapper}>
       {navData.map((item) => (
         <NavLink to={item.link} key={item.link} className={style.navlink}>
           {item.navItem}

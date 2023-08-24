@@ -16,7 +16,7 @@ export const Footer = () => {
             <img src={Logo} alt="Logo" className={style.logo} />
           </Link>
           <nav className={style.navmenu}>
-            <Navmenu />
+            <Navmenu flex="column" />
           </nav>
           <div className={style.timetWrapper}>
             <p className={style.contactTitle}>Години роботи:</p>

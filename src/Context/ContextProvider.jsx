@@ -7,7 +7,7 @@ import { souses } from "../assets/data/sousesData";
 
 import { useLocation, useSearchParams } from "react-router-dom";
 
-export const ReposContext = createContext();
+export const MyContext = createContext();
 
 export const ContextProvider = ({ children }) => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -92,8 +92,6 @@ export const ContextProvider = ({ children }) => {
   };
 
   return (
-    <ReposContext.Provider value={contextValue}>
-      {children}
-    </ReposContext.Provider>
+    <MyContext.Provider value={contextValue}>{children}</MyContext.Provider>
   );
 };

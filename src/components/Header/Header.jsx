@@ -15,7 +15,7 @@ export const Header = () => {
             <img src={Logo} alt="Logo" className={style.logo} />
           </Link>
           <nav className={style.navmenu}>
-            <Navmenu />
+            <Navmenu flex="row" />
           </nav>
           <Link to="tel:+380662408540" className={style.navlink}>
             +380662408540

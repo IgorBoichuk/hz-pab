@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import style from "./BeerPreview.module.scss";
-import { ReposContext } from "../../Context/ContextProvider";
+import { MyContext } from "../../Context/ContextProvider";
 
 export const BeerPreview = ({ children }) => {
-  const { preview } = useContext(ReposContext);
+  const { preview } = useContext(MyContext);
   return (
     <section className={style.section}>
       <h1 className={style.title}>{preview}</h1>

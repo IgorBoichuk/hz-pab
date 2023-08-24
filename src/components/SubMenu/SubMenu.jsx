@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
 
 import style from "./SubMenu.module.scss";
-import { ReposContext } from "../../Context/ContextProvider";
+import { MyContext } from "../../Context/ContextProvider";
 
 export const SubMenu = ({ id }) => {
   const { currentMenu, activeSubMenu, handleSetSearchParams } =
-    useContext(ReposContext);
+    useContext(MyContext);
 
   return (
     <ul className={style.subMenuList}>

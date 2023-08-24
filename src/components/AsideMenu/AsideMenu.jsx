@@ -2,14 +2,14 @@ import React, { useContext } from "react";
 import style from "./AsideMenu.module.scss";
 import { Link } from "react-router-dom";
 import { SubMenu } from "../SubMenu/SubMenu";
-import { ReposContext } from "../../Context/ContextProvider";
+import { MyContext } from "../../Context/ContextProvider";
 // import { beer } from "../../assets/data/beerData";
 // import { menu } from "../../assets/data/menuData";
 // import { snacks } from "../../assets/data/snacksData";
 // import { souses } from "../../assets/data/sousesData";
 
 export const AsideMenu = () => {
-  const { handleSetSearchParams } = useContext(ReposContext);
+  const { handleSetSearchParams } = useContext(MyContext);
   const sideMenu = [
     {
       menuItem: "Бар",

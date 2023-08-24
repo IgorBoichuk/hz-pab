@@ -5,14 +5,11 @@ import { Container } from "../Container/Container";
 import { BeerPreview } from "../BeerPreview/BeerPreview";
 import { ArticleCard } from "../ArticleCard/ArticleCard";
 
-import { ReposContext } from "../../Context/ContextProvider";
+import { MyContext } from "../../Context/ContextProvider";
 import { nanoid } from "nanoid";
 
 export const MenuContent = () => {
-  const { filteredData, activeSubMenu } = useContext(ReposContext);
-
-  // console.log(searchParams);
-  // console.log(activeSubMenu);
+  const { filteredData } = useContext(MyContext);
 
   return (
     <section className={style.section}>
@@ -21,9 +18,7 @@ export const MenuContent = () => {
           <AsideMenu />
           <BeerPreview>
             {filteredData.map((item) => (
-              <li key={nanoid()}>
-                <ArticleCard item={item} />
-              </li>
+              <ArticleCard key={nanoid()} item={item} />
             ))}
           </BeerPreview>
         </div>
