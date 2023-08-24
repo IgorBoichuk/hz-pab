@@ -27,30 +27,29 @@ export const ContextProvider = ({ children }) => {
     return [...new Set(datacategoryes)];
   };
 
-  const filterByCategory = useCallback(() => {
-    let activeItem = "bar";
-
-    switch (activeSubMenu) {
+  const normalizeSubMenu = (data) => {
+    switch (data) {
       case "bar":
-        activeItem = "Напої";
-        break;
+        return "Напої";
 
       case "kitchen":
-        activeItem = "Кухня";
-        break;
+        return "Кухня";
 
       case "snacks":
-        activeItem = "Снеки";
-        break;
+        return "Снеки";
 
       case "souses":
-        activeItem = "Соуси";
-        break;
+        return "Соуси";
 
       default:
-        break;
+        return "Напої";
     }
-    console.log(activeItem);
+  };
+
+  const filterByCategory = useCallback(() => {
+    let activeItem = normalizeSubMenu(activeSubMenu);
+
+    // console.log(activeItem);
 
     const filteredArray = allMenuData.filter(
       (item) => item.category === activeItem
