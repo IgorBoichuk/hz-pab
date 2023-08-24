@@ -5,16 +5,14 @@ import { Container } from "../Container/Container";
 import { BeerPreview } from "../BeerPreview/BeerPreview";
 import { ArticleCard } from "../ArticleCard/ArticleCard";
 
-import { beer } from "../../assets/data/beerData";
 import { ReposContext } from "../../Context/ContextProvider";
-
-// import { menu } from "../../assets/data/menuData";
-// import { snacks } from "../../assets/data/snacksData";
-// import { souses } from "../../assets/data/sousesData";
+import { nanoid } from "nanoid";
 
 export const MenuContent = () => {
-  const { articles, dataForMapingMenu } = useContext(ReposContext);
-  console.log(articles);
+  const { filteredData, activeSubMenu } = useContext(ReposContext);
+
+  // console.log(searchParams);
+  // console.log(activeSubMenu);
 
   return (
     <section className={style.section}>
@@ -22,8 +20,10 @@ export const MenuContent = () => {
         <div className={style.sectionWrapper}>
           <AsideMenu />
           <BeerPreview>
-            {beer.map((item) => (
-              <ArticleCard item={item} />
+            {filteredData.map((item) => (
+              <li key={nanoid()}>
+                <ArticleCard item={item} />
+              </li>
             ))}
           </BeerPreview>
         </div>

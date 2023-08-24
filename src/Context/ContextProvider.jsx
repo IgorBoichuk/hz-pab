@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useCallback, useEffect, useState } from "react";
 
 import { beer } from "../assets/data/beerData";
 import { menu } from "../assets/data/menuData";
@@ -11,37 +11,56 @@ export const ReposContext = createContext();
 
 export const ContextProvider = ({ children }) => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const [articles, setArticles] = useState({ beer });
-
+  const [allMenuData, setAllMenuData] = useState([
+    ...beer,
+    ...menu,
+    ...snacks,
+    ...souses,
+  ]);
+  const [filteredData, setFilteredData] = useState([]);
   const location = useLocation();
   const active = location.pathname.split("/");
   const activeSubMenu = active[active.length - 1];
 
-  const dataForMapingMenu = () => {
-    let mapingMenu;
+  const uniqCat = (data) => {
+    const datacategoryes = data.map((item) => item.subCategory);
+    return [...new Set(datacategoryes)];
+  };
 
-    switch (articles) {
+  const filterByCategory = useCallback(() => {
+    let activeItem = "bar";
+
+    switch (activeSubMenu) {
       case "bar":
-        return beer;
-      case "snacks":
-        return snacks;
+        activeItem = "Напої";
+        break;
+
       case "kitchen":
-        return menu;
+        activeItem = "Кухня";
+        break;
+
+      case "snacks":
+        activeItem = "Снеки";
+        break;
+
       case "souses":
-        return souses;
+        activeItem = "Соуси";
+        break;
 
       default:
         break;
     }
-    console.log(mapingMenu);
-    return mapingMenu;
-  };
+    console.log(activeItem);
 
-  const uniqCat = (data) => {
-    const datacategoryes = data.map((item) => item.category);
+    const filteredArray = allMenuData.filter(
+      (item) => item.category === activeItem
+    );
 
-    return [...new Set(datacategoryes)];
-  };
+    setFilteredData(filteredArray);
+  }, [allMenuData, activeSubMenu]);
+  useEffect(() => {
+    filterByCategory();
+  }, [filterByCategory]);
 
   const currentMenu = (data) => {
     let currentMenu = {};
@@ -54,21 +73,21 @@ export const ContextProvider = ({ children }) => {
     } else if (data === "souses") {
       currentMenu = uniqCat(souses);
     }
-    dataForMapingMenu();
-    setArticles(data);
+    console.log(currentMenu);
     return currentMenu;
   };
   const handleSetSearchParams = (item) => {
     setSearchParams({ SubMenu: item });
-    // console.log(item);
+    filterByCategory();
   };
+  console.log(activeSubMenu);
 
   const contextValue = {
     currentMenu,
     activeSubMenu,
     handleSetSearchParams,
-    articles,
-    dataForMapingMenu,
+    filteredData,
+    searchParams,
   };
 
   return (

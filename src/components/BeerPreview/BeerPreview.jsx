@@ -5,7 +5,7 @@ export const BeerPreview = ({ children }) => {
   return (
     <section className={style.section}>
       <h1 className={style.title}>Наше пиво</h1>
-      <div className={style.beeritems}>{children}</div>
+      <ul className={style.beeritems}>{children}</ul>
     </section>
   );
 };

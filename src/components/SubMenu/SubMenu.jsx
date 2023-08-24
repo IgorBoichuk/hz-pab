@@ -13,7 +13,7 @@ export const SubMenu = ({ id }) => {
         currentMenu(activeSubMenu).map((item) => (
           <li
             key={item}
-            onClick={() => handleSetSearchParams(item)}
+            onClick={() => handleSetSearchParams(item, activeSubMenu)}
             className={style.subMenuItem}
           >
             {item}

@@ -1,6 +1,7 @@
 export const menu = [
   {
-    category: "Бургери",
+    category: "Кухня",
+    subCategory: "Бургери",
     name: "Міні бургер",
     image:
       "https://donerking.com.ua/wp-content/uploads/2022/11/unna9med-file-3.png",
@@ -8,7 +9,8 @@ export const menu = [
     price: 69,
   },
   {
-    category: "Бургери",
+    category: "Кухня",
+    subCategory: "Бургери",
     name: "Бургер",
     image:
       "https://donerking.com.ua/wp-content/uploads/2022/11/unna9med-file-3.png",
@@ -17,7 +19,8 @@ export const menu = [
     price: 112,
   },
   {
-    category: "Бургери",
+    category: "Кухня",
+    subCategory: "Бургери",
     name: "Біг Бургер",
     image:
       "https://donerking.com.ua/wp-content/uploads/2022/11/unna9med-file-3.png",
@@ -26,7 +29,8 @@ export const menu = [
     price: 159,
   },
   {
-    category: "Бургери",
+    category: "Кухня",
+    subCategory: "Бургери",
     name: "Мега Бургер",
     image:
       "https://donerking.com.ua/wp-content/uploads/2022/11/unna9med-file-3.png",
@@ -35,7 +39,8 @@ export const menu = [
     price: 179,
   },
   {
-    category: "Бургери",
+    category: "Кухня",
+    subCategory: "Бургери",
     name: "Рибний Бургер",
     image:
       "https://donerking.com.ua/wp-content/uploads/2022/11/unna9med-file-3.png",
@@ -43,7 +48,8 @@ export const menu = [
     price: 179,
   },
   {
-    category: "Бургери",
+    category: "Кухня",
+    subCategory: "Бургери",
     name: "Міні курячий",
     image:
       "https://donerking.com.ua/wp-content/uploads/2022/11/unna9med-file-3.png",
@@ -52,7 +58,8 @@ export const menu = [
     price: 69,
   },
   {
-    category: "Бургери",
+    category: "Кухня",
+    subCategory: "Бургери",
     name: "Курячий бургер",
     image:
       "https://donerking.com.ua/wp-content/uploads/2022/11/unna9med-file-3.png",
@@ -61,7 +68,8 @@ export const menu = [
     price: 119,
   },
   {
-    category: "Бургери",
+    category: "Кухня",
+    subCategory: "Бургери",
     name: "Бургер барбекю",
     image:
       "https://donerking.com.ua/wp-content/uploads/2022/11/unna9med-file-3.png",
@@ -70,7 +78,8 @@ export const menu = [
     price: 159,
   },
   {
-    category: "Бургери",
+    category: "Кухня",
+    subCategory: "Бургери",
     name: "Сирний бургер",
     image:
       "https://donerking.com.ua/wp-content/uploads/2022/11/unna9med-file-3.png",
@@ -79,7 +88,8 @@ export const menu = [
     price: 129,
   },
   {
-    category: "Бургери",
+    category: "Кухня",
+    subCategory: "Бургери",
     name: "Мисливський",
     image:
       "https://donerking.com.ua/wp-content/uploads/2022/11/unna9med-file-3.png",
@@ -88,7 +98,8 @@ export const menu = [
     price: 129,
   },
   {
-    category: "Бургер-меню",
+    category: "Кухня",
+    subCategory: "Бургер-меню",
     name: "Бургер меню",
     image:
       "https://assets.dots.live/misteram-public/465d4761-4874-454a-b18f-9658fb5e44e8-826x0.png",
@@ -96,7 +107,8 @@ export const menu = [
     price: 189,
   },
   {
-    category: "Бургер-меню",
+    category: "Кухня",
+    subCategory: "Бургер-меню",
     name: "Біг бургер меню",
     image:
       "https://assets.dots.live/misteram-public/465d4761-4874-454a-b18f-9658fb5e44e8-826x0.png",
@@ -104,7 +116,8 @@ export const menu = [
     price: 239,
   },
   {
-    category: "Бургер-меню",
+    category: "Кухня",
+    subCategory: "Бургер-меню",
     name: "Сирний бургер меню",
     image:
       "https://assets.dots.live/misteram-public/465d4761-4874-454a-b18f-9658fb5e44e8-826x0.png",
@@ -112,7 +125,8 @@ export const menu = [
     price: 199,
   },
   {
-    category: "Бургер-меню",
+    category: "Кухня",
+    subCategory: "Бургер-меню",
     name: "Курячий бургер меню",
     image:
       "https://assets.dots.live/misteram-public/465d4761-4874-454a-b18f-9658fb5e44e8-826x0.png",
@@ -120,7 +134,8 @@ export const menu = [
     price: 189,
   },
   {
-    category: "Бургер-меню",
+    category: "Кухня",
+    subCategory: "Бургер-меню",
     name: "Мега бургер меню",
     image:
       "https://assets.dots.live/misteram-public/465d4761-4874-454a-b18f-9658fb5e44e8-826x0.png",
@@ -128,7 +143,8 @@ export const menu = [
     price: 259,
   },
   {
-    category: "Бургер-меню",
+    category: "Кухня",
+    subCategory: "Бургер-меню",
     name: "Бургер барбекю меню",
     image:
       "https://assets.dots.live/misteram-public/465d4761-4874-454a-b18f-9658fb5e44e8-826x0.png",
@@ -136,7 +152,8 @@ export const menu = [
     price: 239,
   },
   {
-    category: "Бургер-меню",
+    category: "Кухня",
+    subCategory: "Бургер-меню",
     name: "Мисливський бургер меню",
     image:
       "https://assets.dots.live/misteram-public/465d4761-4874-454a-b18f-9658fb5e44e8-826x0.png",
@@ -144,7 +161,8 @@ export const menu = [
     price: 229,
   },
   {
-    category: "Фритюр",
+    category: "Кухня",
+    subCategory: "Фритюр",
     name: "Картопля фрі",
     image:
       "https://www.uman.prontopizza.ua/wp-content/uploads/2018/01/potato-100.jpg",
@@ -152,7 +170,8 @@ export const menu = [
     price: 60,
   },
   {
-    category: "Фритюр",
+    category: "Кухня",
+    subCategory: "Фритюр",
     name: "Картопляні діпи",
     image:
       "https://pablito.com.ua/wp-content/uploads/2020/09/kartofelnie-dipi-pablito.jpg",
@@ -160,21 +179,24 @@ export const menu = [
     price: 69,
   },
   {
-    category: "Фритюр",
+    category: "Кухня",
+    subCategory: "Фритюр",
     name: "Нагетси",
     image: "https://today.ua/wp-content/uploads/2022/09/naggetsy.jpg",
     weight: "6 шт",
     price: 79,
   },
   {
-    category: "Фритюр",
+    category: "Кухня",
+    subCategory: "Фритюр",
     name: "Нагетси",
     image: "https://today.ua/wp-content/uploads/2022/09/naggetsy.jpg",
     weight: "9 шт",
     price: 109,
   },
   {
-    category: "Фритюр",
+    category: "Кухня",
+    subCategory: "Фритюр",
     name: "Моцарела фрі",
     image:
       "https://i.lefood.menu/wp-content/uploads/w_images/2022/02/recept-32606-1240x827.jpg",
@@ -182,7 +204,8 @@ export const menu = [
     price: 129,
   },
   {
-    category: "Фритюр",
+    category: "Кухня",
+    subCategory: "Фритюр",
     name: "Сирні палички",
     image:
       "https://shuba.life/static/content/thumbs/740x493/0/e2/nycune---c740x493x50px50p-c740x493x50px50p-up--b06d513ad8a009b64adbc6cafe4fde20.jpg",
@@ -190,7 +213,8 @@ export const menu = [
     price: 69,
   },
   {
-    category: "Фритюр",
+    category: "Кухня",
+    subCategory: "Фритюр",
     name: "Сирні палички",
     image:
       "https://shuba.life/static/content/thumbs/740x493/0/e2/nycune---c740x493x50px50p-c740x493x50px50p-up--b06d513ad8a009b64adbc6cafe4fde20.jpg",
@@ -198,7 +222,8 @@ export const menu = [
     price: 129,
   },
   {
-    category: "Фритюр",
+    category: "Кухня",
+    subCategory: "Фритюр",
     name: "Попкорн",
     image:
       "https://www.rbc.ua/static/img/k/_/k_photo_recipe_ramp_up_2022_02_cheese_popcorn_cheese_popcorn_2_1300x820.jpg",
@@ -206,7 +231,8 @@ export const menu = [
     price: 49,
   },
   {
-    category: "Фритюр",
+    category: "Кухня",
+    subCategory: "Фритюр",
     name: "Попкорн",
     image:
       "https://www.rbc.ua/static/img/k/_/k_photo_recipe_ramp_up_2022_02_cheese_popcorn_cheese_popcorn_2_1300x820.jpg",
@@ -214,7 +240,8 @@ export const menu = [
     price: 89,
   },
   {
-    category: "Фритюр",
+    category: "Кухня",
+    subCategory: "Фритюр",
     name: "Креветки панко",
     image:
       "https://media-cdn.tripadvisor.com/media/photo-s/1c/d3/98/81/sweet-chili.jpg",
@@ -222,21 +249,24 @@ export const menu = [
     price: 79,
   },
   {
-    category: "Фритюр",
+    category: "Кухня",
+    subCategory: "Фритюр",
     name: "Стріпси",
     image: "https://sushi7.com.ua/wp-content/uploads/2022/05/stripsy.jpg",
     weight: "5 шт",
     price: 112,
   },
   {
-    category: "Фритюр",
+    category: "Кухня",
+    subCategory: "Фритюр",
     name: "Стріпси",
     image: "https://sushi7.com.ua/wp-content/uploads/2022/05/stripsy.jpg",
     weight: "10 шт",
     price: 209,
   },
   {
-    category: "Фритюр",
+    category: "Кухня",
+    subCategory: "Фритюр",
     name: "Креветки королівські",
     image:
       "https://s0.tchkcdn.com/i/13/1/345046_3e2a86fe_5d6d12da80b19e07cff735e5c90f33f0_04_kak_varit_zamorozhennye_krevetki_depositphotos_22575483_m.jpg",
@@ -244,7 +274,8 @@ export const menu = [
     price: 169,
   },
   {
-    category: "Фритюр",
+    category: "Кухня",
+    subCategory: "Фритюр",
     name: "Цибулеві кільця",
     image:
       "https://shuba.life/static/content/thumbs/740x493/d/98/jfwvsb---c740x493x50px50p-c740x493x50px50p-up--e6c7028bd7d2476b6800c57965bbc98d.jpg",
@@ -252,7 +283,8 @@ export const menu = [
     price: 69,
   },
   {
-    category: "Фритюр",
+    category: "Кухня",
+    subCategory: "Фритюр",
     name: "Цибулеві кільця",
     image:
       "https://shuba.life/static/content/thumbs/740x493/d/98/jfwvsb---c740x493x50px50p-c740x493x50px50p-up--e6c7028bd7d2476b6800c57965bbc98d.jpg",
@@ -260,7 +292,8 @@ export const menu = [
     price: 89,
   },
   {
-    category: "Фритюр",
+    category: "Кухня",
+    subCategory: "Фритюр",
     name: "Крильця",
     image:
       "https://images.1plus1.video/news-1/34555/f21950704c54e3e8036d32ab9ebc4b00.1020x565.jpg",
@@ -268,7 +301,8 @@ export const menu = [
     price: 129,
   },
   {
-    category: "Фритюр",
+    category: "Кухня",
+    subCategory: "Фритюр",
     name: "Крильця",
     image:
       "https://images.1plus1.video/news-1/34555/f21950704c54e3e8036d32ab9ebc4b00.1020x565.jpg",
@@ -276,14 +310,16 @@ export const menu = [
     price: 229,
   },
   {
-    category: "Фритюр",
+    category: "Кухня",
+    subCategory: "Фритюр",
     name: "Кульки філадельфія",
     image: "https://kartofan.ua/wp-content/uploads/2020/01/2-2-700x470.jpg",
     weight: "6 шт",
     price: 69,
   },
   {
-    category: "Фритюр",
+    category: "Кухня",
+    subCategory: "Фритюр",
     name: "Кульки філадельфія",
     image: "https://kartofan.ua/wp-content/uploads/2020/01/2-2-700x470.jpg",
     weight: "10 шт",

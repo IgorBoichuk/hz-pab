@@ -1,6 +1,7 @@
 export const beer = [
   {
-    category: "Пиво",
+    category: "Напої",
+    subCategory: "Пиво",
     name: "Кельш",
     color: "Світле",
     alcohol: 4.2,
@@ -12,7 +13,8 @@ export const beer = [
     price: 49,
   },
   {
-    category: "Пиво",
+    category: "Напої",
+    subCategory: "Пиво",
     name: "Пшеничне",
     color: "Світле",
     alcohol: 4.5,
@@ -25,7 +27,8 @@ export const beer = [
     price: 54,
   },
   {
-    category: "Пиво",
+    category: "Напої",
+    subCategory: "Пиво",
     name: "Лагер",
     color: "Світле",
     alcohol: 4.4,
@@ -38,7 +41,8 @@ export const beer = [
     price: 51,
   },
   {
-    category: "Пиво",
+    category: "Напої",
+    subCategory: "Пиво",
     name: "IPA",
     color: "Світле",
     alcohol: 5.6,
@@ -51,7 +55,8 @@ export const beer = [
     price: 61,
   },
   {
-    category: "Пиво",
+    category: "Напої",
+    subCategory: "Пиво",
     name: "Лайт",
     color: "Світле",
     alcohol: 4.2,
@@ -64,7 +69,8 @@ export const beer = [
     price: 49,
   },
   {
-    category: "Сідр",
+    category: "Напої",
+    subCategory: "Сідр",
     name: "Сідр яблучний",
     color: "Світле",
     alcohol: 5.0,
@@ -76,7 +82,8 @@ export const beer = [
     price: 50,
   },
   {
-    category: "Вино",
+    category: "Напої",
+    subCategory: "Вино",
     name: "Prosecco",
     color: "Світле",
     alcohol: 10.5,
@@ -88,7 +95,8 @@ export const beer = [
     price: 70,
   },
   {
-    category: "Квас",
+    category: "Напої",
+    subCategory: "Квас",
     name: "Квас",
     color: "Світле",
     alcohol: "",

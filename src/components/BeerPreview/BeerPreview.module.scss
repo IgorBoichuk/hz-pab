@@ -2,9 +2,7 @@
 @import "../../scss/fonts";
 
 .section {
-  // background-color: rgb(146, 78, 106);
-  margin: 150px 0;
-  // max-width: 1240px;
+  margin: 50px 0;
 }
 
 .title {
@@ -17,4 +15,6 @@
   display: grid;
   gap: 24px;
   grid-template-columns: 400px 400px 400px;
+
+  list-style: none;
 }
