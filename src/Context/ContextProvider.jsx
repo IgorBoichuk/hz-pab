@@ -40,7 +40,7 @@ export const ContextProvider = ({ children }) => {
         return "Соуси";
 
       default:
-        return "Напої";
+        return null;
     }
   };
 
@@ -71,14 +71,16 @@ export const ContextProvider = ({ children }) => {
     } else if (data === "souses") {
       currentMenu = uniqCat(souses);
     }
-    console.log(currentMenu);
+
     return currentMenu;
   };
+
+  const preview = subMenu || normalizeSubMenu(activeSubMenu);
+
   const handleSetSearchParams = (item) => {
     setSearchParams({ SubMenu: item });
     filterByCategory();
   };
-  console.log(activeSubMenu);
 
   const contextValue = {
     currentMenu,
@@ -86,6 +88,7 @@ export const ContextProvider = ({ children }) => {
     handleSetSearchParams,
     filteredData,
     searchParams,
+    preview,
   };
 
   return (
