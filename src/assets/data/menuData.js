@@ -1,5 +1,6 @@
 export const menu = [
   {
+    id: 201,
     category: "Кухня",
     subCategory: "Бургери",
     name: "Міні бургер",
@@ -9,6 +10,7 @@ export const menu = [
     price: 69,
   },
   {
+    id: 202,
     category: "Кухня",
     subCategory: "Бургери",
     name: "Бургер",
@@ -19,6 +21,7 @@ export const menu = [
     price: 112,
   },
   {
+    id: 203,
     category: "Кухня",
     subCategory: "Бургери",
     name: "Біг Бургер",
@@ -29,6 +32,7 @@ export const menu = [
     price: 159,
   },
   {
+    id: 204,
     category: "Кухня",
     subCategory: "Бургери",
     name: "Мега Бургер",
@@ -39,6 +43,7 @@ export const menu = [
     price: 179,
   },
   {
+    id: 205,
     category: "Кухня",
     subCategory: "Бургери",
     name: "Рибний Бургер",
@@ -48,6 +53,7 @@ export const menu = [
     price: 179,
   },
   {
+    id: 206,
     category: "Кухня",
     subCategory: "Бургери",
     name: "Міні курячий",
@@ -58,6 +64,7 @@ export const menu = [
     price: 69,
   },
   {
+    id: 207,
     category: "Кухня",
     subCategory: "Бургери",
     name: "Курячий бургер",
@@ -68,6 +75,7 @@ export const menu = [
     price: 119,
   },
   {
+    id: 208,
     category: "Кухня",
     subCategory: "Бургери",
     name: "Бургер барбекю",
@@ -78,6 +86,7 @@ export const menu = [
     price: 159,
   },
   {
+    id: 209,
     category: "Кухня",
     subCategory: "Бургери",
     name: "Сирний бургер",
@@ -88,6 +97,7 @@ export const menu = [
     price: 129,
   },
   {
+    id: 210,
     category: "Кухня",
     subCategory: "Бургери",
     name: "Мисливський",
@@ -98,6 +108,7 @@ export const menu = [
     price: 129,
   },
   {
+    id: 211,
     category: "Кухня",
     subCategory: "Бургер-меню",
     name: "Бургер меню",
@@ -107,6 +118,7 @@ export const menu = [
     price: 189,
   },
   {
+    id: 212,
     category: "Кухня",
     subCategory: "Бургер-меню",
     name: "Біг бургер меню",
@@ -116,6 +128,7 @@ export const menu = [
     price: 239,
   },
   {
+    id: 213,
     category: "Кухня",
     subCategory: "Бургер-меню",
     name: "Сирний бургер меню",
@@ -125,6 +138,7 @@ export const menu = [
     price: 199,
   },
   {
+    id: 214,
     category: "Кухня",
     subCategory: "Бургер-меню",
     name: "Курячий бургер меню",
@@ -134,6 +148,7 @@ export const menu = [
     price: 189,
   },
   {
+    id: 215,
     category: "Кухня",
     subCategory: "Бургер-меню",
     name: "Мега бургер меню",
@@ -143,6 +158,7 @@ export const menu = [
     price: 259,
   },
   {
+    id: 216,
     category: "Кухня",
     subCategory: "Бургер-меню",
     name: "Бургер барбекю меню",
@@ -152,6 +168,7 @@ export const menu = [
     price: 239,
   },
   {
+    id: 217,
     category: "Кухня",
     subCategory: "Бургер-меню",
     name: "Мисливський бургер меню",
@@ -161,6 +178,7 @@ export const menu = [
     price: 229,
   },
   {
+    id: 218,
     category: "Кухня",
     subCategory: "Фритюр",
     name: "Картопля фрі",
@@ -170,6 +188,7 @@ export const menu = [
     price: 60,
   },
   {
+    id: 219,
     category: "Кухня",
     subCategory: "Фритюр",
     name: "Картопляні діпи",
@@ -179,6 +198,7 @@ export const menu = [
     price: 69,
   },
   {
+    id: 220,
     category: "Кухня",
     subCategory: "Фритюр",
     name: "Нагетси",
@@ -187,6 +207,7 @@ export const menu = [
     price: 79,
   },
   {
+    id: 221,
     category: "Кухня",
     subCategory: "Фритюр",
     name: "Нагетси",
@@ -195,6 +216,7 @@ export const menu = [
     price: 109,
   },
   {
+    id: 222,
     category: "Кухня",
     subCategory: "Фритюр",
     name: "Моцарела фрі",
@@ -204,6 +226,7 @@ export const menu = [
     price: 129,
   },
   {
+    id: 223,
     category: "Кухня",
     subCategory: "Фритюр",
     name: "Сирні палички",
@@ -213,6 +236,7 @@ export const menu = [
     price: 69,
   },
   {
+    id: 224,
     category: "Кухня",
     subCategory: "Фритюр",
     name: "Сирні палички",
@@ -222,6 +246,7 @@ export const menu = [
     price: 129,
   },
   {
+    id: 225,
     category: "Кухня",
     subCategory: "Фритюр",
     name: "Попкорн",
@@ -231,6 +256,7 @@ export const menu = [
     price: 49,
   },
   {
+    id: 226,
     category: "Кухня",
     subCategory: "Фритюр",
     name: "Попкорн",
@@ -240,6 +266,7 @@ export const menu = [
     price: 89,
   },
   {
+    id: 227,
     category: "Кухня",
     subCategory: "Фритюр",
     name: "Креветки панко",
@@ -249,6 +276,7 @@ export const menu = [
     price: 79,
   },
   {
+    id: 228,
     category: "Кухня",
     subCategory: "Фритюр",
     name: "Стріпси",
@@ -257,6 +285,7 @@ export const menu = [
     price: 112,
   },
   {
+    id: 229,
     category: "Кухня",
     subCategory: "Фритюр",
     name: "Стріпси",
@@ -265,6 +294,7 @@ export const menu = [
     price: 209,
   },
   {
+    id: 230,
     category: "Кухня",
     subCategory: "Фритюр",
     name: "Креветки королівські",
@@ -274,6 +304,7 @@ export const menu = [
     price: 169,
   },
   {
+    id: 231,
     category: "Кухня",
     subCategory: "Фритюр",
     name: "Цибулеві кільця",
@@ -283,6 +314,7 @@ export const menu = [
     price: 69,
   },
   {
+    id: 232,
     category: "Кухня",
     subCategory: "Фритюр",
     name: "Цибулеві кільця",
@@ -292,6 +324,7 @@ export const menu = [
     price: 89,
   },
   {
+    id: 233,
     category: "Кухня",
     subCategory: "Фритюр",
     name: "Крильця",
@@ -301,6 +334,7 @@ export const menu = [
     price: 129,
   },
   {
+    id: 234,
     category: "Кухня",
     subCategory: "Фритюр",
     name: "Крильця",
@@ -310,6 +344,7 @@ export const menu = [
     price: 229,
   },
   {
+    id: 235,
     category: "Кухня",
     subCategory: "Фритюр",
     name: "Кульки філадельфія",
@@ -318,6 +353,7 @@ export const menu = [
     price: 69,
   },
   {
+    id: 236,
     category: "Кухня",
     subCategory: "Фритюр",
     name: "Кульки філадельфія",

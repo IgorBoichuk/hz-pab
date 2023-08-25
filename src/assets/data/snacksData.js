@@ -1,5 +1,6 @@
 export const snacks = [
   {
+    id: 300,
     category: "Снеки",
     subCategory: "Горішки",
     name: "Арахіс",
@@ -9,6 +10,7 @@ export const snacks = [
     price: 30,
   },
   {
+    id: 301,
     category: "Снеки",
     subCategory: "Горішки",
     name: "Фісташки",
@@ -17,6 +19,7 @@ export const snacks = [
     price: 60,
   },
   {
+    id: 302,
     category: "Снеки",
     subCategory: "Сухарики",
     name: "Сухарики з гірчицею",
@@ -26,6 +29,7 @@ export const snacks = [
     price: 60,
   },
   {
+    id: 303,
     category: "Снеки",
     subCategory: "Рибка",
     name: "Жовтий полосатик",
@@ -34,6 +38,7 @@ export const snacks = [
     price: 60,
   },
   {
+    id: 304,
     category: "Снеки",
     subCategory: "Кальмари",
     name: "Кальмар перуанський",

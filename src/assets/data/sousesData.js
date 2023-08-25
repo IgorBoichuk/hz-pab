@@ -1,5 +1,6 @@
 export const souses = [
   {
+    id: 400,
     category: "Соуси",
     subCategory: "Кетчуп",
     name: "Кетчуп",
@@ -9,6 +10,7 @@ export const souses = [
     price: 30,
   },
   {
+    id: 401,
     category: "Соуси",
     subCategory: "Гірчиця",
     name: "Гірчиця",
@@ -17,6 +19,7 @@ export const souses = [
     price: 30,
   },
   {
+    id: 402,
     category: "Соуси",
     subCategory: "Хрін",
     name: "Хрін",

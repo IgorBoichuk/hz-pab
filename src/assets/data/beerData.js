@@ -1,5 +1,6 @@
 export const beer = [
   {
+    id: 100,
     category: "Напої",
     subCategory: "Пиво",
     name: "Кельш",
@@ -13,6 +14,7 @@ export const beer = [
     price: 49,
   },
   {
+    id: 101,
     category: "Напої",
     subCategory: "Пиво",
     name: "Пшеничне",
@@ -27,6 +29,7 @@ export const beer = [
     price: 54,
   },
   {
+    id: 102,
     category: "Напої",
     subCategory: "Пиво",
     name: "Лагер",
@@ -41,6 +44,7 @@ export const beer = [
     price: 51,
   },
   {
+    id: 103,
     category: "Напої",
     subCategory: "Пиво",
     name: "IPA",
@@ -55,6 +59,7 @@ export const beer = [
     price: 61,
   },
   {
+    id: 104,
     category: "Напої",
     subCategory: "Пиво",
     name: "Лайт",
@@ -69,6 +74,7 @@ export const beer = [
     price: 49,
   },
   {
+    id: 105,
     category: "Напої",
     subCategory: "Сідр",
     name: "Сідр яблучний",
@@ -82,6 +88,7 @@ export const beer = [
     price: 50,
   },
   {
+    id: 106,
     category: "Напої",
     subCategory: "Вино",
     name: "Prosecco",
@@ -95,6 +102,7 @@ export const beer = [
     price: 70,
   },
   {
+    id: 107,
     category: "Напої",
     subCategory: "Квас",
     name: "Квас",

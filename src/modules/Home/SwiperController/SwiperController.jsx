@@ -1,5 +1,4 @@
 import React from "react";
-import { nanoid } from "nanoid";
 
 import style from "./SwiperController.module.scss";
 
@@ -36,7 +35,7 @@ export const SwiperController = ({ data }) => {
           }}
         >
           {data.map((item) => (
-            <SwiperSlide key={nanoid()}>
+            <SwiperSlide key={item.id}>
               <ArticleCard item={item} />
             </SwiperSlide>
           ))}

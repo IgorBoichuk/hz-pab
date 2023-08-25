@@ -6,7 +6,6 @@ import { BeerPreview } from "../BeerPreview/BeerPreview";
 import { ArticleCard } from "../../shared/ArticleCard/ArticleCard";
 
 import { MyContext } from "../../../Context/ContextProvider";
-import { nanoid } from "nanoid";
 
 export const MenuContent = () => {
   const { filteredData } = useContext(MyContext);
@@ -18,7 +17,7 @@ export const MenuContent = () => {
           <AsideMenu />
           <BeerPreview>
             {filteredData.map((item) => (
-              <ArticleCard key={nanoid()} item={item} />
+              <ArticleCard item={item} key={item.id} />
             ))}
           </BeerPreview>
         </div>
