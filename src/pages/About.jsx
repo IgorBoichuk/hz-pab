@@ -8,7 +8,7 @@ export const About = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="bg">
+    <div>
       <MainSection title={"про нас"} />
       {/* <AboutUs /> */}
       <BrokenPaperSection />

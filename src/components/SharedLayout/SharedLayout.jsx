@@ -5,10 +5,10 @@ import { Footer } from "../../modules/Footer/Footer";
 
 export const SharedLayout = () => {
   return (
-    <>
+    <div className="bg">
       <Header />
       <Outlet />
       <Footer />
-    </>
+    </div>
   );
 };

@@ -13,7 +13,7 @@ export const Home = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="bg">
+    <div>
       <Hero />
       <YourAtmosphere title={"твоя атмосфера"} />
       <AboutUs title={"про нас"} />
