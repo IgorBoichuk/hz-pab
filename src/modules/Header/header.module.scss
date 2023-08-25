@@ -2,7 +2,7 @@
 @import "../../scss/fonts";
 
 .header {
-  position: absolute;
+  position: fixed;
   z-index: 9;
   background-color: hsla(0, 0%, 0%, 0.8);
   color: white;
@@ -28,7 +28,10 @@
 .logo {
   display: block;
   text-decoration: none;
-  width: 70px;
+  width: 80px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-right: 120px;
+  }
 }
 
 .navmenu {

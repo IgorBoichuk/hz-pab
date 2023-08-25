@@ -13,7 +13,7 @@ export const Home = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <>
+    <div className="bg">
       <Hero />
       <YourAtmosphere title={"твоя атмосфера"} />
       <AboutUs title={"про нас"} />
@@ -21,6 +21,6 @@ export const Home = () => {
       <RunningLline />
       <Recomendation title={"Рекомендуємо"} />
       <Instagram title={"INSTAGRAM"} />
-    </>
+    </div>
   );
 };

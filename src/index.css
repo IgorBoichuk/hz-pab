@@ -44,3 +44,11 @@ img {
 .active {
   color: orange;
 }
+
+.bg {
+  background-image: url(./assets/galary/section-background.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}

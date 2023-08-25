@@ -5,22 +5,20 @@
   display: flex;
   justify-content: center;
   padding: 80px 0px;
-
-  background-image: url("../../../assets/galary/section-background-rotate.png");
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .sectionWrapper {
   display: flex;
-  gap: 24px;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  // justify-content: space-around;
+  @media screen and (min-width: $breakpoint-desktop) {
+    flex-direction: row;
+  }
 }
 
 .linkwrapper {
-  max-width: max-content;
+  // max-width: max-content;
 }
 
 .link {

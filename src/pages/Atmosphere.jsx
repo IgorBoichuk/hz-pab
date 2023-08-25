@@ -6,7 +6,7 @@ export const Atmosphere = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div>
+    <div className="bg">
       <MainSection title={"атмосфера"} />
     </div>
   );

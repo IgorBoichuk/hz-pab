@@ -110,8 +110,8 @@
 .heroLink {
   position: absolute;
   z-index: 3;
-  right: 25%;
-  bottom: 15%;
+  right: 0%;
+  bottom: 0%;
 
   display: flex;
   justify-content: center;
@@ -130,6 +130,10 @@
   animation-duration: 15s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  @media screen and (min-width: $breakpoint-tablet) {
+    right: 25%;
+    bottom: 15%;
+  }
 }
 
 .textSvg {

@@ -8,7 +8,7 @@ export const Contacts = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div>
+    <div className="bg">
       <MainSection title={"контакти"} />
       <ContactsCardsList />
       <GoogleMap />
