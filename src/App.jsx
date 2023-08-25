@@ -4,8 +4,8 @@ import { About } from "./pages/About";
 import { Menu } from "./pages/Menu";
 import { Atmosphere } from "./pages/Atmosphere";
 import { Contacts } from "./pages/Contacts";
-import { NotFound } from "./components/NotFound/NotFound";
-import { BeerPreview } from "./components/BeerPreview/BeerPreview";
+import { NotFound } from "./modules/NotFound/NotFound";
+import { BeerPreview } from "./modules/Menu/BeerPreview/BeerPreview";
 import { SharedLayout } from "./components/SharedLayout/SharedLayout";
 
 function App() {

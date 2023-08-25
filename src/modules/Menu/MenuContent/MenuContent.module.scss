@@ -1,0 +1,19 @@
+@import "../../../scss/variables";
+@import "../../../scss/fonts";
+
+.section {
+  display: flex;
+  justify-content: center;
+
+  background-image: url("../../../assets/galary/section-background.png");
+  background-attachment: fixed;
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-position: center;
+}
+
+.sectionWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}

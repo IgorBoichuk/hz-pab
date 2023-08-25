@@ -1,0 +1,35 @@
+@import "../../../scss/variables";
+@import "../../../scss/fonts";
+
+.aside {
+  margin-top: 100px;
+}
+
+.list {
+  list-style: none;
+}
+
+.linkItem {
+  text-decoration: none;
+}
+
+.listItem {
+  color: #e3e3e3;
+  font-family: Unbounded, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 120%; /* 24px */
+  text-transform: uppercase;
+  padding: 15px 20px;
+  margin-bottom: 30px;
+  &:hover {
+    color: #ff612f;
+    background-color: rgba(141, 141, 141, 0.15);
+    border-radius: 20px;
+  }
+  &:focus {
+    color: #ff612f;
+    background-color: rgba(141, 141, 141, 0.15);
+    border-radius: 20px;
+  }
+}

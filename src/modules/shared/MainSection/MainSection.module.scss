@@ -1,0 +1,41 @@
+@import "../../../scss/variables";
+
+.section {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  // max-width: 1400px;
+  // height: 700px;
+
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+    url(../../../assets/galary/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+  }
+
+  @media screen and (min-width: $breakpoint-tablet-horizontal) {
+  }
+
+  @media screen and (min-width: $breakpoint-desktop) {
+  }
+}
+.content {
+  padding: 180px 20px 90px 20px;
+}
+
+.endMainSection {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  top: 92%;
+
+  // top: 410px;
+}

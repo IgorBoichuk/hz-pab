@@ -1,0 +1,43 @@
+@import "../../../scss/variables";
+@import "../../../scss/fonts";
+
+.sectionTitle {
+  position: relative;
+}
+
+.textOutline {
+  // font-family: Unbounded, sans-serif;
+  font-size: 90px;
+  font-weight: 900;
+  line-height: 130%; /* 117px */
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px #7d7d7d;
+  margin-bottom: 60px;
+  padding: 0;
+}
+
+.title {
+  position: absolute;
+
+  top: 30px;
+  left: 3px;
+
+  color: #ff612f;
+  font-family: Unbounded, sans-serif;
+  font-weight: 700;
+  line-height: 130%; /* 62.4px */
+  text-transform: uppercase;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 35px;
+  }
+
+  @media screen and (min-width: $breakpoint-tablet-horizontal) {
+    font-size: 40px;
+  }
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    font-size: 48px;
+  }
+}

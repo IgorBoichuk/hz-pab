@@ -71,6 +71,7 @@ export const ContextProvider = ({ children }) => {
     // } else if (data === "souses") {
     //   currentMenu = uniqCat(souses);
     // }
+    // return currentMenu;
 
     switch (data) {
       case "bar":
@@ -88,8 +89,6 @@ export const ContextProvider = ({ children }) => {
       default:
         return null;
     }
-
-    // return currentMenu;
   };
 
   const preview = subMenu || normalizeSubMenu(activeSubMenu);

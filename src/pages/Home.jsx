@@ -1,15 +1,17 @@
-import React from "react";
-import { Hero } from "../components/Hero/Hero";
-import { YourAtmosphere } from "../components/YourAtmosphere/YourAtmosphere";
-import { AboutUs } from "../components/AboutUs/AboutUs";
-import { CraftBeer } from "../components/CraftBeer/CraftBeer";
-
+import React, { useEffect } from "react";
+import { Hero } from "../modules/Home/Hero/Hero";
+import { YourAtmosphere } from "../modules/Home/YourAtmosphere/YourAtmosphere";
+import { AboutUs } from "../modules/Home/AboutUs/AboutUs";
+import { CraftBeer } from "../modules/Home/CraftBeer/CraftBeer";
 import { beer } from "../assets/data/beerData";
-import { Recomendation } from "../components/Recomendation/Recomendation";
-import { Instagram } from "../components/Instagram/Instagram";
-import { RunningLline } from "../components/RunningLline/RunningLline";
+import { RunningLline } from "../modules/Home/RunningLline/RunningLline";
+import { Recomendation } from "../modules/Home/Recomendation/Recomendation";
+import { Instagram } from "../modules/Home/Instagram/Instagram";
 
 export const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Hero />

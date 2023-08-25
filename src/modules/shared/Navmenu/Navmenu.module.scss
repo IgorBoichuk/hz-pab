@@ -1,0 +1,24 @@
+@import "../../../scss/variables";
+@import "../../../scss/fonts";
+
+.navWrapper {
+  display: flex;
+  gap: 38px;
+}
+
+.navlink {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-decoration: none;
+  &:hover {
+    color: #ff612f;
+  }
+  &:focus {
+    color: #ff612f;
+  }
+}
