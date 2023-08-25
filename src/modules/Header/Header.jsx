@@ -5,6 +5,7 @@ import Logo from "../../assets/galary/hzfav.png";
 import { Container } from "../shared/Container/Container";
 import { Link } from "react-router-dom";
 import { Navmenu } from "../shared/Navmenu/Navmenu";
+import sprite from "../../assets/galary/svg/sprite.svg";
 
 export const Header = () => {
   return (
@@ -21,6 +22,11 @@ export const Header = () => {
             +380662408540
           </Link>
         </div>
+        <button type="button" className={style.burgerButton}>
+          <svg className={style.menuIcon} width="24" height="24">
+            <use xlinkHref={`${sprite}#menu`}></use>
+          </svg>
+        </button>
       </Container>
     </header>
   );

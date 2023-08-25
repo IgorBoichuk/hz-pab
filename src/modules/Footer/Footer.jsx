@@ -5,7 +5,7 @@ import { Container } from "../shared/Container/Container";
 import { Link } from "react-router-dom";
 import { Navmenu } from "../shared/Navmenu/Navmenu";
 import Logo from "../../assets/galary/hzfav.png";
-import srite from "../../assets/galary/svg/sprite.svg";
+import sprite from "../../assets/galary/svg/sprite.svg";
 
 export const Footer = () => {
   return (
@@ -37,7 +37,7 @@ export const Footer = () => {
                 target="_blank"
               >
                 <svg className={style.sicialItem} width="40" height="40">
-                  <use xlinkHref={`${srite}#facebook`}></use>
+                  <use xlinkHref={`${sprite}#facebook`}></use>
                 </svg>
               </Link>
               <Link
@@ -45,7 +45,7 @@ export const Footer = () => {
                 target="_blank"
               >
                 <svg className={style.sicialItem} width="40" height="40">
-                  <use xlinkHref={`${srite}#instagram`}></use>
+                  <use xlinkHref={`${sprite}#instagram`}></use>
                 </svg>
               </Link>
             </div>

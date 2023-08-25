@@ -2,19 +2,19 @@ import React from "react";
 import style from "./ContactsCardsList.module.scss";
 import { Container } from "../../shared/Container/Container";
 import { Link } from "react-router-dom";
-import srite from "../../../assets/galary/svg/sprite.svg";
+import sprite from "../../../assets/galary/svg/sprite.svg";
 
 export const ContactsCardsList = () => {
   const social = (
     <div className={style.sicialWrapper}>
       <Link to="https://www.facebook.com/HzPubCraftbeer" target="_blank">
         <svg className={style.sicialItem} width="40" height="40">
-          <use xlinkHref={`${srite}#facebook`}></use>
+          <use xlinkHref={`${sprite}#facebook`}></use>
         </svg>
       </Link>
       <Link to="https://www.instagram.com/craftbeer_pub_2020/" target="_blank">
         <svg className={style.sicialItem} width="40" height="40">
-          <use xlinkHref={`${srite}#instagram`}></use>
+          <use xlinkHref={`${sprite}#instagram`}></use>
         </svg>
       </Link>
     </div>

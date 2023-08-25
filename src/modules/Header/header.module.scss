@@ -31,6 +31,14 @@
   width: 70px;
 }
 
+.navmenu {
+  display: none;
+
+  @media screen and (min-width: $breakpoint-tablet-horizontal) {
+    display: block;
+  }
+}
+
 .navlink {
   color: #fff;
   text-align: center;
@@ -40,10 +48,39 @@
   line-height: 1.5;
   text-transform: uppercase;
   text-decoration: none;
+  display: none;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    display: block;
+    margin-right: 80px;
+  }
+
   &:hover {
     color: #ff612f;
   }
   &:focus {
     color: #ff612f;
   }
+}
+
+.burgerButton {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: navajowhite;
+  @media screen and (min-width: $breakpoint-tablet-horizontal) {
+    display: none;
+  }
+}
+
+.menuIcon {
+  fill: white;
+  // &:hover {
+  //   fill: #ff612f;
+  // }
+  // &:focus {
+  //   fill: #ff612f;
+  // }
 }

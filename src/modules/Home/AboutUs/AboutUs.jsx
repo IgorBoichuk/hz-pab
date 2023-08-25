@@ -6,7 +6,7 @@ import { SectionTitle } from "../../shared/SectionTitle/SectionTitle";
 import beer from "../../../assets/galaryAbutUsSection/beer.jpg";
 import bar from "../../../assets/galaryAbutUsSection/bar.jpg";
 import beerTap from "../../../assets/galaryAbutUsSection/bar2.jpg";
-import srite from "../../../assets/galary/svg/sprite.svg";
+import sprite from "../../../assets/galary/svg/sprite.svg";
 
 export const AboutUs = ({ title }) => {
   return (
@@ -33,7 +33,7 @@ export const AboutUs = ({ title }) => {
             <div className={style.promoWrapper}>
               <div className={style.quoteWrapper}>
                 <svg className={style.quote} width="40" height="40">
-                  <use xlinkHref={`${srite}#quote`}></use>
+                  <use xlinkHref={`${sprite}#quote`}></use>
                 </svg>
               </div>
               <p className={style.promoText}>

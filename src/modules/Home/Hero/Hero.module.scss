@@ -3,8 +3,6 @@
 
 .section {
   position: relative;
-  // max-width: 1400px;
-  // height: 700px;
   margin-left: auto;
   margin-right: auto;
 
@@ -32,13 +30,16 @@
 }
 .content {
   position: relative;
-  width: 50%;
+  width: 90%;
   padding-top: 200px;
   margin-bottom: 140px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    width: 50%;
+  }
 }
 .textOutline {
   // font-family: Unbounded, sans-serif;
-  font-size: 110px;
+  font-size: 36px;
   font-weight: 900;
   line-height: 130%; /* 117px */
   text-transform: uppercase;
@@ -46,6 +47,14 @@
   -webkit-text-stroke: 1px #ffffff;
   margin: 0;
   padding: 0;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 70px;
+  }
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    font-size: 110px;
+  }
 }
 
 .title {
@@ -54,16 +63,12 @@
   left: 4px;
   color: #ff612f;
   font-family: Unbounded, sans-serif;
-  // font-size: 48px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 130%; /* 62.4px */
   text-transform: uppercase;
   @media screen and (min-width: $breakpoint-tablet) {
-    font-size: 35px;
-  }
-
-  @media screen and (min-width: $breakpoint-tablet-horizontal) {
-    font-size: 40px;
+    font-size: 42px;
   }
 
   @media screen and (min-width: $breakpoint-desktop) {
@@ -74,21 +79,32 @@
 .promotion {
   color: #fff;
   font-family: Unbounded, sans-serif;
-  font-size: 38px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 130%; /* 49.4px */
   text-transform: uppercase;
   padding-top: 20px;
   margin-bottom: 25px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 32px;
+  }
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    font-size: 38px;
+  }
 }
 
 .description {
   width: 450px;
   color: #fff;
   font-family: Nunito Sans, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 140%; /* 25.2px */
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 18px;
+  }
 }
 
 .heroLink {
