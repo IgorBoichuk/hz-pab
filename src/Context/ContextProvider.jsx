@@ -61,18 +61,35 @@ export const ContextProvider = ({ children }) => {
   }, [filterByCategory]);
 
   const currentMenu = (data) => {
-    let currentMenu = {};
-    if (data === "bar") {
-      currentMenu = uniqCat(beer);
-    } else if (data === "kitchen") {
-      currentMenu = uniqCat(menu);
-    } else if (data === "snacks") {
-      currentMenu = uniqCat(snacks);
-    } else if (data === "souses") {
-      currentMenu = uniqCat(souses);
+    // let currentMenu = {};
+    // if (data === "bar") {
+    //   currentMenu = uniqCat(beer);
+    // } else if (data === "kitchen") {
+    //   currentMenu = uniqCat(menu);
+    // } else if (data === "snacks") {
+    //   currentMenu = uniqCat(snacks);
+    // } else if (data === "souses") {
+    //   currentMenu = uniqCat(souses);
+    // }
+
+    switch (data) {
+      case "bar":
+        return uniqCat(beer);
+
+      case "kitchen":
+        return uniqCat(menu);
+
+      case "snacks":
+        return uniqCat(snacks);
+
+      case "souses":
+        return uniqCat(souses);
+
+      default:
+        return null;
     }
 
-    return currentMenu;
+    // return currentMenu;
   };
 
   const preview = subMenu || normalizeSubMenu(activeSubMenu);
