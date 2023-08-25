@@ -23,13 +23,16 @@ export const AboutUs = ({ title }) => {
               </p>
               <p className={style.linkPath}>детальніше → </p>
             </Link>
-            <img src={beer} alt="beer" className={style.beerImg} />
+            {/* <img src={beer} alt="beer" className={style.beerImg} /> */}
+            <div className={style.beerImg}></div>
           </div>
-          <div className={style.linkwrapper}>
-            <img src={bar} alt="bar" className={style.barImg} />
+
+          <div className={style.barImg}>
+            {/* <img src={bar} alt="bar" className={style.barImg} /> */}
           </div>
-          <div className={style.linkwrapper}>
-            <img src={beerTap} alt="beerTap" className={style.beerTapImg} />
+          <div className={style.rightPartWrapper}>
+            {/* <img src={beerTap} alt="beerTap" className={style.beerTapImg} /> */}
+            <div className={style.beerTapImg}></div>
             <div className={style.promoWrapper}>
               <div className={style.quoteWrapper}>
                 <svg className={style.quote} width="40" height="40">

@@ -3,37 +3,53 @@
 
 .card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
-  width: 411px;
-  height: 482px;
+  width: 343px;
+  align-items: flex-start;
   align-items: center;
   gap: 8px;
   border-radius: 20px;
   background-color: rgba(97, 97, 97, 0.2);
 
-  // @media screen and (min-width: $breakpoint-tablet) {
-  //   width: 342px;
-  // }
+  @media screen and (min-width: $breakpoint-tablet) {
+    flex-direction: column;
+    // width: 300px;
+    // width: 445px;
+  }
 
   // @media screen and (min-width: $breakpoint-tablet-horizontal) {
   //   width: 400px;
   // }
-  @media screen and (min-width: $breakpoint-desktop) {
-    width: 411px;
-  }
+  // @media screen and (min-width: $breakpoint-tablet) {
+  //   flex-direction: column;
+  //   width: 411px;
+  //   width: 473px;
+  // }
 }
 
 .imagewrapper {
-  max-width: 411px;
+  width: 134px;
+  // flex-shrink: 0;
   height: 230px;
   overflow: hidden;
   margin-bottom: 20px;
+  // @media screen and (min-width: $breakpoint-tablet) {
+  //   width: 365px;
+  //   width: 445px;
+  // }
+
+  // @media screen and (min-width: $breakpoint-tablet) {
+  //   width: 411px;
+  //   width: 473px;
+  // }
 }
 
 .img {
   display: block;
-  max-width: 411px;
+  width: 134px;
+  flex-shrink: 0;
+  align-self: stretch;
   min-height: 230px;
   // margin-left: auto;
   // margin-right: auto;

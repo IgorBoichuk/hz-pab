@@ -45,24 +45,45 @@
 
 .beerImg {
   display: block;
-  max-width: 519px;
-  height: 190px;
+  width: 163px;
+  height: 187px;
   border-radius: 20px;
+
+  background-image: url(../../../assets/galaryAbutUsSection/beer.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .barImg {
   display: block;
-  max-width: 302px;
-  height: 490px;
+  width: 163px;
+  height: 187px;
   border-radius: 20px;
+
+  background-image: url(../../../assets/galaryAbutUsSection/bar.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.rightPartWrapper {
+  display: flex;
+  flex-direction: column;
+  // width: 100%;
 }
 
 .beerTapImg {
   display: block;
-  max-width: 411px;
-  height: 390px;
+
+  height: 157px;
   border-radius: 20px;
   margin-bottom: 24px;
+
+  background-image: url(../../../assets/galaryAbutUsSection/bar2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .promoWrapper {
