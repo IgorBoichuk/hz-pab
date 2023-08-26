@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./header.module.scss";
 
-import Logo from "../../assets/galary/hzfav.png";
+import Logo from "../../assets/galary/logo.png";
 import { Container } from "../shared/Container/Container";
 import { Link } from "react-router-dom";
 import { Navmenu } from "../shared/Navmenu/Navmenu";

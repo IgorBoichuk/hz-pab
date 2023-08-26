@@ -28,8 +28,9 @@
 .title {
   position: absolute;
 
-  top: 30px;
+  top: 10px;
   left: 3px;
+
   font-size: 24px;
   color: #ff612f;
   font-family: Unbounded, sans-serif;
@@ -39,9 +40,11 @@
 
   @media screen and (min-width: $breakpoint-tablet) {
     font-size: 32px;
+    top: 13px;
   }
 
   @media screen and (min-width: $breakpoint-desktop) {
     font-size: 40px;
+    // top: 30px;
   }
 }

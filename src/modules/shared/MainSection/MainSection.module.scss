@@ -35,7 +35,14 @@
   position: absolute;
   z-index: 3;
   width: 100%;
-  top: 92%;
+  top: 95%;
+  @media screen and (min-width: $breakpoint-tablet) {
+    top: 93%;
+  }
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    top: 92%;
+  }
 
   // top: 410px;
 }

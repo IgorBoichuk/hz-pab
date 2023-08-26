@@ -10,6 +10,10 @@
 
   display: flex;
   width: 100%;
+
+  @media screen and (min-width: $breakpoint-tablet-horizontal) {
+    justify-content: center;
+  }
 }
 
 .headerwrapper {

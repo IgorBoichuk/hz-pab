@@ -9,37 +9,63 @@
 
   background: rgba(30, 30, 30, 0.5);
 
-  display: flex;
-  justify-content: center;
-
   &::after {
     content: "";
     position: absolute;
-    top: 70%;
+    top: 85%;
     width: 100%;
     border-top: 1px solid #7d7d7d;
+
+    @media screen and (min-width: $breakpoint-desktop) {
+      top: 80%;
+    }
   }
 }
 
 .footerWrapper {
   display: flex;
-
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding: 62px 0;
+
+  @media screen and (min-width: $breakpoint-tablet-horizontal) {
+  }
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    flex-direction: row;
+  }
 }
 
 .logolink {
-  // display: block;
   width: 100px;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+  }
+
+  @media screen and (min-width: $breakpoint-desktop) {
+  }
 }
 .logo {
   display: block;
   text-decoration: none;
-  width: 70px;
-}
+  width: 100px;
+  margin-bottom: 40px;
 
+  @media screen and (min-width: $breakpoint-desktop) {
+    width: 70px;
+  }
+}
 .navmenu {
+  display: block;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    padding-bottom: 0;
+  }
+}
+.navmenu > .navWrapper {
+  flex-direction: column;
 }
 
 .navlink {
@@ -59,17 +85,31 @@
   }
 }
 
-.timetWrapper {
+.timetAdresWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
   width: 150px;
+  padding-bottom: 30px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    flex-direction: row;
+    width: 470px;
+    gap: 125px;
+  }
+}
+
+.timetWrapper {
+  // width: 150px;
 }
 
 .adressWrapper {
-  width: 240px;
+  // width: 240px;
 }
 
 .contactTitle {
   font-family: Montserrat, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 150%; /* 24px */
   text-transform: uppercase;
@@ -84,17 +124,13 @@
   color: #cdcdcd;
 }
 
-.footerNav {
-  flex-direction: column;
-}
-
-.sicialWrapper {
+.socialWrapper {
   display: flex;
   gap: 16px;
   margin-bottom: 42px;
 }
 
-.sicialItem {
+.socialItem {
   width: 40px;
   height: 40px;
   fill: #ffffff;

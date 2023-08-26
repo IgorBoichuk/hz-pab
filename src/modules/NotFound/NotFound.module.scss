@@ -3,14 +3,22 @@
 
 .section {
   display: block;
-  padding: 100px;
+  padding: 150px 50px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    padding: 150px 50px;
+  }
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    padding: 100px;
+  }
 }
 
 .title {
-  color: wheat;
+  color: #ff612f;
 }
 
 .link {
-  color: wheat;
+  color: #ff612f;
+  margin-left: 10px;
   // text-decoration: none;
 }
