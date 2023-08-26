@@ -13,22 +13,27 @@ export const AboutUs = ({ title }) => {
     <section className={style.section}>
       <Container>
         <div className={style.sectionWrapper}>
-          <div className={style.linkwrapper}>
-            <SectionTitle title={title} />
-            <Link to="about-us" className={style.link}>
-              <p className={style.linkText}>
-                Ласкаво просимо у "ХЗ паб" – найкращий пивний паб в ЖК
-                Петрівський Квартал. Тут панує справжня дружня атмосфера де ви
-                зможете розслабитися та забути про повсякденність.
-              </p>
-              <p className={style.linkPath}>детальніше → </p>
-            </Link>
-            {/* <img src={beer} alt="beer" className={style.beerImg} /> */}
-            <div className={style.beerImg}></div>
-          </div>
+          <div className={style.barImgWrapper}>
+            <div className={style.linkwrapper}>
+              <SectionTitle title={title} />
+              <Link to="about-us" className={style.link}>
+                <p className={style.linkText}>
+                  Ласкаво просимо у "ХЗ паб" – найкращий пивний паб в ЖК
+                  Петрівський Квартал. Тут панує справжня дружня атмосфера де ви
+                  зможете розслабитися та забути про повсякденність.
+                </p>
+                <p className={style.linkPath}>детальніше → </p>
+              </Link>
+              {/* <img src={beer} alt="beer" className={style.beerImg} /> */}
+              <div className={style.beerImgWrapper}>
+                <div className={style.beerImg}></div>
+                <div className={style.barImgMob}></div>
+              </div>
+            </div>
 
-          <div className={style.barImg}>
-            {/* <img src={bar} alt="bar" className={style.barImg} /> */}
+            <div className={style.barImg}>
+              {/* <img src={bar} alt="bar" className={style.barImg} /> */}
+            </div>
           </div>
           <div className={style.rightPartWrapper}>
             {/* <img src={beerTap} alt="beerTap" className={style.beerTapImg} /> */}
