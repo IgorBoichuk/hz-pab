@@ -15,19 +15,39 @@
 
 .runningLlineBlock {
   display: flex;
-  width: 231%;
   animation: scroll 45s linear infinite;
+  width: 2150px;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    width: 2900px;
+  }
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    width: 3675px;
+  }
 }
 
 .runningLlineText {
-  font-family: Unbounded, sans-serif;
-  color: #ff612f;
-  font-size: 48px;
+  // font-family: Unbounded, sans-serif;
+  // color: #ff612f;
+  font-size: 28px;
   line-height: 150%; /* 72px */
   text-transform: uppercase;
+  font-weight: bold;
 
   white-space: nowrap;
   width: 100%;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px #ff612f;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 38px;
+  }
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    font-size: 48px;
+  }
 }
 
 .lineRotate {
