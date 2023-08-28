@@ -7,7 +7,7 @@ export const ArticleCard = ({ item }) => {
       <div className={style.imagewrapper}>
         <img src={item.image} alt={item.name} className={style.img} />
       </div>
-      <div>
+      <div className={style.contentWrapper}>
         <h3 className={style.title}>{item.name}</h3>
         <div className={style.datawrapper}>
           <div className={style.paramwrapper}>

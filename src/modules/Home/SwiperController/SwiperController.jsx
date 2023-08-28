@@ -33,7 +33,7 @@ export const SwiperController = ({ data }) => {
             },
           }}
           modules={[Autoplay, Pagination, Navigation]}
-          // className="mySwiper"
+          className="mySwiper"
         >
           {data.map((item) => (
             <SwiperSlide key={item.id}>
