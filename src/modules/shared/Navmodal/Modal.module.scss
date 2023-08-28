@@ -1,0 +1,51 @@
+@import "../../../scss/variables";
+@import "../../../scss/fonts";
+
+.modalwrapper {
+  // display: none;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+
+  @media screen and (min-width: $breakpoint-tablet-horizontal) {
+    display: none;
+  }
+}
+
+.navmenu {
+  position: absolute;
+  padding-top: 150px;
+  width: 75%;
+  height: 100%;
+  right: 0;
+
+  background-image: url(../../../assets/galary/section-background.png),
+    radial-gradient(rgb(166, 163, 166), rgb(49, 49, 49));
+  background-repeat: no-repeat;
+  // background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+// .modalcontent {
+//   background: rgb(45, 44, 44);
+//   background-image: radial-gradient(rgb(113, 113, 113), rgb(49, 49, 49));
+//   width: 80%;
+//   display: flex;
+//   justify-content: center;
+//   margin-left: auto;
+//   margin-right: auto;
+//   border-radius: 35px 0 0 35px;
+// }
+
+// .modallist {
+//   list-style: none;
+//   color: white;
+//   display: flex;
+//   flex-direction: column;
+//   gap: 30px;
+//   padding: 20px;
+// }

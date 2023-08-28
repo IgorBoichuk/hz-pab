@@ -72,22 +72,34 @@
 
 .burgerButton {
   position: absolute;
+  z-index: 4;
   right: 30px;
   top: 50%;
   transform: translateY(-50%);
   background-color: transparent;
-  border: navajowhite;
+  border: none;
+
   @media screen and (min-width: $breakpoint-tablet-horizontal) {
     display: none;
   }
 }
 
-.menuIcon {
+.menuIconBurger {
   fill: white;
+  width: 28px;
+  height: 28px;
   // &:hover {
   //   fill: #ff612f;
   // }
   // &:focus {
   //   fill: #ff612f;
   // }
+}
+.menuIconCross {
+  position: absolute;
+  top: 2px;
+  right: 8px;
+  fill: white;
+  width: 24px;
+  height: 24px;
 }
