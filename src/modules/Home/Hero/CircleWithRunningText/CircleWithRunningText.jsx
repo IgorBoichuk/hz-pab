@@ -2,9 +2,9 @@ import React from "react";
 import style from "./CircleWithRunningText.module.scss";
 
 const CircleWithRunningText = () => {
-  const radius = 120;
-  const centerX = radius + 15;
-  const centerY = radius + 15;
+  const radius = 80;
+  const centerX = radius + 55;
+  const centerY = radius + 55;
   const chars = "переглянути меню - переглянути меню -";
   const charCount = chars.length;
 
