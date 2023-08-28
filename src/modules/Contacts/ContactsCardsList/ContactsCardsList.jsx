@@ -38,7 +38,7 @@ export const ContactsCardsList = () => {
         <div className={style.cardsWrapper}>
           <ul className={style.cardsList}>
             {contactsInfo.map((item) => (
-              <li className={style.card}>
+              <li key={item.title} className={style.card}>
                 <p className={style.title}>{item.title}</p>
                 <p className={style.info}>{item.info || social}</p>
               </li>
