@@ -16,8 +16,8 @@
   margin-bottom: 60px;
   padding: 0;
 
-  @media screen and (min-width: $breakpoint-tablet) {
-    font-size: 48px;
+  @media screen and (min-width: $breakpoint-tablet-horizontal) {
+    font-size: 46px;
   }
 
   @media screen and (min-width: $breakpoint-desktop) {
@@ -28,8 +28,8 @@
 .title {
   position: absolute;
 
-  top: 10px;
-  left: 3px;
+  top: 9px;
+  // left: 3px;
 
   font-size: 24px;
   color: #ff612f;
@@ -38,13 +38,14 @@
   line-height: 130%; /* 62.4px */
   text-transform: uppercase;
 
-  @media screen and (min-width: $breakpoint-tablet) {
+  @media screen and (min-width: $breakpoint-tablet-horizontal) {
     font-size: 32px;
-    top: 13px;
+    // top: 13px;
   }
 
   @media screen and (min-width: $breakpoint-desktop) {
     font-size: 40px;
-    // top: 30px;
+    left: 3px;
+    top: 21px;
   }
 }

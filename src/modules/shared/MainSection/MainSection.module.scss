@@ -2,11 +2,8 @@
 
 .section {
   display: flex;
-  justify-content: center;
-  position: relative;
 
-  // max-width: 1400px;
-  // height: 700px;
+  position: relative;
 
   background-image: linear-gradient(
       0deg,
@@ -25,6 +22,7 @@
   }
 
   @media screen and (min-width: $breakpoint-desktop) {
+    justify-content: center;
   }
 }
 .content {
