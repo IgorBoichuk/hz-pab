@@ -1,19 +1,27 @@
 import React from "react";
 import style from "./NotFound.module.scss";
+import CircleWithRunningText from "../Home/Hero/CircleWithRunningText/CircleWithRunningText";
+import { ReactComponent as CursorSVG } from "../../assets/galary/svg/cursor.svg";
 import { Link } from "react-router-dom";
-import { MainSection } from "../../modules/shared/MainSection/MainSection";
+import { Container } from "../shared/Container/Container";
 
 export const NotFound = () => {
   return (
     <>
-      <MainSection title="404" />
       <section className={style.section}>
-        <h2 className={style.title}>
-          Сторінку не знайдено, перейдіть на
-          <Link to="/" className={style.link}>
-            головну > >
+        <Container>
+          <h2 className={style.title}>Ми не можемо знайти цю сторінку</h2>
+          <p className={style.description}>
+            Сторінку яку ви намагаєтесь знайти не існує. Будь ласка, перевірте
+            URL-адресу або спробуйте перейти на іншу сторінку{" "}
+          </p>
+          <Link to="/menu" className={style.heroLink}>
+            <CircleWithRunningText className={style.textSvg} />
+            <div className={style.cursorSvg}>
+              <CursorSVG />
+            </div>
           </Link>
-        </h2>
+        </Container>
       </section>
     </>
   );

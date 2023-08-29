@@ -2,23 +2,120 @@
 @import "../../scss/fonts";
 
 .section {
-  display: block;
+  position: relative;
+  display: flex;
+  justify-content: center;
   padding: 150px 50px;
+  overflow: hidden;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url(../../assets//galary/rightglass.png),
+    url(../../assets//galary/leftglass.png);
+  background-repeat: no-repeat;
+  background-position: 0 0, 90% 50px, 55% 180px;
+  background-size: 100% 100%, 150px 150px, 120px 120px;
   @media screen and (min-width: $breakpoint-tablet) {
     padding: 150px 50px;
   }
 
   @media screen and (min-width: $breakpoint-desktop) {
-    padding: 100px;
+    padding: 300px 0;
   }
 }
 
 .title {
-  color: #ff612f;
+  font-family: Unbounded, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 130%; /* 20.8px */
+  text-transform: uppercase;
+  color: #fff;
+
+  margin-bottom: 40px;
 }
 
-.link {
-  color: #ff612f;
-  margin-left: 10px;
-  // text-decoration: none;
+.description {
+  font-family: Nunito Sans, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 130%; /* 20.8px */
+  color: #cdcdcd;
+
+  width: 50%;
+}
+
+.heroLink {
+  position: absolute;
+  z-index: 3;
+  right: -5%;
+  bottom: 0%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 300px;
+  height: 300px;
+
+  text-decoration: none;
+  color: #fff;
+
+  // border: 1px solid white;
+  // border-radius: 100%;
+
+  animation-name: spin;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  @media screen and (min-width: $breakpoint-tablet) {
+    right: 5%;
+    bottom: 5%;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    right: 25%;
+    bottom: 15%;
+  }
+}
+
+.textSvg {
+  width: 300px;
+  height: 300px;
+}
+
+.cursorSvg {
+  position: absolute;
+
+  width: 88px;
+  height: 88px;
+
+  fill: #ff612f;
+  padding: 0;
+  margin: 0;
+
+  animation-name: spinCur;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinCur {
+  100% {
+    transform: rotate(0deg);
+  }
+
+  0% {
+    transform: rotate(360deg);
+  }
 }
