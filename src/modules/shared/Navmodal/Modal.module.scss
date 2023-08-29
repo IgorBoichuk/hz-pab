@@ -18,7 +18,7 @@
 .navmenu {
   position: absolute;
   padding-top: 150px;
-  width: 75%;
+  width: 70%;
   height: 100%;
   right: 0;
 
@@ -28,6 +28,10 @@
   // background-attachment: fixed;
   background-size: cover;
   background-position: center;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    width: 75%;
+  }
 }
 
 // .modalcontent {
