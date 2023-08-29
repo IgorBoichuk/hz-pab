@@ -15,7 +15,7 @@ export const NotFound = () => {
             Сторінку яку ви намагаєтесь знайти не існує. Будь ласка, перевірте
             URL-адресу або спробуйте перейти на іншу сторінку{" "}
           </p>
-          <Link to="/menu" className={style.heroLink}>
+          <Link to="/menu" className={style.linkToHome}>
             <CircleWithRunningText className={style.textSvg} />
             <div className={style.cursorSvg}>
               <CursorSVG />

@@ -19,10 +19,14 @@
   background-size: 100% 100%, 150px 150px, 120px 120px;
   @media screen and (min-width: $breakpoint-tablet) {
     padding: 150px 50px;
+    background-size: 100% 100%, 250px 250px, 220px 220px;
+    background-position: 0 0, 100% 50px, 55% 180px;
   }
 
   @media screen and (min-width: $breakpoint-desktop) {
     padding: 300px 0;
+    background-size: 100% 100%, 450px 450px, 350px 350px;
+    background-position: 0 0, 90% 100px, 50% 350px;
   }
 }
 
@@ -44,10 +48,18 @@
   line-height: 130%; /* 20.8px */
   color: #cdcdcd;
 
-  width: 50%;
+  width: 70%;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    width: 50%;
+  }
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    width: 50%;
+  }
 }
 
-.heroLink {
+.linkToHome {
   position: absolute;
   z-index: 3;
   right: -5%;
@@ -71,8 +83,8 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   @media screen and (min-width: $breakpoint-tablet) {
-    right: 5%;
-    bottom: 5%;
+    right: 10%;
+    bottom: -10%;
   }
   @media screen and (min-width: $breakpoint-desktop) {
     right: 25%;
