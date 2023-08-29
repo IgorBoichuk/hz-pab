@@ -16,12 +16,9 @@ export const ContextProvider = ({ children }) => {
 
   const [allMenuData] = useState([...beer, ...menu, ...snacks, ...souses]);
   const [filteredData, setFilteredData] = useState([]);
-  const [isModal, setIsModal] = useState(false);
   const location = useLocation();
   const active = location.pathname.split("/");
   const activeSubMenu = active[active.length - 1];
-
-  const useToggle = () => {};
 
   const uniqCat = (data) => {
     const datacategoryes = data.map((item) => item.subCategory);
