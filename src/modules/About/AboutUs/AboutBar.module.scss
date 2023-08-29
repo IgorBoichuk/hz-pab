@@ -1,0 +1,127 @@
+@import "../../../scss/variables";
+@import "../../../scss/fonts";
+
+.section {
+  display: flex;
+  justify-content: center;
+  padding: 80px 0px;
+}
+
+.sectionWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  // justify-content: space-around;
+  @media screen and (min-width: $breakpoint-desktop) {
+    flex-direction: row;
+  }
+}
+
+.barImgWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.promo {
+  @media screen and (min-width: $breakpoint-tablet) {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.textTitle {
+  color: white;
+}
+
+.textDescription {
+  color: #cdcdcd;
+  font-family: Nunito Sans, sans-serif;
+  line-height: 150%; /* 24px */
+}
+
+.beerImgWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.beerImg {
+  display: block;
+  // width: 163px;
+  width: 100%;
+  height: 187px;
+  border-radius: 20px;
+
+  background-image: url(../../../assets/galaryAbutUsSection/beer.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.barImgMob {
+  display: block;
+  // width: 163px;
+  width: 100%;
+  height: 187px;
+  border-radius: 20px;
+
+  background-image: url(../../../assets/galaryAbutUsSection/bar.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media screen and (min-width: $breakpoint-tablet) {
+    display: none;
+  }
+}
+
+.barImg {
+  display: none;
+  min-width: 163px;
+  width: 100%;
+  height: 490px;
+
+  border-radius: 20px;
+
+  background-image: url(../../../assets/galaryAbutUsSection/bar.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media screen and (min-width: $breakpoint-tablet) {
+    display: block;
+    width: 50%;
+  }
+}
+
+.rightPartWrapper {
+  display: flex;
+  flex-direction: column;
+  // width: 100%;
+}
+
+.beerTapImg {
+  display: block;
+
+  height: 157px;
+  border-radius: 20px;
+  margin-bottom: 24px;
+
+  background-image: url(../../../assets/galaryAbutUsSection/bar2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media screen and (min-width: $breakpoint-tablet) {
+    height: 300px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    height: 100%;
+  }
+}
+
+.promoWrapper {
+  gap: 27px;
+  justify-content: space-between;
+}
