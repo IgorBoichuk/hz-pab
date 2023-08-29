@@ -8,7 +8,7 @@ import { Navmenu } from "../shared/Navmenu/Navmenu";
 import sprite from "../../assets/galary/svg/sprite.svg";
 import { Modal } from "../shared/Navmodal/Modal";
 
-import { ContextProvider, MyContext } from "../../Context/ContextProvider";
+import { MyContext } from "../../Context/ContextProvider";
 
 export const Header = () => {
   const { isModal, open, close, toggle } = useContext(MyContext);
