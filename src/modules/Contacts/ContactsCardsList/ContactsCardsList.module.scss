@@ -15,7 +15,7 @@
   justify-content: center;
   list-style: none;
   @media screen and (min-width: $breakpoint-tablet) {
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
   @media screen and (min-width: $breakpoint-desktop) {
     flex-wrap: nowrap;

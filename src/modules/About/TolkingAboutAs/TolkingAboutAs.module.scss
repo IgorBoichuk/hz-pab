@@ -30,7 +30,7 @@
   -webkit-text-stroke: 2px #7d7d7d;
   margin-bottom: 60px;
   padding: 0;
-  width: 45%;
+  width: 55%;
   @media screen and (min-width: $breakpoint-tablet) {
     width: 100%;
   }
@@ -45,6 +45,7 @@
   font-weight: 700;
   line-height: 130%; /* 36.4px */
   text-transform: uppercase;
+
   width: 50%;
 
   // @media screen and (min-width: $breakpoint-tablet) {
