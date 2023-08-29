@@ -10,13 +10,13 @@
   // margin-right: auto;
 
   @media screen and (min-width: $breakpoint-tablet) {
-    // width: 768px;
+    width: 100%;
+    min-width: 736px;
   }
 
   @media screen and (min-width: $breakpoint-tablet-horizontal) {
-    // width: 1024px;
-    // padding-left: 100px;
-    // padding-right: 100px;
+    min-width: 992px;
+    width: 100%;
   }
 
   @media screen and (min-width: $breakpoint-desktop) {
