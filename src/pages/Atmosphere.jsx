@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { MainSection } from "../modules/shared/MainSection/MainSection";
+import { PhotoCollage } from "../modules/Atmosphere/PhotoColage/PhotoCollage";
 
 export const Atmosphere = () => {
   useEffect(() => {
@@ -8,6 +9,7 @@ export const Atmosphere = () => {
   return (
     <div>
       <MainSection title={"атмосфера"} />
+      <PhotoCollage />
     </div>
   );
 };
