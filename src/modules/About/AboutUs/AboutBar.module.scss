@@ -35,12 +35,18 @@
 
 .textTitle {
   color: white;
+  font-family: Unbounded, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 130%; /* 20.8px */
+  text-transform: uppercase;
 }
 
 .textDescription {
   color: #cdcdcd;
   font-family: Nunito Sans, sans-serif;
   line-height: 150%; /* 24px */
+  font-size: 16px;
 }
 
 .beerImgWrapper {
