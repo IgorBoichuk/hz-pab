@@ -6,11 +6,14 @@ import { snacks } from "../assets/data/snacksData";
 import { souses } from "../assets/data/sousesData";
 
 import { useLocation, useSearchParams } from "react-router-dom";
+import { useToggleModal } from "../helpers/hooks/useToggleModal";
 
 export const MyContext = createContext();
 
 export const ContextProvider = ({ children }) => {
   const [searchParams, setSearchParams] = useSearchParams();
+
+  const { isModal, open, close, toggle } = useToggleModal();
 
   const subMenu = searchParams.get("SubMenu");
 
@@ -93,6 +96,10 @@ export const ContextProvider = ({ children }) => {
     filteredData,
     searchParams,
     preview,
+    isModal,
+    open,
+    close,
+    toggle,
   };
 
   return (

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import style from "./header.module.scss";
 
 import Logo from "../../assets/galary/logo.png";
@@ -7,10 +7,11 @@ import { Link } from "react-router-dom";
 import { Navmenu } from "../shared/Navmenu/Navmenu";
 import sprite from "../../assets/galary/svg/sprite.svg";
 import { Modal } from "../shared/Navmodal/Modal";
-import { useToggle } from "../../helpers/hooks/useToggle";
+
+import { ContextProvider, MyContext } from "../../Context/ContextProvider";
 
 export const Header = () => {
-  const { isModal, open, close, toggle } = useToggle();
+  const { isModal, open, close, toggle } = useContext(MyContext);
   return (
     <header className={style.header}>
       <Container>
