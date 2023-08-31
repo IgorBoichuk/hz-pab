@@ -21,9 +21,10 @@ export const ArticleCard = ({ item }) => {
           {item.description && (
             <p className={style.description}>{item.description}</p>
           )}
+          {item.weight && <p className={style.paramaWeight}>{item.weight}</p>}
         </div>
         <span className={style.price}>
-          Ціна: {item.price} грн / {item.weight}
+          Ціна: {item.price} грн {/* / {item.weight} */}
         </span>
       </div>
     </li>

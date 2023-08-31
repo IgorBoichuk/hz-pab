@@ -6,7 +6,8 @@ export const snacks = [
     name: "Арахіс солоний",
     image:
       "https://hophey.ua/upload/iblock/d14/74mb4y43a5fmujb9mckc9z36hwxl76uo.png",
-    description: "Арахіс смажений, солоний",
+    description: "",
+    weight: "100 грам",
     price: 46,
   },
   {
@@ -16,7 +17,8 @@ export const snacks = [
     name: "Арахіс зі смаком сиру",
     image:
       "https://hophey.ua/upload/iblock/d14/74mb4y43a5fmujb9mckc9z36hwxl76uo.png",
-    description: "Арахіс смажений, солоний",
+    description: "",
+    weight: "100 грам",
     price: 52,
   },
   {
@@ -25,7 +27,8 @@ export const snacks = [
     subCategory: "Горішки",
     name: "Фісташки",
     image: "https://nuts.org.ua/wp-content/uploads/2020/05/fistashka-ssha.jpg",
-    description: "Фісташки солоні",
+    description: "",
+    weight: "100 грам",
     price: 100,
   },
   {
@@ -34,7 +37,8 @@ export const snacks = [
     subCategory: "Морепродукти",
     name: "Стружка кальмара",
     image: "https://images.prom.ua/1889577983_w640_h640_struzhka-kalmara-1.jpg",
-    description: "Стружка кальмара",
+    description: "",
+    weight: "100 грам",
     price: 114,
   },
   {
@@ -44,7 +48,8 @@ export const snacks = [
     name: "Корюшка",
     image:
       "https://www.fishplus.kiev.ua/wp-content/uploads/2020/11/%D0%BA%D0%BE%D1%80%D1%8E%D1%88%D0%BA%D0%B0-445x445.jpg",
-    description: "Корюшка",
+    description: "",
+    weight: "100 грам",
     price: 90,
   },
   {
@@ -53,7 +58,8 @@ export const snacks = [
     subCategory: "Морепродукти",
     name: "Кальмар",
     image: "https://content.rozetka.com.ua/goods/images/big/177882939.jpg",
-    description: "Стружка кальмара",
+    description: "",
+    weight: "100 грам",
     price: 120,
   },
   {
@@ -62,7 +68,8 @@ export const snacks = [
     subCategory: "Морепродукти",
     name: "Мінтай з перцем",
     image: "https://images.prom.ua/1889542218_w600_h600_1889542218.jpg",
-    description: "Мінтай з перцем",
+    description: "",
+    weight: "100 грам",
     price: 90,
   },
   {
@@ -72,7 +79,8 @@ export const snacks = [
     name: "Креветки сушені",
     image:
       "https://nuts.org.ua/wp-content/uploads/2021/02/krevetka-sush.-smetana-i-zelen.jpg",
-    description: "Креветки сушені",
+    description: "",
+    weight: "100 грам",
     price: 140,
   },
   {
@@ -82,7 +90,8 @@ export const snacks = [
     name: "Ікра судака",
     image:
       "https://img3.zakaz.ua/upload.version_1.0.6da1661602f5a1a882f703bc6ac9804f.350x350.jpeg",
-    description: "Ікра судака",
+    description: "",
+    weight: "100 грам",
     price: 140,
   },
   {
@@ -92,7 +101,8 @@ export const snacks = [
     name: "Тріска",
     image:
       "https://pyvnalavka.com/image/cache/catalog/photo/477020266-treska-550x550.jpg",
-    description: "Тріска",
+    description: "",
+    weight: "100 грам",
     price: 116,
   },
   {
@@ -102,7 +112,8 @@ export const snacks = [
     name: "Звіздар",
     image:
       "https://pivnafishka.com/content/images/46/480x480l50nn0/zvizdar-z-pertsem-tryhla-z-pertsem-46842862303008.jpg",
-    description: "Звіздар",
+    description: "",
+    weight: "100 грам",
     price: 130,
   },
 ];
