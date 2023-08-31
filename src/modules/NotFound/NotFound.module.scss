@@ -52,6 +52,7 @@
 
   @media screen and (min-width: $breakpoint-tablet) {
     width: 50%;
+    padding-bottom: 200px;
   }
 
   @media screen and (min-width: $breakpoint-desktop) {
@@ -62,15 +63,15 @@
 .linkToHome {
   position: absolute;
   z-index: 3;
-  right: -5%;
+  right: 2%;
   bottom: 0%;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 180px;
 
   text-decoration: none;
   color: #fff;
@@ -84,7 +85,7 @@
   animation-iteration-count: infinite;
   @media screen and (min-width: $breakpoint-tablet) {
     right: 10%;
-    bottom: -10%;
+    bottom: 10%;
   }
   @media screen and (min-width: $breakpoint-desktop) {
     right: 25%;
