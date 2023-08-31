@@ -3,8 +3,8 @@ import style from "./CircleWithRunningText.module.scss";
 
 const CircleWithRunningText = () => {
   const radius = 80;
-  const centerX = radius + 55;
-  const centerY = radius + 55;
+  const centerX = radius + 10;
+  const centerY = radius + 10;
   const chars = "переглянути меню - переглянути меню -";
   const charCount = chars.length;
 

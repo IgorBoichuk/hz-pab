@@ -2,21 +2,20 @@
 
 .container {
   // max-width: 1440px;
-  // width: 100%;
+
   padding: 0 16px;
   // margin-left: auto;
 
   // margin-left: auto;
   // margin-right: auto;
+  overflow: hidden;
 
   @media screen and (min-width: $breakpoint-tablet) {
-    width: 100%;
     min-width: 736px;
   }
 
   @media screen and (min-width: $breakpoint-tablet-horizontal) {
     min-width: 992px;
-    width: 100%;
   }
 
   @media screen and (min-width: $breakpoint-desktop) {
