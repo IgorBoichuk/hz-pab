@@ -10,6 +10,7 @@ export const SubMenu = ({ id }) => {
   return (
     <ul className={style.subMenuList}>
       {id === activeSubMenu &&
+        currentMenu(activeSubMenu) &&
         currentMenu(activeSubMenu).map((item) => (
           <li
             key={item}

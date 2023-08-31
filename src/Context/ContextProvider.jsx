@@ -75,7 +75,8 @@ export const ContextProvider = ({ children }) => {
         return uniqCat(snacks);
 
       case "souses":
-        return uniqCat(souses);
+        // return uniqCat(souses);
+        return null;
 
       default:
         return null;
