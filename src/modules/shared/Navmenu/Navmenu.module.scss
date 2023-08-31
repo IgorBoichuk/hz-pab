@@ -19,6 +19,9 @@
   @media screen and (min-width: $breakpoint-tablet) {
     font-size: 24px;
   }
+  @media screen and (min-width: $breakpoint-tablet-horizontal) {
+    font-size: 14px;
+  }
 
   &:hover {
     color: #ff612f;
