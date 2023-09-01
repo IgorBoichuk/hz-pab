@@ -1,11 +1,26 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 
 import style from "./SubMenu.module.scss";
 import { MyContext } from "../../../Context/ContextProvider";
+import { useNavigate } from "react-router-dom";
 
 export const SubMenu = ({ id }) => {
-  const { currentMenu, activeSubMenu, handleSetSearchParams } =
-    useContext(MyContext);
+  const navigate = useNavigate();
+  const {
+    currentMenu,
+    activeSubMenu,
+    handleSetSearchParams,
+    submenu,
+    searchParams,
+  } = useContext(MyContext);
+
+  const query = searchParams.get("SubMenu");
+
+  useEffect(() => {
+    if (query && !submenu.includes(query)) {
+      navigate("/NotFound");
+    }
+  }, [submenu, query, navigate]);
 
   return (
     <ul className={style.subMenuList}>

@@ -28,6 +28,8 @@ export const ContextProvider = ({ children }) => {
     return [...new Set(datacategoryes)];
   };
 
+  const submenu = uniqCat(allMenuData);
+
   const normalizeSubMenu = (data) => {
     switch (data) {
       case "bar":
@@ -101,6 +103,7 @@ export const ContextProvider = ({ children }) => {
     open,
     close,
     toggle,
+    submenu,
   };
 
   return (

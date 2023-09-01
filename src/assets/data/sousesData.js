@@ -24,7 +24,7 @@ export const souses = [
   {
     id: 402,
     category: "Соуси",
-    subCategory: "",
+    subCategory: "Соуси",
     name: "Сирний",
     image:
       "https://i.lefood.menu/wp-content/uploads/w_images/2021/09/recept-5568-620x414.jpg",
@@ -35,7 +35,7 @@ export const souses = [
   {
     id: 403,
     category: "Соуси",
-    subCategory: "",
+    subCategory: "Соуси",
     name: "Часниковий",
     image: "https://blog.metro.ua/wp-content/uploads/2019/01/1-3-min.jpg",
     description: "",
@@ -45,7 +45,7 @@ export const souses = [
   {
     id: 404,
     category: "Соуси",
-    subCategory: "",
+    subCategory: "Соуси",
     name: "Брусничний",
     image:
       "https://cdn.vkusnoo.com.ua/images/15780/15780-brusnichnyj-sous2.jpg",
@@ -56,7 +56,7 @@ export const souses = [
   {
     id: 405,
     category: "Соуси",
-    subCategory: "",
+    subCategory: "Соуси",
     name: "Тартар",
     image:
       "https://smak.ua/i/55/68/3/55683/image_main/6b808b449a50ce65882d90ca7970b162-quality_100Xresize_crop_1Xallow_enlarge_0Xw_680Xh_510.jpg",
@@ -67,7 +67,7 @@ export const souses = [
   {
     id: 406,
     category: "Соуси",
-    subCategory: "",
+    subCategory: "Соуси",
     name: "Барбекю",
     image:
       "https://klopotenko.com/wp-content/uploads/2018/06/sous-barbeku_siteNew.jpg",
@@ -78,7 +78,7 @@ export const souses = [
   {
     id: 407,
     category: "Соуси",
-    subCategory: "",
+    subCategory: "Соуси",
     name: "Кислосолодкий",
     image: "https://kryla.com.ua/img/menu/middle/262/1141038521.png",
     description: "",
@@ -88,7 +88,7 @@ export const souses = [
   {
     id: 408,
     category: "Соуси",
-    subCategory: "",
+    subCategory: "Соуси",
     name: "Карі",
     image: "https://i.obozrevatel.com/food/recipemain/2019/3/21/sos-curry.jpg",
     description: "",
