@@ -16,7 +16,7 @@ export const Footer = () => {
             <img src={Logo} alt="Logo" className={style.logo} />
           </Link>
           <nav className={style.navmenu}>
-            <Navmenu flex="column" togap="24px" />
+            <Navmenu footer flex="column" togap="24px" />
           </nav>
           <div className={style.timetAdresWrapper}>
             <div className={style.timetWrapper}>

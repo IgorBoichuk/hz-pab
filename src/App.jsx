@@ -7,16 +7,6 @@ import { Contacts } from "./pages/Contacts";
 import { ErrorPage } from "./pages/ErrorPage";
 import { BeerPreview } from "./modules/Menu/BeerPreview/BeerPreview";
 import { SharedLayout } from "./components/SharedLayout/SharedLayout";
-import { AsideMenu } from "./modules/Menu/AsideMenu/AsideMenu";
-
-const MenuExample = () => {
-  return (
-    <div>
-      <AsideMenu />
-      <h1>Hello</h1>
-    </div>
-  );
-};
 
 function App() {
   return (

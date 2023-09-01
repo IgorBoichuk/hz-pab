@@ -3,8 +3,8 @@ import style from "./Navmenu.module.scss";
 import { NavLink } from "react-router-dom";
 import { MyContext } from "../../../Context/ContextProvider";
 
-export const Navmenu = ({ flex, togap }) => {
-  const { isModal, open, close, toggle } = useContext(MyContext);
+export const Navmenu = ({ flex, togap, footer }) => {
+  const { close } = useContext(MyContext);
 
   const navData = [
     {
@@ -30,8 +30,11 @@ export const Navmenu = ({ flex, togap }) => {
   ];
   return (
     <div
-      style={{ flexDirection: flex, gap: togap }}
-      className={style.navWrapper}
+      style={{
+        flexDirection: flex,
+        gap: togap,
+      }}
+      className={footer ? style.navWrapperFooter : style.navWrapper}
     >
       {navData.map((item) => (
         <NavLink

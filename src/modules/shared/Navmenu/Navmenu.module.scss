@@ -5,6 +5,15 @@
   display: flex;
   gap: 38px;
 }
+.navWrapperFooter {
+  gap: 38px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  & > :nth-child(1) {
+    display: none;
+  }
+}
 
 .navlink {
   color: #fff;

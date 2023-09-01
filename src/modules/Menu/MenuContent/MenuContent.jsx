@@ -1,4 +1,3 @@
-import React, { useContext } from "react";
 import style from "./MenuContent.module.scss";
 import { AsideMenu } from "../AsideMenu/AsideMenu";
 import { Container } from "../../shared/Container/Container";
