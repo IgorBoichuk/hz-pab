@@ -1,7 +1,9 @@
-import React, { useContext, useEffect } from "react";
+import React, { useCallback, useContext, useEffect } from "react";
 import style from "./Modal.module.scss";
 import { Navmenu } from "../Navmenu/Navmenu";
 import { MyContext } from "../../../Context/ContextProvider";
+import { motion } from "framer-motion";
+import { fromRigth } from "../../../animations/modalAnimation";
 
 export const Modal = () => {
   const { isModal, open, close, toggle } = useContext(MyContext);
@@ -17,12 +19,15 @@ export const Modal = () => {
     }
   };
 
-  const handleKeyDown = (event) => {
-    event.key === "Escape" && close();
-    if (event.key === "Escape" && isModal) {
-      close();
-    }
-  };
+  const handleKeyDown = useCallback(
+    (event) => {
+      event.key === "Escape" && close();
+      if (event.key === "Escape" && isModal) {
+        close();
+      }
+    },
+    [isModal, close]
+  );
 
   useEffect(() => {
     document.addEventListener("keydown", handleKeyDown);
@@ -30,7 +35,7 @@ export const Modal = () => {
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, []);
+  }, [handleKeyDown]);
 
   return (
     <div
@@ -38,9 +43,15 @@ export const Modal = () => {
       onClick={handleOnDropClose}
       // onClick={close}
     >
-      <nav className={style.navmenu}>
+      <motion.nav
+        variants={fromRigth}
+        initial="hidden"
+        exit="exit"
+        whileInView="visible"
+        className={style.navmenu}
+      >
         <Navmenu flex="column" togap="24px" />
-      </nav>
+      </motion.nav>
     </div>
   );
 };

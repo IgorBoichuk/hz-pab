@@ -7,15 +7,15 @@ import { Link } from "react-router-dom";
 import { Navmenu } from "../shared/Navmenu/Navmenu";
 import sprite from "../../assets/galary/svg/sprite.svg";
 import { Modal } from "../shared/Navmodal/Modal";
-
+import { AnimatePresence } from "framer-motion";
 import { MyContext } from "../../Context/ContextProvider";
 
 export const Header = () => {
-  const { isModal, open, close, toggle } = useContext(MyContext);
+  const { isModal, toggle } = useContext(MyContext);
   return (
     <header className={style.header}>
       <Container>
-        {isModal && <Modal />}
+        <AnimatePresence>{isModal && <Modal />}</AnimatePresence>
         <div className={style.headerwrapper}>
           <Link to="/" className={style.logolink}>
             <img src={Logo} alt="Logo" className={style.logo} />
