@@ -17,7 +17,7 @@ export const Navmenu = ({ flex, togap }) => {
     },
     {
       navItem: "меню",
-      link: "/menu",
+      link: "/menu/bar",
     },
     {
       navItem: "атмосфера",
