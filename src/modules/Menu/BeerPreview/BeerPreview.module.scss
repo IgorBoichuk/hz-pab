@@ -12,9 +12,12 @@
 }
 
 .beeritems {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 24px;
-  grid-template-columns: 400px 400px 400px;
 
   list-style: none;
+  @media screen and (min-width: $breakpoint-tablet) {
+    flex-direction: row;
+  }
 }

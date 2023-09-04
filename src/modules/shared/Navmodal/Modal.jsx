@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { fromRigth } from "../../../animations/modalAnimation";
 
 export const Modal = () => {
-  const { isModal, open, close, toggle } = useContext(MyContext);
+  const { isModal, close } = useContext(MyContext);
 
   const handleOnDropClose = (event) => {
     event.stopPropagation();
