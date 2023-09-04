@@ -39,3 +39,28 @@
     color: #ff612f;
   }
 }
+
+.navlinkFooter {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 24px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    font-size: 14px;
+  }
+
+  &:hover {
+    color: #ff612f;
+  }
+  &:focus {
+    color: #ff612f;
+  }
+}

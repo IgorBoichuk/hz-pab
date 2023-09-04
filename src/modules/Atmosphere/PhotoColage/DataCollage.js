@@ -1,8 +1,10 @@
+import bar from "../../../assets/galary/AtmospherePage/bar.jpg";
+
 export const Collage = [
   {
     id: 1,
     name: "bar",
-    photo: "../../../assets/galary/AtmospherePage/bar.jpg",
+    photo: bar,
   },
   {
     id: 2,

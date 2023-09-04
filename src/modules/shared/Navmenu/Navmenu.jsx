@@ -39,7 +39,7 @@ export const Navmenu = ({ flex, togap, footer }) => {
         <NavLink
           to={item.link}
           key={item.link}
-          className={style.navlink}
+          className={footer ? style.navlinkFooter : style.navlink}
           onClick={close}
         >
           {item.navItem}

@@ -10,7 +10,6 @@ export const Modal = () => {
 
   const handleOnDropClose = (event) => {
     event.stopPropagation();
-    console.log(event.target === event.currentTarget);
 
     event.target === event.currentTarget && close();
 

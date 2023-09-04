@@ -1,13 +1,19 @@
 import React from "react";
+
+import style from "./PhotoCollage.module.scss";
 import { Collage } from "./DataCollage";
 
 export const PhotoCollage = () => {
   return (
-    <ul>
+    <ul className={style.wrapper}>
       {Collage.map((item) => (
-        <li key={item.id}>
-          <img src={item.photo} alt={item.name} />
-        </li>
+        <div className={style.imgWrapper} key={item.id}>
+          <img
+            className={style.img}
+            src="https://assets.avtocod.ru/storage/images/articles-2022/otnyud-ne-bmw-top-10-samykh-dorogikh-mashin-mira-v-2022-godu/otnyud-ne-bmw-top-10-samykh-dorogikh-mashin-mira-v-2022-godu-3-min.jpg"
+            alt={item.name}
+          />
+        </div>
       ))}
     </ul>
   );

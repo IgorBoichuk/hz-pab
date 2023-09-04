@@ -1,0 +1,15 @@
+@import "../../../scss/variables";
+@import "../../../scss/fonts";
+
+.wrapper {
+  list-style: none;
+}
+.imgWrapper {
+  max-width: 500px;
+}
+.img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
