@@ -13,6 +13,10 @@
 
 .sectionWrapper {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   gap: 50px;
+  @media screen and (min-width: $breakpoint-tablet-horizontal) {
+    flex-direction: row;
+  }
 }

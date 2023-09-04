@@ -10,7 +10,10 @@
 }
 
 .linkItem {
+  display: block;
   text-decoration: none;
+  color: #e3e3e3;
+  padding: 15px 20px;
 }
 
 .listItem {
@@ -20,8 +23,12 @@
   font-weight: 600;
   line-height: 120%; /* 24px */
   text-transform: uppercase;
-  padding: 15px 20px;
   margin-bottom: 30px;
+  background-color: rgba(141, 141, 141, 0.15);
+  border-radius: 20px;
+  @media screen and (min-width: $breakpoint-tablet-horizontal) {
+    background-color: transparent;
+  }
   &:hover {
     color: #ff612f;
     background-color: rgba(141, 141, 141, 0.15);

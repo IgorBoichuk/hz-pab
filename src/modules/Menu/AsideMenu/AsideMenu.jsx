@@ -30,13 +30,15 @@ export const AsideMenu = () => {
       <ul className={style.list}>
         {sideMenu.map((item) => (
           <div key={item.menuItem}>
-            <Link
-              to={item.menuLink}
-              className={style.linkItem}
-              onClick={() => handleSetSearchParams(item.menuItem)}
-            >
-              <li className={style.listItem}>{item.menuItem}</li>
-            </Link>
+            <li className={style.listItem}>
+              <Link
+                to={item.menuLink}
+                className={style.linkItem}
+                onClick={() => handleSetSearchParams(item.menuItem)}
+              >
+                {item.menuItem}
+              </Link>
+            </li>
             <SubMenu id={item.menuLink} />
           </div>
         ))}
