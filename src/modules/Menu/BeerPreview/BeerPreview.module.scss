@@ -14,10 +14,12 @@
 .beeritems {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 24px;
 
   list-style: none;
   @media screen and (min-width: $breakpoint-tablet) {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }
