@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { MainSection } from "../modules/shared/MainSection/MainSection";
-import { PhotoCollage } from "../modules/Atmosphere/PhotoColage/PhotoCollage";
+import { PhotoCollage } from "../modules/Atmosphere/PhotoCollage";
 
 export const Atmosphere = () => {
   useEffect(() => {
