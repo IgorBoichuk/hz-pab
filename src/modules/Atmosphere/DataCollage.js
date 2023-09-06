@@ -16,15 +16,16 @@ export const Collage = [
     name: "bar",
     photo: first,
   },
+
   {
     id: 2,
-    name: "barsecond",
-    photo: barSecond,
+    name: "atmos",
+    photo: atmos,
   },
   {
     id: 3,
-    name: "atmos",
-    photo: atmos,
+    name: "barsecond",
+    photo: barSecond,
   },
   {
     id: 4,
@@ -51,11 +52,7 @@ export const Collage = [
     name: "shampane",
     photo: shampane,
   },
-  {
-    id: 9,
-    name: "gangstaparty",
-    photo: gangstaparty,
-  },
+
   {
     id: 10,
     name: "birthday",
