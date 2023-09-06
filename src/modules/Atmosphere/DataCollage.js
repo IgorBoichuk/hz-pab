@@ -1,14 +1,14 @@
-import first from "./PhotoColage/IMG_2390.jpg";
-import barSecond from "./PhotoColage/photo_2023-06-19_17-54-14.jpg";
-import atmos from "./PhotoColage/photo_2023-06-19_17-53-4.jpg";
-import snacks from "./PhotoColage/IMG_0409.jpg";
-import beertap from "./PhotoColage/156098567.jpg";
-import beer from "./PhotoColage/IMG_4080.jpg";
-import qparty from "./PhotoColage/photo_2023-06-19_17-53-47.jpg";
-import shampane from "./PhotoColage/IMG_0694.jpg";
-import gangstaparty from "./PhotoColage/IMG_0409.jpg";
-import birthday from "./PhotoColage/photo_2023-06-19_17-53-46.jpg";
-import fishmeet from "./PhotoColage/IMG_0334.jpg";
+import first from "./PhotoColage/IMG_2390.webp";
+import barSecond from "./PhotoColage/photo_2023-06-19_17-54-14.webp";
+import atmos from "./PhotoColage/photo_2023-06-19_17-53-4.webp";
+import snacks from "./PhotoColage/IMG_0409.webp";
+import beertap from "./PhotoColage/156098567.webp";
+import beer from "./PhotoColage/IMG_4080.webp";
+import qparty from "./PhotoColage/photo_2023-06-19_17-53-47.webp";
+import shampane from "./PhotoColage/IMG_0694.webp";
+import gangstaparty from "./PhotoColage/IMG_0409.webp";
+import birthday from "./PhotoColage/photo_2023-06-19_17-53-46.webp";
+import fishmeet from "./PhotoColage/IMG_0334.webp";
 
 export const Collage = [
   {

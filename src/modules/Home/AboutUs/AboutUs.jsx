@@ -3,9 +3,6 @@ import style from "./AboutUs.module.scss";
 import { Container } from "../../shared/Container/Container";
 import { Link } from "react-router-dom";
 import { SectionTitle } from "../../shared/SectionTitle/SectionTitle";
-import beer from "../../../assets/galaryAbutUsSection/beer.jpg";
-import bar from "../../../assets/galaryAbutUsSection/bar.jpg";
-import beerTap from "../../../assets/galaryAbutUsSection/bar2.jpg";
 import sprite from "../../../assets/galary/svg/sprite.svg";
 
 export const AboutUs = ({ title }) => {

@@ -1,12 +1,12 @@
 import React from "react";
 import style from "./YourAtmosphere.module.scss";
 import { Container } from "../../shared/Container/Container";
-import dictrict from "../../../assets/galaryAtmosphereSection/dictrict.png";
-import friends from "../../../assets/galaryAtmosphereSection/friends.png";
-import family from "../../../assets/galaryAtmosphereSection/family.png";
-import sport from "../../../assets/galaryAtmosphereSection/sport.png";
-import beer from "../../../assets/galaryAtmosphereSection/beer.png";
-import kitchen from "../../../assets/galaryAtmosphereSection/kitchen.png";
+import dictrict from "../../../assets/galaryAtmosphereSection/dictrict.webp";
+import friends from "../../../assets/galaryAtmosphereSection/friends.webp";
+import family from "../../../assets/galaryAtmosphereSection/family.webp";
+import sport from "../../../assets/galaryAtmosphereSection/sport.webp";
+import beer from "../../../assets/galaryAtmosphereSection/beer.webp";
+import kitchen from "../../../assets/galaryAtmosphereSection/kitchen.webp";
 import { SectionTitle } from "../../shared/SectionTitle/SectionTitle";
 
 export const YourAtmosphere = ({ title }) => {

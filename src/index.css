@@ -50,7 +50,7 @@ img {
 }
 
 .bg {
-  background-image: url(./assets/galary/section-background.png);
+  background-image: url(./assets/galary/section-background.webp);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
