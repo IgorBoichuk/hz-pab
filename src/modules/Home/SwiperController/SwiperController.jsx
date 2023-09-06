@@ -19,7 +19,7 @@ export const SwiperController = ({ data }) => {
       <Container>
         <Swiper
           slidesPerView={1}
-          spaceBetween={4}
+          spaceBetween={16}
           autoplay={{
             delay: 2000,
             disableOnInteraction: false,
@@ -32,6 +32,7 @@ export const SwiperController = ({ data }) => {
               slidesPerView: 3,
             },
           }}
+          loop={true}
           modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper"
         >

@@ -37,6 +37,7 @@
   &:last-child {
     flex-basis: 60%;
   }
+
   @media screen and (min-width: $breakpoint-tablet) {
     max-height: 250px;
     flex-basis: 30%;

@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import style from "./Navmenu.module.scss";
 import { NavLink } from "react-router-dom";
 import { MyContext } from "../../../Context/ContextProvider";
+
 export const Navmenu = ({ flex, togap, footer }) => {
   const { close } = useContext(MyContext);
 

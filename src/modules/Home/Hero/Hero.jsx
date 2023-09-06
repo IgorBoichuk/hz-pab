@@ -14,7 +14,7 @@ export const Hero = () => {
         <motion.div className={style.content}>
           <motion.p
             initial={{ opacity: 0, x: -500 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
             animate={{ opacity: 1, x: 0 }}
             className={style.textOutline}
           >
@@ -22,7 +22,7 @@ export const Hero = () => {
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, x: -500 }}
-            transition={{ duration: 0.5, delay: 0.7 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
             animate={{ opacity: 1, x: 0 }}
             className={style.title}
           >
@@ -30,7 +30,7 @@ export const Hero = () => {
           </motion.h1>
           <motion.h2
             initial={{ opacity: 0, x: -500 }}
-            transition={{ duration: 0.5, delay: 1.2 }}
+            transition={{ duration: 0.5, delay: 1 }}
             animate={{ opacity: 1, x: 0 }}
             className={style.promotion}
           >
@@ -38,7 +38,7 @@ export const Hero = () => {
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 100 }}
-            transition={{ duration: 0.5, delay: 1.5 }}
+            transition={{ duration: 0.5, delay: 1 }}
             animate={{ opacity: 1, y: 0 }}
             className={style.description}
           >

@@ -1,6 +1,14 @@
 import React from "react";
 import style from "./ArticleCard.module.scss";
 
+const normalizeDesc = (str) => {
+  const sliceLength = 60;
+  if (str.length > sliceLength) {
+    return `${str.slice(0, sliceLength)}...`;
+  }
+  return str;
+};
+
 export const ArticleCard = ({ item }) => {
   return (
     <li className={style.card}>
@@ -19,7 +27,10 @@ export const ArticleCard = ({ item }) => {
             )}
           </div>
           {item.description && (
-            <p className={style.description}>{item.description}</p>
+            <p className={style.description}>
+              {normalizeDesc(item.description)}
+            </p>
+            // <p className={style.description}>{item.description}</p>
           )}
           {item.weight && <p className={style.paramaWeight}>{item.weight}</p>}
         </div>

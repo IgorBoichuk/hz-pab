@@ -4,17 +4,12 @@
 .section {
   display: flex;
   justify-content: center;
-
-  // background-image: url("../../../assets/galary/section-background.png");
-  // background-attachment: fixed;
-  // background-size: cover;
-  // background-position: center;
 }
 
 .sectionWrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
   gap: 50px;
   @media screen and (min-width: $breakpoint-tablet-horizontal) {
     flex-direction: row;
