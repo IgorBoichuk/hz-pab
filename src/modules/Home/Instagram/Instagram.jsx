@@ -16,16 +16,40 @@ export const Instagram = ({ title }) => {
       <Container>
         <SectionTitle title={title} />
         <ul className={style.list}>
-          <li style={{ transform: random() }}>
+          <li
+            style={{
+              transform: random(),
+              display: "grid",
+              justifyContent: "center",
+            }}
+          >
             <InstaCard />
           </li>
-          <li style={{ transform: random() }}>
+          <li
+            style={{
+              transform: random(),
+              display: "grid",
+              justifyContent: "center",
+            }}
+          >
             <InstaCard />
           </li>
-          <li style={{ transform: random() }}>
+          <li
+            style={{
+              transform: random(),
+              display: "grid",
+              justifyContent: "center",
+            }}
+          >
             <InstaCard />
           </li>
-          <li style={{ transform: random() }}>
+          <li
+            style={{
+              transform: random(),
+              display: "grid",
+              justifyContent: "center",
+            }}
+          >
             <InstaCard />
           </li>
         </ul>

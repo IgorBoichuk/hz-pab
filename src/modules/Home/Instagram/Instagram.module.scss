@@ -17,9 +17,20 @@
 }
 
 .list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 18px;
+  // display: flex;
+  // flex-wrap: wrap;
+  display: grid;
+  // justify-content: center;
+  align-items: center;
+
+  row-gap: 50px;
   list-style: none;
+  padding-bottom: 50px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 90px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
