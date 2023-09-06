@@ -8,14 +8,15 @@
   background-color: rgba(97, 97, 97, 0.2);
   display: grid;
   grid-template-columns: 1fr 1fr;
+
   height: 300px;
 
   @media screen and (min-width: $breakpoint-tablet) {
     grid-template-columns: 1fr;
+    grid-template-rows: 43% 1fr;
     height: 500px;
   }
   @media screen and (min-width: $breakpoint-tablet-horizontal) {
-    height: 550px;
   }
 }
 
