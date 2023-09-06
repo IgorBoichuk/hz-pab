@@ -13,7 +13,12 @@ export const ArticleCard = ({ item }) => {
   return (
     <li className={style.card}>
       <div className={style.imagewrapper}>
-        <img src={item.image} alt={item.name} className={style.img} />
+        <img
+          loading="lazy"
+          src={item.image}
+          alt={item.name}
+          className={style.img}
+        />
       </div>
       <div className={style.contentWrapper}>
         <h3 className={style.title}>{item.name}</h3>

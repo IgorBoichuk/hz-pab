@@ -11,7 +11,12 @@ export const PhotoCollage = () => {
         <ul className={style.list}>
           {Collage.map((item) => (
             <li className={style.listItem} key={item.id}>
-              <img className={style.img} src={item.photo} alt={item.name} />
+              <img
+                loading="lazy"
+                className={style.img}
+                src={item.photo}
+                alt={item.name}
+              />
             </li>
           ))}
         </ul>

@@ -13,7 +13,7 @@ export const Footer = () => {
       <Container>
         <div className={style.footerWrapper}>
           <Link to="/" className={style.logolink}>
-            <img src={Logo} alt="Logo" className={style.logo} />
+            <img loading="lazy" src={Logo} alt="Logo" className={style.logo} />
           </Link>
           <nav className={style.navmenu}>
             <Navmenu footer flex="column" togap="24px" />

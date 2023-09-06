@@ -24,7 +24,7 @@ export const AboutUs = ({ title }) => {
                 </p>
                 <p className={style.linkPath}>детальніше → </p>
               </Link>
-              {/* <img src={beer} alt="beer" className={style.beerImg} /> */}
+              {/* <img loading='lazy' src={beer} alt="beer" className={style.beerImg} /> */}
               <div className={style.beerImgWrapper}>
                 <div className={style.beerImg}></div>
                 <div className={style.barImgMob}></div>
@@ -32,11 +32,11 @@ export const AboutUs = ({ title }) => {
             </div>
 
             <div className={style.barImg}>
-              {/* <img src={bar} alt="bar" className={style.barImg} /> */}
+              {/* <img loading='lazy' src={bar} alt="bar" className={style.barImg} /> */}
             </div>
           </div>
           <div className={style.rightPartWrapper}>
-            {/* <img src={beerTap} alt="beerTap" className={style.beerTapImg} /> */}
+            {/* <img loading='lazy' src={beerTap} alt="beerTap" className={style.beerTapImg} /> */}
             <div className={style.beerTapImg}></div>
             <div className={style.promoWrapper}>
               <div className={style.quoteWrapper}>

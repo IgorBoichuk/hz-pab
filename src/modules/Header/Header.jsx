@@ -18,7 +18,7 @@ export const Header = () => {
         <AnimatePresence>{isModal && <Modal />}</AnimatePresence>
         <div className={style.headerwrapper}>
           <Link to="/" className={style.logolink}>
-            <img src={Logo} alt="Logo" className={style.logo} />
+            <img loading="lazy" src={Logo} alt="Logo" className={style.logo} />
           </Link>
           <nav className={style.navmenu}>
             <Navmenu flex="row" />

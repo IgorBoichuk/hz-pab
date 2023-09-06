@@ -6,7 +6,12 @@ import brokenPaper from "../../../assets/galary/brokenpaper.png";
 export const BrokenPaper = () => {
   return (
     <div className={style.wrapper}>
-      <img src={brokenPaper} alt="brokenPaper" className={style.brokenPaper} />
+      <img
+        loading="lazy"
+        src={brokenPaper}
+        alt="brokenPaper"
+        className={style.brokenPaper}
+      />
     </div>
   );
 };
