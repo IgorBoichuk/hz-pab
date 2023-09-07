@@ -1,6 +1,14 @@
 import soltPeanuts from "../galary/menu/snacks/soltpeanuts.webp";
 import cheasepeanuts from "../galary/menu/snacks/cheasepeanut.jpg";
 import pistashes from "../galary/menu/snacks/pistashes.jpg";
+import kalmar from "../galary/menu/snacks/kalmar.jpg";
+import koryushka from "../galary/menu/snacks/koryushka.jpg";
+import kalmarPer from "../galary/menu/snacks/kalmar-per.jpg";
+import mintay from "../galary/menu/snacks/mintay.jpg";
+import krevetka from "../galary/menu/snacks/krevetka.jpg";
+import ikra from "../galary/menu/snacks/ikra.jpg";
+import triska from "../galary/menu/snacks/triska.jpg";
+import zvizdar from "../galary/menu/snacks/zvizdar.jpg";
 
 export const snacks = [
   {
@@ -38,7 +46,7 @@ export const snacks = [
     category: "Снеки",
     subCategory: "Морепродукти",
     name: "Стружка кальмара",
-    image: "https://images.prom.ua/1889577983_w640_h640_struzhka-kalmara-1.jpg",
+    image: kalmar,
     description: "",
     weight: "100 грам",
     price: 114,
@@ -48,8 +56,7 @@ export const snacks = [
     category: "Снеки",
     subCategory: "Морепродукти",
     name: "Корюшка",
-    image:
-      "https://www.fishplus.kiev.ua/wp-content/uploads/2020/11/%D0%BA%D0%BE%D1%80%D1%8E%D1%88%D0%BA%D0%B0-445x445.jpg",
+    image: koryushka,
     description: "",
     weight: "100 грам",
     price: 90,
@@ -58,8 +65,8 @@ export const snacks = [
     id: 305,
     category: "Снеки",
     subCategory: "Морепродукти",
-    name: "Кальмар",
-    image: "https://content.rozetka.com.ua/goods/images/big/177882939.jpg",
+    name: "Кальмар перуанський",
+    image: kalmarPer,
     description: "",
     weight: "100 грам",
     price: 120,
@@ -69,7 +76,7 @@ export const snacks = [
     category: "Снеки",
     subCategory: "Морепродукти",
     name: "Мінтай з перцем",
-    image: "https://images.prom.ua/1889542218_w600_h600_1889542218.jpg",
+    image: mintay,
     description: "",
     weight: "100 грам",
     price: 90,
@@ -79,8 +86,7 @@ export const snacks = [
     category: "Снеки",
     subCategory: "Морепродукти",
     name: "Креветки сушені",
-    image:
-      "https://nuts.org.ua/wp-content/uploads/2021/02/krevetka-sush.-smetana-i-zelen.jpg",
+    image: krevetka,
     description: "",
     weight: "100 грам",
     price: 140,
@@ -90,8 +96,7 @@ export const snacks = [
     category: "Снеки",
     subCategory: "Морепродукти",
     name: "Ікра судака",
-    image:
-      "https://img3.zakaz.ua/upload.version_1.0.6da1661602f5a1a882f703bc6ac9804f.350x350.jpeg",
+    image: ikra,
     description: "",
     weight: "100 грам",
     price: 140,
@@ -101,8 +106,7 @@ export const snacks = [
     category: "Снеки",
     subCategory: "Морепродукти",
     name: "Тріска",
-    image:
-      "https://pyvnalavka.com/image/cache/catalog/photo/477020266-treska-550x550.jpg",
+    image: triska,
     description: "",
     weight: "100 грам",
     price: 116,
@@ -112,8 +116,7 @@ export const snacks = [
     category: "Снеки",
     subCategory: "Морепродукти",
     name: "Звіздар",
-    image:
-      "https://pivnafishka.com/content/images/46/480x480l50nn0/zvizdar-z-pertsem-tryhla-z-pertsem-46842862303008.jpg",
+    image: zvizdar,
     description: "",
     weight: "100 грам",
     price: 130,
