@@ -1,11 +1,13 @@
+import burger from "../galary/menu/kitchen/burgerche.jpg";
+import bigBurger from "../galary/menu/kitchen/big-burger.jpg";
+
 export const menu = [
   {
     id: 201,
     category: "Кухня",
     subCategory: "Бургери",
     name: "Міні бургер",
-    image:
-      "https://donerking.com.ua/wp-content/uploads/2022/11/unna9med-file-3.png",
+    image: burger,
     description: "яловичина, чедер, мариновані огірки і цибуля, соус бургерний",
     price: 69,
   },
@@ -14,8 +16,7 @@ export const menu = [
     category: "Кухня",
     subCategory: "Бургери",
     name: "Бургер",
-    image:
-      "https://donerking.com.ua/wp-content/uploads/2022/11/unna9med-file-3.png",
+    image: burger,
     description:
       "яловичина, чедер, айсберг, мариновані огірки і цибуля, соус бургерний",
     price: 112,
@@ -25,8 +26,7 @@ export const menu = [
     category: "Кухня",
     subCategory: "Бургери",
     name: "Біг Бургер",
-    image:
-      "https://donerking.com.ua/wp-content/uploads/2022/11/unna9med-file-3.png",
+    image: bigBurger,
     description:
       "яловичина, чедер, помідор, айсберг, мариновані огірки і цибуля, соус бургерний",
     price: 159,
@@ -183,7 +183,7 @@ export const menu = [
     subCategory: "Фритюр",
     name: "Картопля фрі",
     image:
-      "https://www.uman.prontopizza.ua/wp-content/uploads/2018/01/potato-100.jpg",
+      "https://img.povar.ru/mobile/64/12/b0/54/kartofel_fri_v_domashnih_usloviyah-36496.jpg",
     weight: "150 грам",
     price: 60,
   },
@@ -193,7 +193,7 @@ export const menu = [
     subCategory: "Фритюр",
     name: "Картопляні діпи",
     image:
-      "https://pablito.com.ua/wp-content/uploads/2020/09/kartofelnie-dipi-pablito.jpg",
+      "https://api-street-lavash.brandium.pro/uploads/Kartoplya_fri_29b9215cc4.png",
     weight: "150 грам",
     price: 69,
   },
@@ -348,7 +348,8 @@ export const menu = [
     category: "Кухня",
     subCategory: "Фритюр",
     name: "Кульки філадельфія",
-    image: "https://kartofan.ua/wp-content/uploads/2020/01/2-2-700x470.jpg",
+    image:
+      "https://cdn.lifehacker.ru/wp-content/uploads/2021/06/shutterstock_1235750089_1624872507-scaled-e1624872590217-1280x640.jpg",
     weight: "6 шт",
     price: 69,
   },
@@ -357,7 +358,8 @@ export const menu = [
     category: "Кухня",
     subCategory: "Фритюр",
     name: "Кульки філадельфія",
-    image: "https://kartofan.ua/wp-content/uploads/2020/01/2-2-700x470.jpg",
+    image:
+      "https://cdn.lifehacker.ru/wp-content/uploads/2021/06/shutterstock_1235750089_1624872507-scaled-e1624872590217-1280x640.jpg",
     weight: "10 шт",
     price: 109,
   },
