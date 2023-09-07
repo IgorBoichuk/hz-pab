@@ -1,19 +1,18 @@
 import React from "react";
 import style from "./InstaCard.module.scss";
-import vechirka from "./vechirka.jpg";
 
-export const InstaCard = () => {
+export const InstaCard = ({ item }) => {
   return (
     <div className={style.card}>
       <div className={style.imgwrapper}>
         <img
           loading="lazy"
-          src={vechirka}
-          alt="vechirka"
+          src={item.image}
+          alt={item.alt}
           className={style.image}
         />
       </div>
-      <p className={style.title}>#halloween</p>
+      <p className={style.title}>#{item.alt}</p>
     </div>
   );
 };
