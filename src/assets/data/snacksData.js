@@ -1,11 +1,14 @@
+import soltPeanuts from "../galary/menu/snacks/soltpeanuts.webp";
+import cheasepeanuts from "../galary/menu/snacks/cheasepeanut.jpg";
+import pistashes from "../galary/menu/snacks/pistashes.jpg";
+
 export const snacks = [
   {
     id: 300,
     category: "Снеки",
     subCategory: "Горішки",
     name: "Арахіс солоний",
-    image:
-      "https://hophey.ua/upload/iblock/d14/74mb4y43a5fmujb9mckc9z36hwxl76uo.png",
+    image: soltPeanuts,
     description: "",
     weight: "100 грам",
     price: 46,
@@ -15,8 +18,7 @@ export const snacks = [
     category: "Снеки",
     subCategory: "Горішки",
     name: "Арахіс зі смаком сиру",
-    image:
-      "https://hophey.ua/upload/iblock/d14/74mb4y43a5fmujb9mckc9z36hwxl76uo.png",
+    image: cheasepeanuts,
     description: "",
     weight: "100 грам",
     price: 52,
@@ -26,7 +28,7 @@ export const snacks = [
     category: "Снеки",
     subCategory: "Горішки",
     name: "Фісташки",
-    image: "https://nuts.org.ua/wp-content/uploads/2020/05/fistashka-ssha.jpg",
+    image: pistashes,
     description: "",
     weight: "100 грам",
     price: 100,
