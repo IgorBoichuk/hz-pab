@@ -46,7 +46,7 @@ img {
 }
 
 .active {
-  color: orange;
+  color: #ff612f;
 }
 
 .bg {
@@ -55,4 +55,31 @@ img {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.153);
+}
+
+/* ::-webkit-scrollbar-track:hover {
+  background-color: #000000;
+  width: 50px;
+} */
+
+::-webkit-scrollbar-thumb {
+  /* background: #ff5f2fc8; */
+  background: transparent;
+  border-radius: 100px 0 0 100px;
+  /* outline: 3px solid #000000; */
+  outline: 8px solid #ff5f2fc8;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  border-left: 4px solid #ffffffb0;
+  border-top: 4px solid #ffffffb0;
+  border-bottom: 4px solid #ffffffb0;
 }
