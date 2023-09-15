@@ -68,7 +68,7 @@ div > .active {
 ::-webkit-scrollbar-thumb {
   background: transparent;
   border-radius: 100px 0 0 100px;
-  outline: 8px solid #ff5f2fc8;
+  outline: 5px solid #ff5f2fc8;
 }
 
 ::-webkit-scrollbar-thumb:hover {
