@@ -45,7 +45,7 @@ img {
   height: auto;
 }
 
-.active {
+div > .active {
   color: #ff612f;
 }
 
