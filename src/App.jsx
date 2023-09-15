@@ -1,12 +1,20 @@
 import { Route, Routes } from "react-router-dom";
-import { Home } from "./pages/Home";
-import { About } from "./pages/About";
-import { Menu } from "./pages/Menu";
-import { Atmosphere } from "./pages/Atmosphere";
-import { Contacts } from "./pages/Contacts";
+import React, { lazy } from "react";
+
+// import { Menu } from "./pages/Menu";
+// import { About } from "./pages/About";
+// import { Atmosphere } from "./pages/Atmosphere";
+// import { Contacts } from "./pages/Contacts";
 import { ErrorPage } from "./pages/ErrorPage";
 import { BeerPreview } from "./modules/Menu/BeerPreview/BeerPreview";
 import { SharedLayout } from "./components/SharedLayout/SharedLayout";
+
+import { Home } from "./pages/Home";
+
+const About = lazy(() => import("./pages/About"));
+const Menu = lazy(() => import("./pages/Menu"));
+const Atmosphere = lazy(() => import("./pages/Atmosphere"));
+const Contacts = lazy(() => import("./pages/Contacts"));
 
 function App() {
   return (

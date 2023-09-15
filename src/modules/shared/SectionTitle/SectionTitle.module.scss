@@ -7,7 +7,8 @@
 
 .textOutline {
   // font-family: Unbounded, sans-serif;
-  font-size: 36px;
+  // font-size: 36px;
+  font-size: calc(36px + 34 * (100vw / 1280));
   font-weight: 900;
   line-height: 130%; /* 117px */
   text-transform: uppercase;
@@ -16,22 +17,29 @@
   margin-bottom: 60px;
   padding: 0;
 
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: calc(36px + (34 + 34 * 0.7) * ((100vw - 320px) / 1280));
+    // font-size: 46px;
+  }
+
   @media screen and (min-width: $breakpoint-tablet-horizontal) {
-    font-size: 46px;
+    // font-size: 46px;
   }
 
   @media screen and (min-width: $breakpoint-desktop) {
-    font-size: 70px;
+    // font-size: 70px;
   }
 }
 
 .title {
   position: absolute;
 
-  top: 9px;
+  // top: 9px;
+  top: calc(9px + 13 * (100vw / 1280));
   // left: 3px;
 
-  font-size: 24px;
+  // font-size: 24px;
+  font-size: calc(24px + 16 * (100vw / 1280));
   color: #ff612f;
   font-family: Unbounded, sans-serif;
   font-weight: 700;
@@ -39,14 +47,14 @@
   text-transform: uppercase;
 
   @media screen and (min-width: $breakpoint-tablet-horizontal) {
-    font-size: 32px;
-    top: 11px;
-    left: 1px;
+    // font-size: 32px;
+    // top: 11px;
+    // left: 1px;
   }
 
   @media screen and (min-width: $breakpoint-desktop) {
-    font-size: 40px;
-    left: 2px;
-    top: 21px;
+    // font-size: 40px;
+    // top: 21px;
+    // left: 2px;
   }
 }

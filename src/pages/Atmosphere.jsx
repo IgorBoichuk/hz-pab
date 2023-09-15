@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { MainSection } from "../modules/shared/MainSection/MainSection";
 import { PhotoCollage } from "../modules/Atmosphere/PhotoCollage";
 
-export const Atmosphere = () => {
+const Atmosphere = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -13,3 +13,5 @@ export const Atmosphere = () => {
     </div>
   );
 };
+
+export default Atmosphere;

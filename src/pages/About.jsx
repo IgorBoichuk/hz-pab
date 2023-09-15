@@ -5,7 +5,7 @@ import { TolkingAboutAs } from "../modules/About/TolkingAboutAs/TolkingAboutAs";
 
 import { AboutBar } from "../modules/About/AboutUs/AboutBar";
 
-export const About = () => {
+const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -18,3 +18,4 @@ export const About = () => {
     </div>
   );
 };
+export default About;

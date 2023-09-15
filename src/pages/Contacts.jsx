@@ -3,7 +3,7 @@ import { MainSection } from "../modules/shared/MainSection/MainSection";
 import { GoogleMap } from "../modules/Contacts/GoogleMap/GoogleMap";
 import { ContactsCardsList } from "../modules/Contacts/ContactsCardsList/ContactsCardsList";
 
-export const Contacts = () => {
+const Contacts = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -15,3 +15,4 @@ export const Contacts = () => {
     </div>
   );
 };
+export default Contacts;
