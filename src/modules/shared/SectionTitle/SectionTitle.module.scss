@@ -35,26 +35,34 @@
   position: absolute;
 
   // top: 9px;
-  top: calc(9px + 13 * (100vw / 1280));
-  // left: 3px;
+  top: calc(9px + 10 * (100vw / 1280));
+  left: 3px;
 
   // font-size: 24px;
-  font-size: calc(24px + 16 * (100vw / 1280));
+  font-size: calc(24px + 25 * (100vw / 1280));
   color: #ff612f;
   font-family: Unbounded, sans-serif;
   font-weight: 700;
   line-height: 130%; /* 62.4px */
   text-transform: uppercase;
+  @media screen and (min-width: $breakpoint-tablet) {
+    // font-size: 32px;
+    // top: 11px;
+    // left: 1px;
+    // top: calc(9px + 10 * (100vw / 1280));
+  }
 
   @media screen and (min-width: $breakpoint-tablet-horizontal) {
     // font-size: 32px;
     // top: 11px;
     // left: 1px;
+    top: calc(9px + 14 * (100vw / 1280));
   }
 
   @media screen and (min-width: $breakpoint-desktop) {
     // font-size: 40px;
     // top: 21px;
     // left: 2px;
+    top: calc(9px + 17 * (100vw / 1280));
   }
 }

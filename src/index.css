@@ -57,10 +57,6 @@ div > .active {
   background-position: center;
 }
 
-.outlet {
-  flex: 1 1 auto;
-}
-
 ::-webkit-scrollbar {
   width: 12px;
 }
