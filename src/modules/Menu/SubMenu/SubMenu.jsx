@@ -3,16 +3,12 @@ import React, { useContext, useEffect } from "react";
 import style from "./SubMenu.module.scss";
 import { MyContext } from "../../../Context/ContextProvider";
 import { useNavigate } from "react-router-dom";
+import { currentMenu } from "../../../helpers/currentMenu";
 
 export const SubMenu = ({ id }) => {
   const navigate = useNavigate();
-  const {
-    currentMenu,
-    activeSubMenu,
-    handleSetSearchParams,
-    submenu,
-    searchParams,
-  } = useContext(MyContext);
+  const { activeSubMenu, handleSetSearchParams, submenu, searchParams } =
+    useContext(MyContext);
 
   const query = searchParams.get("SubMenu");
 

@@ -1,42 +1,27 @@
-const instaData = [
+import vechirka from "./InstaCard/AdobeStock_206053893.webp";
+import sport from "./InstaCard/AdobeStock_313425029.webp";
+import beers from "./InstaCard/amie-johnson-VJXLzQi5TlE-unsplash 1.webp";
+import halloween from "./InstaCard/photo_2023-09-06_13-55-20.webp";
+
+export const data = [
   {
-    image:
-      "https://www.geneva.te.ua/wp-content/uploads/2020/02/pexels-photo-3171837-1024x684.jpeg",
-    title: "#крафтовепиво",
+    id: 1,
+    image: vechirka,
+    alt: "vechirka",
   },
   {
-    image:
-      "https://www.geneva.te.ua/wp-content/uploads/2020/02/pexels-photo-3171837-1024x684.jpeg",
-    title: "#halloween",
+    id: 2,
+    image: beers,
+    alt: "beers",
   },
   {
-    image:
-      "https://www.geneva.te.ua/wp-content/uploads/2020/02/pexels-photo-3171837-1024x684.jpeg",
-    title: "#смаколики",
+    id: 3,
+    image: sport,
+    alt: "sport",
   },
   {
-    image:
-      "https://www.geneva.te.ua/wp-content/uploads/2020/02/pexels-photo-3171837-1024x684.jpeg",
-    title: "#келихігристого",
-  },
-  {
-    image:
-      "https://www.geneva.te.ua/wp-content/uploads/2020/02/pexels-photo-3171837-1024x684.jpeg",
-    title: "#party",
-  },
-  {
-    image:
-      "https://www.geneva.te.ua/wp-content/uploads/2020/02/pexels-photo-3171837-1024x684.jpeg",
-    title: "#some-else",
-  },
-  {
-    image:
-      "https://www.geneva.te.ua/wp-content/uploads/2020/02/pexels-photo-3171837-1024x684.jpeg",
-    title: "#and-again",
-  },
-  {
-    image:
-      "https://www.geneva.te.ua/wp-content/uploads/2020/02/pexels-photo-3171837-1024x684.jpeg",
-    title: "#superstar",
+    id: 4,
+    image: halloween,
+    alt: "halloween",
   },
 ];
