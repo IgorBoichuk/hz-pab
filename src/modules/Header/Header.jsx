@@ -8,14 +8,16 @@ import { Navmenu } from "../shared/Navmenu/Navmenu";
 import sprite from "../../assets/galary/svg/sprite.svg";
 import { Modal } from "../shared/Navmodal/Modal";
 import { AnimatePresence } from "framer-motion";
-import { MyContext } from "../../Context/ContextProvider";
+import { useToggleModal } from "../../helpers/hooks/useToggleModal";
+// import { MyContext } from "../../Context/ContextProvider";
 
 export const Header = () => {
-  const { isModal, toggle } = useContext(MyContext);
+  // const { isModal, toggle } = useContext(MyContext);
+  const { isModal, toggle } = useToggleModal();
   return (
     <header className={style.header}>
       <Container>
-        <AnimatePresence>{isModal && <Modal />}</AnimatePresence>
+        <AnimatePresence>{isModal && <Modal close={toggle} />}</AnimatePresence>
         <div className={style.headerwrapper}>
           <Link to="/" className={style.logolink}>
             <img loading="lazy" src={Logo} alt="Logo" className={style.logo} />

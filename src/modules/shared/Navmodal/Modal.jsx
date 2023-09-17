@@ -1,31 +1,22 @@
 import React, { useCallback, useContext, useEffect } from "react";
 import style from "./Modal.module.scss";
 import { Navmenu } from "../Navmenu/Navmenu";
-import { MyContext } from "../../../Context/ContextProvider";
 import { motion } from "framer-motion";
 import { fromRigth } from "../../../animations/modalAnimation";
+import ReactDOM from "react-dom";
 
-export const Modal = () => {
-  const { isModal, close } = useContext(MyContext);
+const modalRoot = document.querySelector("#modal");
 
+export const Modal = ({ close }) => {
   const handleOnDropClose = (event) => {
-    event.stopPropagation();
-
     event.target === event.currentTarget && close();
-
-    if (event.target === event.currentTarget) {
-      close();
-    }
   };
 
   const handleKeyDown = useCallback(
     (event) => {
       event.key === "Escape" && close();
-      if (event.key === "Escape" && isModal) {
-        close();
-      }
     },
-    [isModal, close]
+    [close]
   );
 
   useEffect(() => {
@@ -36,7 +27,7 @@ export const Modal = () => {
     };
   }, [handleKeyDown]);
 
-  return (
+  return ReactDOM.createPortal(
     <div
       className={style.modalwrapper}
       onClick={handleOnDropClose}
@@ -49,8 +40,9 @@ export const Modal = () => {
         whileInView="visible"
         className={style.navmenu}
       >
-        <Navmenu flex="column" togap="24px" />
+        <Navmenu close={close} flex="column" togap="24px" />
       </motion.nav>
-    </div>
+    </div>,
+    modalRoot
   );
 };
