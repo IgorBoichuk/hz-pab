@@ -35,13 +35,10 @@ export const ArticleCard = ({ item }) => {
             <p className={style.description}>
               {normalizeDesc(item.description)}
             </p>
-            // <p className={style.description}>{item.description}</p>
           )}
           {item.weight && <p className={style.paramaWeight}>{item.weight}</p>}
         </div>
-        <span className={style.price}>
-          Ціна: {item.price} грн {/* / {item.weight} */}
-        </span>
+        <span className={style.price}>Ціна: {item.price} грн</span>
       </div>
     </li>
   );

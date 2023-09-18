@@ -4,6 +4,7 @@ import { Container } from "../../shared/Container/Container";
 
 import { SectionTitle } from "../../shared/SectionTitle/SectionTitle";
 import { atmospherePhotos } from "./atmospherePhotos";
+import { SingleItem } from "./SingleItem";
 
 export const YourAtmosphere = ({ title }) => {
   return (
@@ -12,17 +13,8 @@ export const YourAtmosphere = ({ title }) => {
         <SectionTitle title={title} />
 
         <ul className={style.list}>
-          {atmospherePhotos.map(({ id, photo, title, description }) => (
-            <li className={style.item} key={id}>
-              <img
-                loading="lazy"
-                src={photo}
-                alt="dictrict"
-                className={style.itemImg}
-              />
-              <p className={style.itemTitle}>{title}</p>
-              <p className={style.itemDescription}>{description}</p>
-            </li>
+          {atmospherePhotos.map((item) => (
+            <SingleItem item={item} key={item.id} />
           ))}
         </ul>
       </Container>
