@@ -1,8 +1,8 @@
 import React from "react";
 import { MainSection } from "../modules/shared/MainSection/MainSection";
-import { NotFound } from "../modules/NotFound/NotFound";
+import { NotFound } from "../modules/NotFound";
 
-export const ErrorPage = () => {
+const ErrorPage = () => {
   return (
     <>
       <MainSection title="404" />
@@ -10,3 +10,4 @@ export const ErrorPage = () => {
     </>
   );
 };
+export default ErrorPage;

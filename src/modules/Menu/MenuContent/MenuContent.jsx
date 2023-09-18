@@ -1,7 +1,8 @@
 import style from "./MenuContent.module.scss";
-import { AsideMenu } from "../AsideMenu/AsideMenu";
 import { Container } from "../../shared/Container/Container";
-import { BeerPreview } from "../BeerPreview/BeerPreview";
+
+import { AsideMenu } from "../../Menu";
+import { BeerPreview } from "../../Menu";
 
 export const MenuContent = () => {
   return (

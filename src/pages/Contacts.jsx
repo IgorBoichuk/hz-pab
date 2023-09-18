@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { MainSection } from "../modules/shared/MainSection/MainSection";
-import { GoogleMap } from "../modules/Contacts/GoogleMap/GoogleMap";
-import { ContactsCardsList } from "../modules/Contacts/ContactsCardsList/ContactsCardsList";
+import { ContactsCardsList, GoogleMap } from "../modules/Contacts";
 
 const Contacts = () => {
   useEffect(() => {

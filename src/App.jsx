@@ -1,11 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import React, { lazy } from "react";
 
-// import { Menu } from "./pages/Menu";
-// import { About } from "./pages/About";
-// import { Atmosphere } from "./pages/Atmosphere";
-// import { Contacts } from "./pages/Contacts";
-import { ErrorPage } from "./pages/ErrorPage";
 import { BeerPreview } from "./modules/Menu/BeerPreview/BeerPreview";
 import { SharedLayout } from "./components/SharedLayout/SharedLayout";
 
@@ -15,6 +10,7 @@ const About = lazy(() => import("./pages/About"));
 const Menu = lazy(() => import("./pages/Menu"));
 const Atmosphere = lazy(() => import("./pages/Atmosphere"));
 const Contacts = lazy(() => import("./pages/Contacts"));
+const ErrorPage = lazy(() => import("./pages/ErrorPage"));
 
 function App() {
   return (
