@@ -6,7 +6,6 @@ import beertap from "./PhotoColage/156098567.webp";
 import beer from "./PhotoColage/IMG_4080.webp";
 import qparty from "./PhotoColage/photo_2023-06-19_17-53-47.webp";
 import shampane from "./PhotoColage/IMG_0694.webp";
-import gangstaparty from "./PhotoColage/IMG_0409.webp";
 import birthday from "./PhotoColage/photo_2023-06-19_17-53-46.webp";
 import fishmeet from "./PhotoColage/IMG_0334.webp";
 
