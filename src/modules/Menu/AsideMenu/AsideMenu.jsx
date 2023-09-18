@@ -3,27 +3,10 @@ import style from "./AsideMenu.module.scss";
 import { Link } from "react-router-dom";
 import { SubMenu } from "../SubMenu/SubMenu";
 import { MyContext } from "../../../Context/ContextProvider";
+import { sideMenu } from "./sideMenu";
 
 export const AsideMenu = () => {
   const { handleSetSearchParams } = useContext(MyContext);
-  const sideMenu = [
-    {
-      menuItem: "Бар",
-      menuLink: "bar",
-    },
-    {
-      menuItem: "Снеки",
-      menuLink: "snacks",
-    },
-    {
-      menuItem: "Кухня",
-      menuLink: "kitchen",
-    },
-    {
-      menuItem: "Соуси",
-      menuLink: "souses",
-    },
-  ];
 
   return (
     <aside className={style.aside}>
