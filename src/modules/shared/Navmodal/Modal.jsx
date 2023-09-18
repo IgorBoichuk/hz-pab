@@ -1,4 +1,4 @@
-import React, { useCallback, useContext, useEffect } from "react";
+import React, { useCallback, useEffect } from "react";
 import style from "./Modal.module.scss";
 import { Navmenu } from "../Navmenu/Navmenu";
 import { motion } from "framer-motion";
@@ -28,11 +28,7 @@ export const Modal = ({ close }) => {
   }, [handleKeyDown]);
 
   return ReactDOM.createPortal(
-    <div
-      className={style.modalwrapper}
-      onClick={handleOnDropClose}
-      // onClick={close}
-    >
+    <div className={style.modalwrapper} onClick={handleOnDropClose}>
       <motion.nav
         variants={fromRigth}
         initial="hidden"
