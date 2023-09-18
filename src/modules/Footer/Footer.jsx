@@ -60,7 +60,7 @@ export const Footer = () => {
         </div>
         <div className={style.rightsWrapper}>
           <p className={style.rights}>
-            {`Copyright © ${year}. All rights reserved.`}
+            Copyright © {year}. All rights reserved.
           </p>
         </div>
       </Container>
