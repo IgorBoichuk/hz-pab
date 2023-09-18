@@ -1,9 +1,8 @@
 import React, { createContext, useCallback, useEffect, useState } from "react";
 
 import { useLocation, useSearchParams } from "react-router-dom";
-import { normalizeSubMenu } from "../helpers/NormalizeSubMenu";
-import { uniqCat } from "../helpers/currentMenu";
-import { allMenuData } from "../helpers/getAllMenu";
+
+import { allMenuData, normalizeSubMenu, uniqCat } from "../helpers";
 
 export const MyContext = createContext();
 
