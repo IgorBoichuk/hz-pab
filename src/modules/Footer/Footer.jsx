@@ -8,6 +8,8 @@ import Logo from "../../assets/galary/logo.png";
 import sprite from "../../assets/galary/svg/sprite.svg";
 
 export const Footer = () => {
+  const year = new Date().getFullYear();
+
   return (
     <footer className={style.footer}>
       <Container>
@@ -57,7 +59,9 @@ export const Footer = () => {
           </div>
         </div>
         <div className={style.rightsWrapper}>
-          <p className={style.rights}>Copyright © 2023. All rights reserved.</p>
+          <p className={style.rights}>
+            {`Copyright © ${year}. All rights reserved.`}
+          </p>
         </div>
       </Container>
     </footer>

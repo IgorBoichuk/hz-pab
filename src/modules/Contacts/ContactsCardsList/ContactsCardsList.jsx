@@ -30,7 +30,7 @@ export const ContactsCardsList = () => {
       info: "вулиця Соборна, 107, Софіївська Борщагівка, Київ",
     },
     { title: "НоМЕР ТЕЛЕФОНУ", info: "+380123456789" },
-    { title: "СОЦІАЛЬНІ МЕРЕЖІ", info: "" },
+    { title: "СОЦІАЛЬНІ МЕРЕЖІ", info: social },
   ];
   return (
     <section className={style.section}>
@@ -40,7 +40,7 @@ export const ContactsCardsList = () => {
             {contactsInfo.map((item) => (
               <li key={item.title} className={style.card}>
                 <p className={style.title}>{item.title}</p>
-                <p className={style.info}>{item.info || social}</p>
+                <p className={style.info}>{item.info}</p>
               </li>
             ))}
           </ul>
