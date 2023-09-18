@@ -1,12 +1,14 @@
 import React, { useEffect } from "react";
-import { Hero } from "../modules/Home/Hero/Hero";
-import { YourAtmosphere } from "../modules/Home/YourAtmosphere/YourAtmosphere";
-import { AboutUs } from "../modules/Home/AboutUs/AboutUs";
-import { CraftBeer } from "../modules/Home/CraftBeer/CraftBeer";
 import { beer } from "../assets/data/beerData";
-import { RunningLline } from "../modules/Home/RunningLline/RunningLline";
-import { Recomendation } from "../modules/Home/Recomendation/Recomendation";
-import { Instagram } from "../modules/Home/Instagram/Instagram";
+import {
+  Hero,
+  YourAtmosphere,
+  AboutUs,
+  CraftBeer,
+  RunningLline,
+  Recomendation,
+  Instagram,
+} from "../modules/Home";
 
 export const Home = () => {
   useEffect(() => {
