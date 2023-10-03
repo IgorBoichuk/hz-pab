@@ -2,141 +2,142 @@
 @import "../../../scss/fonts";
 
 .card {
-  width: 100%;
-  gap: 16px;
-  border-radius: 20px;
-  background-color: rgba(97, 97, 97, 0.2);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+	width: 100%;
+	gap: 16px;
+	border-radius: 20px;
+	background-color: rgba(97, 97, 97, 0.2);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 
-  height: 300px;
+	height: 300px;
 
-  @media screen and (min-width: $breakpoint-tablet) {
-    grid-template-columns: 1fr;
-    grid-template-rows: 43% 1fr;
-    height: 500px;
-  }
-  @media screen and (min-width: $breakpoint-tablet-horizontal) {
-  }
+	@media screen and (min-width: $breakpoint-tablet) {
+		grid-template-columns: 1fr;
+		grid-template-rows: 43% 1fr;
+		height: 500px;
+	}
+	@media screen and (min-width: $breakpoint-tablet-horizontal) {
+	}
 }
 
 .imagewrapper {
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	background-color: #fff;
 
-  border-radius: 20px 0px 0px 20px;
-  overflow: hidden;
+	border-radius: 20px 0px 0px 20px;
+	overflow: hidden;
 
-  @media screen and (min-width: $breakpoint-tablet) {
-    // height: 25vh;
-    height: 230px;
-    width: 100%;
-    border-radius: 20px 20px 0px 0px;
-  }
+	@media screen and (min-width: $breakpoint-tablet) {
+		// height: 25vh;
+		height: 230px;
+		width: 100%;
+		border-radius: 20px 20px 0px 0px;
+	}
 }
 
 .img {
-  display: block;
+	display: block;
 
-  min-width: 50px;
-  height: 130%;
-  object-fit: cover;
+	min-width: 50px;
+	height: 130%;
+	object-fit: cover;
 
-  @media screen and (min-width: $breakpoint-tablet) {
-    width: 100%;
-    height: 100%;
-    object-position: top;
-  }
+	@media screen and (min-width: $breakpoint-tablet) {
+		width: 100%;
+		height: 100%;
+		object-position: top;
+	}
 }
 
 .contentWrapper {
-  display: flex;
-  flex-direction: column;
-  // text-align: center;
-  justify-content: space-between;
-  padding: 14px 0;
-  margin-left: auto;
-  margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	// text-align: center;
+	justify-content: space-between;
+	padding: 14px 0;
+	margin-left: auto;
+	margin-right: auto;
 
-  @media screen and (min-width: $breakpoint-tablet) {
-  }
+	@media screen and (min-width: $breakpoint-tablet) {
+	}
 }
 
 .title {
-  color: #ff612f;
-  font-family: Unbounded, sans-serif;
-  font-size: 16px;
-  font-weight: 800;
-  line-height: 130%; /* 28.6px */
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 12px;
+	color: #ff612f;
+	font-family: Unbounded, sans-serif;
+	font-size: 16px;
+	font-weight: 800;
+	line-height: 130%; /* 28.6px */
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 12px;
 }
 
 .datawrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .paramwrapper {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 15px;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 15px;
 }
 
 .paramalcohol {
-  display: flex;
-  color: #fff;
-  font-family: Unbounded;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 130%; /* 18.2px */
+	display: flex;
+	color: #fff;
+	font-family: Unbounded;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 130%; /* 18.2px */
 }
 
 .paramibu {
-  color: #fff;
-  font-family: Unbounded;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 130%; /* 18.2px */
+	color: #fff;
+	font-family: Unbounded;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 130%; /* 18.2px */
 }
 
 .description {
-  color: #cdcdcd;
-  text-align: center;
-  font-family: Nunito Sans;
-  font-size: 14px;
-  line-height: 140%; /* 19.6px */
-  margin-bottom: 20px;
-  padding: 0 10px;
+	color: #cdcdcd;
+	text-align: center;
+	font-family: Nunito Sans;
+	font-size: 14px;
+	line-height: 140%; /* 19.6px */
+	margin-bottom: 20px;
+	padding: 0 10px;
 }
 
 .paramaWeight {
-  display: flex;
-  color: #fff;
-  font-family: Unbounded;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 130%; /* 18.2px */
-  margin: 0 auto 30px auto;
+	display: flex;
+	color: #fff;
+	font-family: Unbounded;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 130%; /* 18.2px */
+	margin: 0 auto 30px auto;
 }
 
 .price {
-  display: block;
-  width: max-content;
+	display: block;
+	width: max-content;
 
-  position: relative;
-  padding: 13px 15px;
-  color: #ffffff;
-  border-radius: 11px;
-  border: 2px solid #fff;
+	position: relative;
+	padding: 13px 15px;
+	color: #ffffff;
+	border-radius: 11px;
+	border: 2px solid #fff;
 
-  margin: auto;
-  @media screen and (min-width: $breakpoint-tablet) {
-    padding: 13px 25px;
-    // width: max-content;
-  }
+	margin: auto;
+	@media screen and (min-width: $breakpoint-tablet) {
+		padding: 13px 25px;
+		// width: max-content;
+	}
 }

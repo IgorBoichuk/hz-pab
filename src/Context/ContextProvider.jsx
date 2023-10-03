@@ -1,9 +1,6 @@
 import React, { createContext, useCallback, useEffect, useState } from "react";
-
 import { useLocation, useSearchParams } from "react-router-dom";
-
 import { allMenuData, normalizeSubMenu, uniqCat } from "../helpers";
-
 export const MyContext = createContext();
 
 export const ContextProvider = ({ children }) => {

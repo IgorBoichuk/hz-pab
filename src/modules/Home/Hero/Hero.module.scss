@@ -2,221 +2,218 @@
 @import "../../../scss/fonts";
 
 .section {
-  position: relative;
+	position: relative;
 
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.4) 0%,
-      rgba(0, 0, 0, 0.4) 100%
-    ),
-    url(../../../assets/galary/hero-bg.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  overflow-wrap: normal;
+	background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%),
+		url(../../../assets/galary/hero-bg.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	overflow-wrap: normal;
+	overflow: hidden;
 
-  @media screen and (min-width: $breakpoint-tablet) {
-  }
+	@media screen and (min-width: $breakpoint-tablet) {
+	}
 
-  @media screen and (min-width: $breakpoint-tablet-horizontal) {
-  }
+	@media screen and (min-width: $breakpoint-tablet-horizontal) {
+	}
 
-  @media screen and (min-width: $breakpoint-desktop) {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
+	@media screen and (min-width: $breakpoint-desktop) {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
 }
 .content {
-  position: relative;
+	position: relative;
 
-  padding-top: 200px;
-  margin-bottom: 140px;
+	padding-top: 200px;
+	margin-bottom: 140px;
 
-  @media screen and (min-width: $breakpoint-tablet) {
-    width: 50%;
-  }
+	@media screen and (min-width: $breakpoint-tablet) {
+		width: 50%;
+	}
 }
 .textOutline {
-  // font-family: Unbounded, sans-serif;
-  font-size: 36px;
-  font-size: calc(36px + 34 * (100vw / 1280));
-  font-weight: 900;
-  line-height: 130%; /* 117px */
-  text-transform: uppercase;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px #ffffff;
-  margin: 0;
-  padding: 0;
-  width: 350px;
+	// font-family: Unbounded, sans-serif;
+	font-size: 36px;
+	font-size: calc(36px + 34 * (100vw / 1280));
+	font-weight: 900;
+	line-height: 130%; /* 117px */
+	text-transform: uppercase;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 1px #ffffff;
+	margin: 0;
+	padding: 0;
+	width: 350px;
 
-  // @media screen and (min-width: $breakpoint-tablet) {
-  //   font-size: 70px;
-  // }
+	// @media screen and (min-width: $breakpoint-tablet) {
+	//   font-size: 70px;
+	// }
 
-  // @media screen and (min-width: $breakpoint-desktop) {
-  //   font-size: 110px;
-  // }
+	// @media screen and (min-width: $breakpoint-desktop) {
+	//   font-size: 110px;
+	// }
 }
 
 .title {
-  position: absolute;
-  // top: 60%;
-  top: calc(215px + 10 * (100vw / 1280));
-  left: 4px;
-  color: #ff612f;
-  font-family: Unbounded, sans-serif;
-  // font-size: 28px;
-  font-size: calc(24px + 25 * (100vw / 1280));
-  font-weight: 700;
-  line-height: 130%; /* 62.4px */
-  text-transform: uppercase;
-  @media screen and (min-width: $breakpoint-tablet) {
-    // font-size: 42px;
-    top: calc(225px + 10 * (100vw / 1280));
-  }
+	position: absolute;
+	// top: 60%;
+	top: calc(215px + 10 * (100vw / 1280));
+	left: 4px;
+	color: #ff612f;
+	font-family: Unbounded, sans-serif;
+	// font-size: 28px;
+	font-size: calc(24px + 25 * (100vw / 1280));
+	font-weight: 700;
+	line-height: 130%; /* 62.4px */
+	text-transform: uppercase;
+	@media screen and (min-width: $breakpoint-tablet) {
+		// font-size: 42px;
+		top: calc(225px + 10 * (100vw / 1280));
+	}
 
-  @media screen and (min-width: $breakpoint-tablet-horizontal) {
-    // font-size: 42px;
-    top: calc(235px + 10 * (100vw / 1280));
-  }
+	@media screen and (min-width: $breakpoint-tablet-horizontal) {
+		// font-size: 42px;
+		top: calc(235px + 10 * (100vw / 1280));
+	}
 
-  @media screen and (min-width: $breakpoint-desktop) {
-    font-size: 48px;
-    top: calc(255px + 10 * (100vw / 1280));
-  }
+	@media screen and (min-width: $breakpoint-desktop) {
+		font-size: 48px;
+		top: calc(255px + 10 * (100vw / 1280));
+	}
 }
 
 .promotion {
-  color: #fff;
-  font-family: Unbounded, sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 130%; /* 49.4px */
-  text-transform: uppercase;
-  padding-top: 20px;
-  margin-bottom: 25px;
-  @media screen and (min-width: $breakpoint-tablet) {
-    font-size: 32px;
-  }
+	color: #fff;
+	font-family: Unbounded, sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 130%; /* 49.4px */
+	text-transform: uppercase;
+	padding-top: 20px;
+	margin-bottom: 25px;
+	@media screen and (min-width: $breakpoint-tablet) {
+		font-size: 32px;
+	}
 
-  @media screen and (min-width: $breakpoint-desktop) {
-    font-size: 38px;
-  }
+	@media screen and (min-width: $breakpoint-desktop) {
+		font-size: 38px;
+	}
 }
 
 .description {
-  // width: 450px;
-  color: #fff;
-  font-family: Nunito Sans, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 140%; /* 25.2px */
+	// width: 450px;
+	color: #fff;
+	font-family: Nunito Sans, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 140%; /* 25.2px */
 
-  @media screen and (min-width: $breakpoint-tablet) {
-    font-size: 18px;
-    width: 450px;
-  }
+	@media screen and (min-width: $breakpoint-tablet) {
+		font-size: 18px;
+		width: 450px;
+	}
 }
 
 .heroLink {
-  position: absolute;
-  z-index: 3;
-  right: 7%;
-  bottom: 7%;
+	position: absolute;
+	z-index: 3;
+	right: 7%;
+	bottom: 7%;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-  width: 200px;
-  height: 180px;
+	width: 200px;
+	height: 180px;
 
-  text-decoration: none;
-  color: #fff;
+	text-decoration: none;
+	color: #fff;
 
-  // border: 1px solid white;
-  // border-radius: 100%;
+	// border: 1px solid white;
+	// border-radius: 100%;
 
-  animation-name: spin;
-  animation-duration: 20s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  margin: 0;
-  padding: 0;
+	animation-name: spin;
+	animation-duration: 20s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	margin: 0;
+	padding: 0;
 
-  // text-align: center;
-  // align-items: center;
-  @media screen and (min-width: $breakpoint-tablet) {
-    right: 5%;
-    bottom: 5%;
-  }
-  @media screen and (min-width: $breakpoint-desktop) {
-    right: 25%;
-    bottom: 15%;
-  }
+	// text-align: center;
+	// align-items: center;
+	@media screen and (min-width: $breakpoint-tablet) {
+		right: 5%;
+		bottom: 5%;
+	}
+	@media screen and (min-width: $breakpoint-desktop) {
+		right: 25%;
+		bottom: 15%;
+	}
 }
 
 .textSvg {
-  // width: 300px;
-  // height: 300px;
+	// width: 300px;
+	// height: 300px;
 }
 
 .cursorSvg {
-  position: absolute;
+	position: absolute;
 
-  width: 88px;
-  height: 88px;
+	width: 88px;
+	height: 88px;
 
-  fill: #ff612f;
-  padding: 0;
-  margin: 0;
+	fill: #ff612f;
+	padding: 0;
+	margin: 0;
 
-  animation-name: spinCur;
-  animation-duration: 20s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+	animation-name: spinCur;
+	animation-duration: 20s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
 }
 
 .pagination {
-  display: flex;
-  justify-content: space-around;
-  width: 50px;
-  color: #ff612f;
-  margin-left: 100px;
-  padding-bottom: 140px;
+	display: flex;
+	justify-content: space-around;
+	width: 50px;
+	color: #ff612f;
+	margin-left: 100px;
+	padding-bottom: 140px;
 }
 
 .endsection {
-  position: absolute;
-  z-index: 3;
-  width: 100%;
-  top: 97%;
-  @media screen and (min-width: $breakpoint-tablet) {
-    top: 96%;
-  }
+	position: absolute;
+	z-index: 3;
+	width: 100%;
+	top: 97%;
+	@media screen and (min-width: $breakpoint-tablet) {
+		top: 96%;
+	}
 
-  @media screen and (min-width: $breakpoint-desktop) {
-    top: 95%;
-  }
+	@media screen and (min-width: $breakpoint-desktop) {
+		top: 95%;
+	}
 }
 
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
+	0% {
+		transform: rotate(0deg);
+	}
 
-  100% {
-    transform: rotate(360deg);
-  }
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 @keyframes spinCur {
-  100% {
-    transform: rotate(0deg);
-  }
+	100% {
+		transform: rotate(0deg);
+	}
 
-  0% {
-    transform: rotate(360deg);
-  }
+	0% {
+		transform: rotate(360deg);
+	}
 }
