@@ -1,11 +1,7 @@
 import React from "react";
-
 import style from "./SwiperController.module.scss";
-
 import { ArticleCard } from "../../../modules/shared/ArticleCard/ArticleCard";
-
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";

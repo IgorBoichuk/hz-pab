@@ -1,8 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import style from "./Hero.module.scss";
 import { BrokenPaper } from "../../shared/BrokenPaper/BrokenPaper";
 import { ReactComponent as CursorSVG } from "../../../assets/galary/svg/cursor.svg";
-import { Link } from "react-router-dom";
 import { Container } from "../../shared/Container/Container";
 import CircleWithRunningText from "./CircleWithRunningText/CircleWithRunningText";
 import { motion } from "framer-motion";
@@ -45,12 +45,6 @@ export const Hero = () => {
 						Спостерігайте за улюбленими спортивними подіями і насолоджуйтесь часом з друзями та родиною
 					</motion.p>
 				</motion.div>
-				{/* <ul className={style.pagination}>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul> */}
 				<Link to="/menu" className={style.heroLink}>
 					<CircleWithRunningText className={style.textSvg} />
 					<div className={style.cursorSvg}>

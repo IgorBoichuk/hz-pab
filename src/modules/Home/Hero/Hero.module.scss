@@ -3,21 +3,12 @@
 
 .section {
 	position: relative;
-
 	background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%),
 		url(../../../assets/galary/hero-bg.webp);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	overflow-wrap: normal;
-	// overflow: hidden;
-
-	@media screen and (min-width: $breakpoint-tablet) {
-	}
-
-	@media screen and (min-width: $breakpoint-tablet-horizontal) {
-	}
-
 	@media screen and (min-width: $breakpoint-desktop) {
 		display: flex;
 		justify-content: center;
@@ -26,16 +17,13 @@
 }
 .content {
 	position: relative;
-
 	padding-top: 200px;
 	margin-bottom: 140px;
-
 	@media screen and (min-width: $breakpoint-tablet) {
 		width: 50%;
 	}
 }
 .textOutline {
-	// font-family: Unbounded, sans-serif;
 	font-size: 36px;
 	font-size: calc(36px + 34 * (100vw / 1280));
 	font-weight: 900;
@@ -46,38 +34,25 @@
 	margin: 0;
 	padding: 0;
 	width: 350px;
-
-	// @media screen and (min-width: $breakpoint-tablet) {
-	//   font-size: 70px;
-	// }
-
-	// @media screen and (min-width: $breakpoint-desktop) {
-	//   font-size: 110px;
-	// }
 }
 
 .title {
 	position: absolute;
-	// top: 60%;
 	top: calc(215px + 10 * (100vw / 1280));
 	left: 4px;
 	color: #ff612f;
 	font-family: Unbounded, sans-serif;
-	// font-size: 28px;
 	font-size: calc(24px + 25 * (100vw / 1280));
 	font-weight: 700;
 	line-height: 130%; /* 62.4px */
 	text-transform: uppercase;
 	@media screen and (min-width: $breakpoint-tablet) {
-		// font-size: 42px;
 		top: calc(225px + 10 * (100vw / 1280));
 	}
 
 	@media screen and (min-width: $breakpoint-tablet-horizontal) {
-		// font-size: 42px;
 		top: calc(235px + 10 * (100vw / 1280));
 	}
-
 	@media screen and (min-width: $breakpoint-desktop) {
 		font-size: 48px;
 		top: calc(255px + 10 * (100vw / 1280));
@@ -96,14 +71,12 @@
 	@media screen and (min-width: $breakpoint-tablet) {
 		font-size: 32px;
 	}
-
 	@media screen and (min-width: $breakpoint-desktop) {
 		font-size: 38px;
 	}
 }
 
 .description {
-	// width: 450px;
 	color: #fff;
 	font-family: Nunito Sans, sans-serif;
 	font-size: 16px;
@@ -125,25 +98,16 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 	width: 200px;
 	height: 180px;
-
 	text-decoration: none;
 	color: #fff;
-
-	// border: 1px solid white;
-	// border-radius: 100%;
-
 	animation-name: spin;
 	animation-duration: 20s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	margin: 0;
 	padding: 0;
-
-	// text-align: center;
-	// align-items: center;
 	@media screen and (min-width: $breakpoint-tablet) {
 		right: 5%;
 		bottom: 5%;
@@ -154,21 +118,14 @@
 	}
 }
 
-.textSvg {
-	// width: 300px;
-	// height: 300px;
-}
-
 .cursorSvg {
 	position: absolute;
 
 	width: 88px;
 	height: 88px;
-
 	fill: #ff612f;
 	padding: 0;
 	margin: 0;
-
 	animation-name: spinCur;
 	animation-duration: 20s;
 	animation-timing-function: linear;
@@ -192,7 +149,6 @@
 	@media screen and (min-width: $breakpoint-tablet) {
 		top: 96%;
 	}
-
 	@media screen and (min-width: $breakpoint-desktop) {
 		top: 95%;
 	}
