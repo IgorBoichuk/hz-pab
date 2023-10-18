@@ -1,9 +1,4 @@
-.section {
-}
-
 .googleMap {
-  width: 100%;
-  // filter: grayscale(0) invert(100%);
-
-  filter: invert(90%) grayscale(1) hue-rotate(180deg);
+	width: 100%;
+	filter: invert(90%) grayscale(1) hue-rotate(180deg);
 }

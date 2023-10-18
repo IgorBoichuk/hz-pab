@@ -22,7 +22,6 @@
 	flex-direction: column;
 	justify-content: center;
 	gap: 16px;
-	// justify-content: space-around;
 	@media screen and (min-width: $breakpoint-desktop) {
 		flex-direction: row;
 	}
@@ -123,16 +122,13 @@
 .rightPartWrapper {
 	display: flex;
 	flex-direction: column;
-	// width: 100%;
 }
 
 .beerTapImg {
 	display: block;
-
 	height: 157px;
 	border-radius: 20px;
 	margin-bottom: 24px;
-
 	background-image: url(../../../assets/galaryAbutUsSection/bar2.webp);
 	background-repeat: no-repeat;
 	background-position: center;
