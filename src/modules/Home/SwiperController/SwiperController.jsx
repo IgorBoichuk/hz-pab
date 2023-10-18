@@ -2,7 +2,6 @@ import React from "react";
 
 import style from "./SwiperController.module.scss";
 
-import { Container } from "../../shared/Container/Container";
 import { ArticleCard } from "../../../modules/shared/ArticleCard/ArticleCard";
 
 import { Swiper, SwiperSlide } from "swiper/react";

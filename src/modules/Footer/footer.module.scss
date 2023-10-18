@@ -2,157 +2,155 @@
 @import "../../scss/fonts";
 
 .footer {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
-  background: rgba(30, 30, 30, 0.5);
-  overflow: hidden;
+	background: rgba(30, 30, 30, 0.5);
+	overflow: hidden;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 85%;
-    width: 100%;
-    border-top: 1px solid #7d7d7d;
+	&::after {
+		content: "";
+		position: absolute;
+		top: 85%;
+		width: 100%;
+		border-top: 1px solid #7d7d7d;
 
-    @media screen and (min-width: $breakpoint-desktop) {
-      top: 80%;
-    }
-  }
+		@media screen and (min-width: $breakpoint-desktop) {
+			top: 80%;
+		}
+	}
 }
 
 .footerWrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 62px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 62px 0;
 
-  @media screen and (min-width: $breakpoint-tablet-horizontal) {
-  }
+	@media screen and (min-width: $breakpoint-tablet-horizontal) {
+	}
 
-  @media screen and (min-width: $breakpoint-desktop) {
-    flex-direction: row;
-  }
+	@media screen and (min-width: $breakpoint-desktop) {
+		flex-direction: row;
+	}
 }
 
 .logolink {
-  width: 100px;
+	width: 100px;
 
-  @media screen and (min-width: $breakpoint-tablet) {
-  }
+	@media screen and (min-width: $breakpoint-tablet) {
+	}
 
-  @media screen and (min-width: $breakpoint-desktop) {
-  }
+	@media screen and (min-width: $breakpoint-desktop) {
+	}
 }
 .logo {
-  display: block;
-  text-decoration: none;
-  width: 100px;
-  margin-bottom: 40px;
+	display: block;
+	text-decoration: none;
+	width: 100px;
+	margin-bottom: 40px;
 
-  @media screen and (min-width: $breakpoint-desktop) {
-    width: 70px;
-  }
+	@media screen and (min-width: $breakpoint-desktop) {
+		width: 70px;
+	}
 }
 .navmenu {
-  display: block;
-  margin-bottom: 40px;
+	display: block;
+	margin-bottom: 40px;
 
-  @media screen and (min-width: $breakpoint-desktop) {
-    margin-bottom: 0;
-  }
+	@media screen and (min-width: $breakpoint-desktop) {
+		margin-bottom: 0;
+	}
 }
 .navmenu > .navWrapper {
-  flex-direction: column;
+	flex-direction: column;
 }
 
 .navlink {
-  color: #fff;
-  text-align: center;
-  font-family: Montserrat, sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.5;
-  text-transform: uppercase;
-  text-decoration: none;
-  &:hover {
-    color: #ff612f;
-  }
-  &:focus {
-    color: #ff612f;
-  }
+	color: #fff;
+	text-align: center;
+	font-family: Montserrat, sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.5;
+	text-transform: uppercase;
+	text-decoration: none;
+	&:hover {
+		color: #ff612f;
+	}
+	&:focus {
+		color: #ff612f;
+	}
 }
 
 .timetAdresWrapper {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 40px;
-  width: 150px;
-  padding-bottom: 30px;
-  @media screen and (min-width: $breakpoint-tablet) {
-    flex-direction: row;
-    width: 470px;
-    gap: 125px;
-  }
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	width: 150px;
+	padding-bottom: 30px;
+	@media screen and (min-width: $breakpoint-tablet) {
+		flex-direction: row;
+		width: 470px;
+		gap: 125px;
+	}
 }
 
 .timetWrapper {
-  // width: 150px;
+	// width: 150px;
 }
 
 .adressWrapper {
-  // width: 240px;
+	// width: 240px;
 }
 
 .contactTitle {
-  font-family: Montserrat, sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 150%; /* 24px */
-  text-transform: uppercase;
-  color: #fff;
+	font-family: Montserrat, sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 150%; /* 24px */
+	text-transform: uppercase;
+	color: #fff;
 }
 
 .contact {
-  font-family: Montserrat, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 150%; /* 24px */
-  color: #cdcdcd;
+	font-family: Montserrat, sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 150%; /* 24px */
+	color: #cdcdcd;
 }
 
 .socialWrapper {
-  display: flex;
-  gap: 16px;
-  margin-bottom: 42px;
+	display: flex;
+	gap: 16px;
+	margin-bottom: 42px;
 }
 
 .socialItem {
-  width: 40px;
-  height: 40px;
-  fill: #ffffff;
-  &:hover {
-    fill: #ff612f;
-  }
-  &:focus {
-    fill: #ff612f;
-  }
+	width: 40px;
+	height: 40px;
+	fill: #ffffff;
+	&:hover {
+		fill: #ff612f;
+	}
+	&:focus {
+		fill: #ff612f;
+	}
 }
 
 .rightsWrapper {
-  width: 100%;
+	width: 100%;
 }
 
 .rights {
-  display: block;
-  font-family: Montserrat, sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 22px; /* 157.143% */
-  color: #cdcdcd;
-  padding: 34px 0;
+	display: block;
+	font-family: Montserrat, sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 22px; /* 157.143% */
+	color: #cdcdcd;
+	padding: 34px 0;
 }
