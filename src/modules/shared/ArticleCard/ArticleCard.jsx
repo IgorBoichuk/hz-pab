@@ -1,5 +1,5 @@
-import React from "react";
-import style from "./ArticleCard.module.scss";
+import React from 'react';
+import style from './ArticleCard.module.scss';
 
 const normalizeDesc = str => {
 	const sliceLength = 80;
@@ -11,9 +11,9 @@ const normalizeDesc = str => {
 
 export const ArticleCard = ({ item }) => {
 	return (
-		<li className={style.card}>
+		<div className={style.card}>
 			<div className={style.imagewrapper}>
-				<img loading="lazy" src={item.image} alt={item.name} className={style.img} />
+				<img loading='lazy' src={item.image} alt={item.name} className={style.img} />
 			</div>
 			<div className={style.contentWrapper}>
 				<h3 className={style.title}>{item.name}</h3>
@@ -27,6 +27,6 @@ export const ArticleCard = ({ item }) => {
 				</div>
 				<span className={style.price}>Ціна: {item.price} грн</span>
 			</div>
-		</li>
+		</div>
 	);
 };
