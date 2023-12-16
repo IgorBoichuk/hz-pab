@@ -1,26 +1,26 @@
-@import "../../../scss/variables";
-@import "../../../scss/fonts";
+@import '../../../scss/variables';
+@import '../../../scss/fonts';
 
 .section {
-  margin: 50px 0;
+	margin: 50px 0;
 }
 
 .title {
-  color: wheat;
-  font-size: 35px;
-  padding: 40px;
+	color: wheat;
+	font-size: 35px;
+	padding: 40px;
 }
 
 .beeritems {
-  display: grid;
-  gap: 24px;
-  list-style: none;
-  @media screen and (min-width: $breakpoint-tablet) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  @media screen and (min-width: $breakpoint-tablet-horizontal) {
-    grid-template-columns: repeat(3, 1fr);
-  }
+	display: grid;
+	gap: 24px;
+	list-style: none;
+	@media screen and (min-width: $breakpoint-tablet) {
+		// flex-direction: row;
+		// flex-wrap: wrap;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@media screen and (min-width: $breakpoint-tablet-horizontal) {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
